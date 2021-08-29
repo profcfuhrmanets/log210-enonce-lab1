@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="514px" preserveAspectRatio="none" style="width:564px;height:514px;background:#FFFFFF;" version="1.1" viewBox="0 0 564 514" width="564px" zoomAndPan="magnify"><defs/><g><!--MD5=[66f88c57ef64f50dae71b0b92300acde]
+cluster Navigateur moderne--><polygon fill="#FFFFFF" points="278,16,288,6,518,6,518,147,508,157,278,157,278,16" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="508" x2="518" y1="16" y2="6"/><line style="stroke:#000000;stroke-width:1.5;" x1="278" x2="508" y1="16" y2="16"/><line style="stroke:#000000;stroke-width:1.5;" x1="508" x2="508" y1="16" y2="157"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="164" x="312" y="31.9951">Navigateur moderne</text><!--MD5=[0c5ebc11d1f9055b162fb809766bcc2a]
+cluster Système de gestion\ndes apprentissages\n(SGA)--><polygon fill="#FFFFFF" points="16,22.5,26,12.5,251,12.5,251,497,241,507,16,507,16,22.5" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="241" x2="251" y1="22.5" y2="12.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="241" y1="22.5" y2="22.5"/><line style="stroke:#000000;stroke-width:1.5;" x1="241" x2="241" y1="22.5" y2="507"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="50" y="38.4951">Système de gestion</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="158" x="50.5" y="54.792">des apprentissages</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="46" x="106.5" y="71.0889">(SGA)</text><!--MD5=[a7e36d4aa44b43fc8fb02c9c2fa0b819]
+cluster SGB--><polygon fill="#CCCCCC" points="312,208,322,198,547,198,547,364,537,374,312,374,312,208" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="537" x2="547" y1="208" y2="198"/><line style="stroke:#000000;stroke-width:1.5;" x1="312" x2="537" y1="208" y2="208"/><line style="stroke:#000000;stroke-width:1.5;" x1="537" x2="537" y1="208" y2="374"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="138" x="356.5" y="223.9951">«Système externe»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="159" x="346" y="240.292">Système de gestion</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="115" x="368" y="256.5889">des borderaux</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="46" x="402.5" y="272.8857">(SGB)</text><!--MD5=[beb5ad5244d3d849df9473931f7c2e5e]
+entity GUI--><rect fill="#FEFECE" height="95.1875" style="stroke:#A80036;stroke-width:1.5;" width="206" x="295" y="46"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="481" y="51"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="479" y="53"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="479" y="57"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="310" y="78.9951">Application frontale</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="310" y="95.292">minimaliste,p.ex.</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="310" y="111.5889">pages web (templates)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="310" y="127.8857">et un peu de JavaScript</text><!--MD5=[953a8c67cfe21abaf9bf45dad8506ca8]
+entity Router--><ellipse cx="133" cy="93.5" fill="#FEFECE" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="103" y="123.4951">Routage</text><!--MD5=[6e8f311b0aa23032184ffba0ef926f91]
+entity App--><rect fill="#FEFECE" height="78.8906" style="stroke:#A80036;stroke-width:1.5;" width="199" x="33.5" y="283"/><rect fill="#FEFECE" height="10" style="stroke:#A80036;stroke-width:1.5;" width="15" x="212.5" y="288"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="210.5" y="290"/><rect fill="#FEFECE" height="2" style="stroke:#A80036;stroke-width:1.5;" width="4" x="210.5" y="294"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="48.5" y="315.9951">Application conçue</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="48.5" y="332.292">selon la méthodologie</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="154" x="48.5" y="348.5889">proposée par Larman</text><!--MD5=[0f236602209a03542e21b89873b828ef]
+entity SimpleDB--><path d="M93.5,439 C93.5,429 133,429 133,429 C133,429 172.5,429 172.5,439 L172.5,480.5938 C172.5,490.5938 133,490.5938 133,490.5938 C133,490.5938 93.5,490.5938 93.5,480.5938 L93.5,439 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.5;"/><path d="M93.5,439 C93.5,449 133,449 133,449 C133,449 172.5,449 172.5,439 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="103.5" y="465.9951">Solution</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="103.5" y="482.292">simple</text><path d="M366.5,295 L366.5,350.3984 L511.5,350.3984 L511.5,305 L501.5,295 L366.5,295 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M501.5,295 L501.5,305 L511.5,305 L501.5,295 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><path d="M377.8333,303.2161 C375.4392,303.2161 373.5,305.1553 373.5,307.5495 C373.5,309.9436 375.4392,311.8828 377.8333,311.8828 C380.2275,311.8828 382.1667,309.9436 382.1667,307.5495 C382.1667,305.1553 380.2275,303.2161 377.8333,303.2161 M377.8333,304.2995 L377.8333,306.4661 L381.0833,306.4661 L381.0833,308.6328 L377.8333,308.6328 L377.8333,310.7995 L374.5833,307.5495 L377.8333,304.2995 " fill="#000000" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="387.1667" y="312.0669">Source pour les</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="372.5" y="327.1997">infos sur les cours,</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="372.5" y="342.3325">les étudiants, etc.</text><!--MD5=[56b72e7de0968c0cf25972f053180467]
+reverse link Router to GUI--><path d="M152.403,93.5 C182.369,93.5 241.998,93.5 294.994,93.5 " fill="none" id="Router-backto-GUI" style="stroke:#A80036;stroke-width:1.0;"/><path d="M145.2002,101.9572 A9,9 0 0 0 145.2002 85.0428" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="160.5" y="86.5669">API REST niveau 2</text><!--MD5=[ee207bd21a41d647759085e7fca34991]
+link Router to App--><path d="M133,102.579 C133,131.012 133,227.692 133,282.59 " fill="none" id="Router-App" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b87fad3cf41de54d892cd606074f6fe5]
+link App to SimpleDB--><path d="M133,362.329 C133,383.444 133,409.172 133,428.7769 " fill="none" id="App-SimpleDB" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8ceabf8ea623773f41dcf93e05bd7474]
+link App to SGB--><path d="M232.609,322.5 C254.73,322.5 276.633,322.5 293.6619,322.5 C297.9191,322.5 301.8717,322.5 305.4469,322.5 C307.2345,322.5 308.9277,322.5 310.5176,322.5 C310.915,322.5 311.306,322.5 311.6904,322.5 C311.7865,322.5 311.8822,322.5 311.9774,322.5 " fill="none" id="App-SGB" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="250.57" y="315.5669">API REST</text><!--MD5=[e9d1d518d19cd3268b88dd5694900959]
+@startuml
+skinparam style strictuml
+skinparam componentStyle uml2
+
+node "Navigateur moderne" {
+    component [Application frontale\nminimaliste,p.ex.\npages web (templates)\net un peu de JavaScript] as GUI
+}
+
+node "Système de gestion\ndes apprentissages\n(SGA)" {
+    interface Routage as Router
+
+    [Application conçue\nselon la méthodologie\nproposée par Larman] as App
+
+    database "Solution\nsimple" as SimpleDB {
+    } 
+}
+
+node "Système de gestion\ndes borderaux\n(SGB)" as SGB <<Système externe>> #cccccc {
+note as SGBNote
+<&arrow-circle-left> Source pour les
+infos sur les cours, 
+les étudiants, etc.
+end note
+}
+
+
+GUI -left-( Router : API REST niveau 2
+Router -down- App
+App -down- SimpleDB
+App -right- SGB : API REST
+@enduml
+
+PlantUML version 1.2021.10beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

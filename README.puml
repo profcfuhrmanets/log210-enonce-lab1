@@ -1,0 +1,114 @@
+@startuml dss-demonstration
+skinparam style strictuml
+participant ":Auxiliaire\nd'enseignement\n(Chargé.e de lab)" as C
+participant ":Équipe" as E
+participant ":System" as S
+participant ":Github" as G
+
+C --> E: demande le début de\nla démonstration
+E --> S: ouvrir application et \ndocument d'exigence\ncôte à côte
+loop Tant que l'auxiliaire d'enseignement n'est pas satisfait
+    C --> E: sélectionner cas d'utilisation\nou FURPS
+    E --> S: démontrer le fonctionnement\ndu scénario principal et alternatif\ns'il y a leu
+    C --> E: identification des problèmes
+    E --> G:  création d'une tâche pour correction
+end
+
+@enduml
+
+@startuml dss-evaluation-implementation
+skinparam style strictuml
+participant ":Auxiliaire\nd'enseignement\n(Chargé.e de lab)" as C
+participant ":System" as S
+participant ":Équipe" as E
+participant ":Github" as G
+
+C --> S: ouvrir code et rapport de l'itération
+C --> S: vérifier correspondance code vs MDD
+loop Tant que l'auxiliaire d'enseignement n'est pas satisfait
+    C --> S: sélectionner une RDCU
+    C --> S: vérifier correspondance code et RDCU
+    opt problèmes
+        C --> E : information sur le problème à corriger
+        E --> G: création d'une tâche\npour correction
+    end
+end
+
+C -->S: exécuter les tests
+opt problèmes
+    C --> E : information sur le problème à corriger
+    E --> G: création d'une tâche\npour correction
+end
+
+@enduml
+
+@startuml deploiement
+skinparam style strictuml
+skinparam componentStyle uml2
+
+node "Navigateur moderne" {
+    component [Application frontale\nminimaliste,p.ex.\npages web (templates)\net un peu de JavaScript] as GUI
+}
+
+node "Système de gestion\ndes apprentissages\n(SGA)" {
+    interface Routage as Router
+
+    [Application conçue\nselon la méthodologie\nproposée par Larman] as App
+
+    database "Solution\nsimple" as SimpleDB {
+    } 
+}
+
+node "Système de gestion\ndes borderaux\n(SGB)" as SGB <<Système externe>> #cccccc {
+note as SGBNote
+<&arrow-circle-left> Source pour les
+infos sur les cours, 
+les étudiants, etc.
+end note
+}
+
+
+GUI -left-( Router : API REST niveau 2
+Router -down- App
+App -down- SimpleDB
+App -right- SGB : API REST
+@enduml
+
+@startdot figureF16.24-web
+digraph G {
+	graph [ labelloc=top,label="Séparation des couches\n(selon la Figure A17.24/F16.24 de Larman)",fontname="Helvetica",fontsize=12];
+	edge [fontname="Helvetica",fontsize=9,labelfontname="Helvetica",labelfontsize=9];
+	node [fontname="Helvetica",fontsize=9, shape=box, style=filled, fillcolor="white"];
+
+   	utilisateur [label=<<TABLE BORDER="0" ALIGN="LEFT"><TR><TD><FONT POINT-SIZE="20">웃</FONT></TD></TR><TR><TD><B>:Joueur</B></TD></TR></TABLE>>, fontname="Helvetica-Bold" shape=plaintext]
+    subgraph cluster_0 {
+        style=filled;
+		label = "Couche présentation"; labeljust=l; fontname="Helvetica-Oblique";fontsize=9;
+        color = "#ddffdd";
+	    pageWeb [label="Page web\n(navigateur)", shape=note]
+    	pageWeb -> routeur [label=" HTTP GET /api/v1/demarrerJeu/Toto", fontname="Courier-Bold"];
+        c11 [label="" , shape=none, fillcolor=invis]
+        c10 [label="                   " , shape=none, fillcolor=invis]
+	    routeurNote [label="Routeur Express\n(Node)", shape=note, fontname="Helvetica-Oblique" fontsize=9 fillcolor=yellow]
+	    routeur [label=<<TABLE BORDER="0" ALIGN="LEFT"><TR><TD><B>:Router</B></TD></TR></TABLE>>, style=filled, fillcolor=lightyellow]
+        routeur -> routeurNote [arrowhead=none; arrowtail=odot style=dashed]
+        {rank=same; c10; routeur; routeurNote}
+        {rank=same; c11; pageWeb}
+	}
+    subgraph cluster_1 {
+        style=filled; color = "#ddddff";
+		label = "Couche domaine"; labeljust=l; fontname="Helvetica-Oblique";fontsize=9;
+	    domain [label="", shape=point, fillcolor=invis, color=invis]
+	    controleurNote [label="contrôleur", shape=note, fontname="Helvetica-Oblique" fontsize=9 fillcolor=yellow]
+    	controleur [label=<<TABLE BORDER="0" ALIGN="LEFT"><TR><TD><b>:JeuDeDes</b></TD></TR></TABLE>>, style=filled, fillcolor=lightyellow]
+	    filler6 [label="", shape=none, fillcolor=invis]
+        controleur -> controleurNote [arrowhead=none; arrowtail=odot style=dashed]
+        {rank=same; controleur; controleurNote}
+    }
+    routeur -> controleur [label="\n\n", taillabel=<<TABLE BORDER="0" ALIGN="LEFT"><TR><TD VALIGN="MIDDLE" BGCOLOR="yellow"><FONT FACE="Helvetica-Oblique" POINT-SIZE="9">Opération système (du DSS)</FONT></TD><TD><FONT FACE="Courier-Bold" POINT-SIZE="10"><B>demarrerJeu(nom)</B></FONT></TD></TR></TABLE>>,
+	         labeldistance = 2.5, labelangle=0]
+
+	utilisateur -> pageWeb [label="  appuie sur le bouton", style=dashed, labeljust=r];
+    controleur -> domain [label=" ... (selon la logique\ndu domaine)"]
+}
+@enddot
