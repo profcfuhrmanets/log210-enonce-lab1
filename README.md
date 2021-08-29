@@ -1,6 +1,7 @@
 # Système de gestion de l'apprentissage
 
 Version: Automne 2021 (1.0.0)
+Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
 
