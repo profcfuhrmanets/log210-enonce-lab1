@@ -447,7 +447,7 @@ Sans objet.
 
 ---
 
-## CU04 - Corriger questionnaire (correction manuelle)
+## CU06 - Corriger questionnaire (correction manuelle)
 
 Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doivent être corrigées par un enseignant.
 
