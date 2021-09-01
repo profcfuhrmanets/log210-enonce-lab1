@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="348px" preserveAspectRatio="none" style="width:1071px;height:348px;" version="1.1" viewBox="0 0 1071 348" width="1071px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="125" x="464" y="18.6855">Cas d'utilisation</text><!--MD5=[b3698a6cc5564d9d4fef4442b1101ec2]
+cluster SGA Système de Gestion des Apprentissages--><rect fill="#FFFFFF" height="125" style="stroke: #000000; stroke-width: 1.5;" width="1053" x="7" y="131.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="317" x="375" y="147.6738">SGA Système de Gestion des Apprentissages</text><ellipse cx="63.8686" cy="203.5355" fill="#FEFECE" rx="40.3686" ry="32.8949" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="46.3686" y="191.2308">CU01</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="45.3686" y="208.8402">Gérer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="46.3686" y="226.4495">cours</text><ellipse cx="463.1021" cy="203.4223" fill="#FEFECE" rx="44.6021" ry="36.2817" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="445.6021" y="187.3378">CU02</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="444.6021" y="204.9472">Gérer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="432.6021" y="222.5566">questions</text><ellipse cx="340.8668" cy="203.7341" fill="#FEFECE" rx="41.8668" ry="34.0935" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="323.3668" y="190.0801">CU03</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="322.3668" y="207.6895">Gérer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="46" x="317.8668" y="225.2989">devoirs</text><ellipse cx="583.8646" cy="203.4323" fill="#FEFECE" rx="40.8646" ry="33.2916" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="566.3646" y="190.6793">CU04</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="557.8646" y="208.2887">Corriger</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="39" x="564.3646" y="225.8981">devoir</text><ellipse cx="202.1276" cy="203.7277" fill="#FEFECE" rx="62.1276" ry="36.5871" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="184.6276" y="185.7548">CU05</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="37" x="183.6276" y="203.3642">Gérer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="93" x="155.6276" y="220.9735">questionnaires</text><ellipse cx="717.8368" cy="203.8258" fill="#FEFECE" rx="57.8368" ry="36.6852" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="700.3368" y="186.0114">CU06</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="691.8368" y="203.6207">Corriger</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="86" x="674.8368" y="221.2301">questionnaire</text><ellipse cx="851.8646" cy="203.4323" fill="#FEFECE" rx="40.8646" ry="33.2916" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="834.3646" y="190.6793">CU07</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="58" x="822.8646" y="208.2887">Remettre</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="39" x="832.3646" y="225.8981">devoir</text><ellipse cx="985.8368" cy="203.8258" fill="#FEFECE" rx="57.8368" ry="36.6852" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="968.3368" y="186.0114">CU08</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="44" x="963.8368" y="203.6207">Passer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="86" x="942.8368" y="221.2301">questionnaire</text><!--MD5=[626ad08abde0879284d52f51a0eb42aa]
+entity P--><ellipse cx="402" cy="36.6406" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M402,44.6406 L402,71.6406 M389,52.6406 L415,52.6406 M402,71.6406 L389,86.6406 M402,71.6406 L415,86.6406 " fill="none" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="71" x="366.5" y="103.6738">Enseignant</text><!--MD5=[68f82070d0aec4ff4b64d9b1102926da]
+entity E--><ellipse cx="919" cy="36.6406" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M919,44.6406 L919,71.6406 M906,52.6406 L932,52.6406 M919,71.6406 L906,86.6406 M919,71.6406 L932,86.6406 " fill="none" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="893" y="103.6738">Étudiant</text><!--MD5=[edbaca1f82b312aedb86f38766b1bbc8]
+entity signets--><rect fill="#FEFECE" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="337" x="415.5" y="300.1406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="48" x="425.5" y="324.6738">«actor»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="30" x="477.5" y="324.6738">SGB</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="231" x="511.5" y="324.6738">Système de Gestion des Bordereaux</text><!--MD5=[2789d71e8ff0857fb483018644b03429]
+link P to gc--><path d="M366.287,71.8846 C300.272,79.3316 162.215,97.5206 122,123.1406 C103.268,135.0746 88.6041,155.3886 78.707,172.4946 " fill="none" id="P-gc" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[704e21f65d969b283eaa7674a4b7ed34]
+link P to gq1--><path d="M366.39,80.6306 C341.549,90.2356 308.277,104.9306 282,123.1406 C262.687,136.5246 243.902,154.8286 229.394,170.5006 " fill="none" id="P-gq1" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[eb82eff7b5dab196b80cf1c8e437c378]
+link P to gq2--><path d="M419.808,107.4056 C428.67,126.9446 439.271,150.3206 447.753,169.0236 " fill="none" id="P-gq2" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[306dc1b4b18e8873b529a3fd7ec7071d]
+link P to gd--><path d="M384.192,107.4056 C374.979,127.7206 363.885,152.1816 355.247,171.2266 " fill="none" id="P-gd" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c77fa8d8c887158d68751de1043c5cec]
+link P to cd--><path d="M437.766,78.6826 C463.839,87.5956 499.006,102.2736 525,123.1406 C542.022,136.8056 556.676,156.4776 567.121,172.8336 " fill="none" id="P-cd" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[bcfd51094e5f48f5489974eb5b8b9ab4]
+link P to cq--><path d="M437.848,69.8486 C487.093,73.5756 577.058,85.4336 643,123.1406 C663.26,134.7256 681.366,153.5316 694.709,169.9436 " fill="none" id="P-cq" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3dd90619d27c133ef09c691c004f616b]
+link E to pq--><path d="M938.559,107.4056 C948.216,126.7896 959.753,149.9496 969.032,168.5766 " fill="none" id="E-pq" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ec7e1e610b05f49989c3cf0e9df552c6]
+link E to rd--><path d="M899.441,107.4056 C889.166,128.0306 876.763,152.9296 867.216,172.0956 " fill="none" id="E-rd" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9cf7cf07b78234675bf764b7ae3745cb]
+link gq1 to signets--><path d="M235.254,234.7926 C248.863,245.6198 265.319,256.9258 282,264.1406 C323.553,282.1126 370.806,294.1032 415.393,302.1033 " fill="none" id="gq1-signets" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[21fae4a09bd0151007ddbff0610bb41a]
+link gd to signets--><path d="M363.733,232.6096 C374.079,243.7853 387.11,255.926 401,264.1406 C428.229,280.244 460.61,291.8477 490.509,300.0677 " fill="none" id="gd-signets" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[65d2892bbd7a042d356ddc2ce65aa0ea]
+link pq to signets--><path d="M955.154,234.9426 C942.439,245.7896 926.955,257.0697 911,264.1406 C861.814,285.9384 804.936,299.017 752.547,306.8378 " fill="none" id="pq-signets" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[923c532d92aae9732baaf180a55244d5]
+link cd to signets--><path d="M584,237.1656 C584,257.603 584,283.2015 584,300.0817 " fill="none" id="cd-signets" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[148ecf4de9f43faed5faaece36081c5b]
+link cq to signets--><path d="M683.839,233.5756 C659.181,254.4608 626.64,282.0243 605.519,299.9137 " fill="none" id="cq-signets" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[4b49db740f4d59f9a87c1eab44fa0920]
+@startuml DiagCasUtilisation
+title Cas d'utilisation
+skinparam style strictuml
+'skinparam backgroundcolor transparent
+'left to right direction
+rectangle "SGA Système de Gestion des Apprentissages" {
+(CU01\nGérer\ncours) as gc
+(CU02\nGérer\nquestions) as gq2
+(CU03\nGérer\ndevoirs) as gd
+(CU04\nCorriger\ndevoir) as cd
+(CU05\nGérer\nquestionnaires) as gq1
+(CU06\nCorriger\nquestionnaire) as cq
+(CU07\nRemettre\ndevoir) as rd
+(CU08\nPasser\nquestionnaire) as pq
+}
+'actor "Administrateur" as A
+actor "Enseignant" as P
+actor "Étudiant" as E
+rectangle "<<actor>> **SGB** Système de Gestion des Bordereaux" as signets
+P - - gc
+P - - gq1
+P - - gq2
+P - - gd
+P - - cd
+P - - cq
+'A - - ie
+E - - pq
+E - - rd
+signets -u- gq1
+signets -u- gd
+signets -u- pq
+signets -u- cd
+signets -u- cq
+@enduml
+
+@startuml DiagCasUtilisation
+title Cas d'utilisation
+skinparam style strictuml
+rectangle "SGA Système de Gestion des Apprentissages" {
+(CU01\nGérer\ncours) as gc
+(CU02\nGérer\nquestions) as gq2
+(CU03\nGérer\ndevoirs) as gd
+(CU04\nCorriger\ndevoir) as cd
+(CU05\nGérer\nquestionnaires) as gq1
+(CU06\nCorriger\nquestionnaire) as cq
+(CU07\nRemettre\ndevoir) as rd
+(CU08\nPasser\nquestionnaire) as pq
+}
+actor "Enseignant" as P
+actor "Étudiant" as E
+rectangle "<<actor>> **SGB** Système de Gestion des Bordereaux" as signets
+P - - gc
+P - - gq1
+P - - gq2
+P - - gd
+P - - cd
+P - - cq
+E - - pq
+E - - rd
+signets -u- gq1
+signets -u- gd
+signets -u- pq
+signets -u- cd
+signets -u- cq
+@enduml
+
+PlantUML version 1.2020.15(Sun Jun 28 07:39:45 EDT 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: CA
+--></g></svg>

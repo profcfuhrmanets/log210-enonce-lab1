@@ -1,0 +1,34 @@
+@startuml DiagCasUtilisation
+title Cas d'utilisation
+skinparam style strictuml
+'skinparam backgroundcolor transparent
+'left to right direction
+rectangle "SGA Système de Gestion des Apprentissages" {
+(CU01\nGérer\ncours) as gc
+(CU02\nGérer\nquestions) as gq2
+(CU03\nGérer\ndevoirs) as gd
+(CU04\nCorriger\ndevoir) as cd
+(CU05\nGérer\nquestionnaires) as gq1
+(CU06\nCorriger\nquestionnaire) as cq
+(CU07\nRemettre\ndevoir) as rd
+(CU08\nPasser\nquestionnaire) as pq
+}
+'actor "Administrateur" as A
+actor "Enseignant" as P
+actor "Étudiant" as E
+rectangle "<<actor>> **SGB** Système de Gestion des Bordereaux" as signets
+P -- gc
+P -- gq1
+P -- gq2
+P -- gd
+P -- cd
+P -- cq
+'A -- ie
+E -- pq
+E -- rd
+signets -u- gq1
+signets -u- gd
+signets -u- pq
+signets -u- cd
+signets -u- cq
+@enduml
