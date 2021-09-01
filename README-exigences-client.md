@@ -27,7 +27,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 **Préconditions:**
 
-- L'enseignant est authentifié. SGA transfère l'information à SGB pour l'authentification. SGB retourne un token que SGA retourne à l'usager. L'usager doit nécessairement utiliser ce token pour faire ses requêtes à SGA..
+- L'enseignant est authentifié. SGA transfère l'information à SGB pour l'authentification. SGB retourne un jeton que SGA retourne à l'utilisateur. L'utilisateur doit nécessairement utiliser ce jeton pour faire ses requêtes à SGA..
 
 **Garanties en cas de succès (postconditions):**
 
@@ -579,7 +579,7 @@ Référence: https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typ
 
 Le client doit voir les informations (surtout les questions) clairement sur plusieurs formats d'écran: téléphone, tablette et écran PC. Alors, les pages web doivent supporter des appareils avec une taille d'écran de 320 par 568 pixels jusqu'à 1920 par 1080 pixels et le texte doit être lisible à une distance de 25 cm. Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 
-**Note:** vous pouvez utiliser les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran.
+**Note:** vous pouvez utiliser les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran. Les PUG sont déjà basés sur Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
 
 ## Fiabilité (Reliability)
 
@@ -590,9 +590,10 @@ En cas d'indisponibilité du système connecté (SGB - système de gestion des b
 **Note:** Larman propose des solutions avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
 
 <!-- on met 2 espaces à la fin de markdown pour avoir un <br/> -->
-R1 s'applique uniquement à l'exigence CU03-Corriger devoir pour les scénarios suivants:  
+R1 s'applique au cas d'utilisation **Corriger devoir** pour les scénarios suivants:  
 &nbsp;&nbsp;&nbsp;&nbsp;9. L'enseignant téléverse (“upload”) la version corrigée du devoir.  
 &nbsp;&nbsp;&nbsp;10. L'enseignant indique la note du devoir.
+R1 s'applique également au cas d'utilisations **Passer questionnaire** (lors de la correction automatique) et **Corriger questionnaire** (lors de la correction manuelle).
 
 ## Performance
 
