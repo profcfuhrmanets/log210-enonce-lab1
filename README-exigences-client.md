@@ -1,4 +1,7 @@
-# Étude de cas: système de gestion de l'apprentissage
+# Éxigences SGA
+
+Version: Automne 2021 (1.0.0)  
+Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
 - [Grille de pointage des exigences](./README-grille-pointage.md)
@@ -17,11 +20,11 @@ Dans cette étude de cas, il est proposé de réaliser un système de gestion de
 
 - **Étudiant:** Il est inscrit à l'université. Il veut un moyen de remettre des devoirs et réaliser des jeux-questionnaires pour les groupes-cours dans lesquels il est inscrit.
 
-# Cas d'utilisation
+## Cas d'utilisation
 
 Vous devez vous assurer d'implémenter une mécanique de gestion des états permettant de s'assurer que les opérations système sont appelées dans un ordre cohérent avec le cas d'utilisation. Toute séquence d'utilisation autre que la séquence normale devrait automatiquement générer une erreur.  Nous couvrirons cette mécanique lors du cours sur les diagrammes d'états.
 
-## CU01a - Ajouter cours
+### CU01a - Ajouter cours
 
 **Acteur principal:**  Enseignant
 
@@ -48,7 +51,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.
 
-## CU01b - Récupérer cours
+### CU01b - Récupérer cours
 
 **Acteur principal:**  Enseignant
 
@@ -67,7 +70,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. L'enseignant demande les détails d'un cours.
 1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
 
-## CU01c - Retirer cours
+### CU01c - Retirer cours
 
 **Acteur principal:**  Enseignant
 
@@ -92,7 +95,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 ---
 
-## CU02a - Ajouter question
+### CU02a - Ajouter question
 
 **Acteur principal:**  Enseignant
 
@@ -122,7 +125,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 
-## CU02b - Récupérer question
+### CU02b - Récupérer question
 
 **Acteur principal:**  Enseignant
 
@@ -143,7 +146,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 *On répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
 
-## CU02c - Modifier question
+### CU02c - Modifier question
 
 **Acteur principal:**  Enseignant
 
@@ -168,7 +171,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 
-## CU02d - Supprimer question
+### CU02d - Supprimer question
 
 **Acteur principal:**  Enseignant
 
@@ -192,7 +195,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 ---
 
-## CU03a - Ajouter devoir
+### CU03a - Ajouter devoir
 
 **Acteur principal:**  Enseignant
 
@@ -221,7 +224,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 
-## CU03b - Récupérer devoir
+### CU03b - Récupérer devoir
 
 **Acteur principal:**  Enseignant
 
@@ -253,7 +256,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;7b. Le système affiche les étudiants par ordre croissant de la note.
 
-## CU03c - Modifier devoir
+### CU03c - Modifier devoir
 
 **Acteur principal:**  Enseignant
 
@@ -276,7 +279,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
 
-## CU03d - Supprimer devoir
+### CU03d - Supprimer devoir
 
 **Acteur principal:**  Enseignant
 
@@ -300,7 +303,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 ---
 
-## CU04 - Corriger devoir
+### CU04 - Corriger devoir
 
 **Acteur principal:**  Enseignant
 
@@ -331,7 +334,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 ---
 
-## CU05a - Ajouter questionnaire
+### CU05a - Ajouter questionnaire
 
 **Acteur principal:**  Enseignant
 
@@ -363,7 +366,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 Sans objet.
 
-## CU05b - Afficher questionnaire
+### CU05b - Afficher questionnaire
 
 **Acteur principal:**  Enseignant
 
@@ -394,7 +397,7 @@ Sans objet.
 
 Sans objet.
 
-## CU05c - Modifier questionnaire
+### CU05c - Modifier questionnaire
 
 **Acteur principal:**  Enseignant
 
@@ -422,7 +425,7 @@ Sans objet.
 
 &nbsp;&nbsp;&nbsp;4b. L'enseignant supprime une question du questionnaire.
 
-## CU05d - Supprimer questionnaire
+### CU05d - Supprimer questionnaire
 
 **Acteur principal:**  Enseignant
 
@@ -447,7 +450,7 @@ Sans objet.
 
 ---
 
-## CU06 - Corriger questionnaire (correction manuelle)
+### CU06 - Corriger questionnaire (correction manuelle)
 
 Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doivent être corrigées par un enseignant.
 
@@ -456,12 +459,12 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 **Préconditions:**
 
 - L'enseignant est authentifié.
-- Il existe des questionnaires passés par étudiant avec questions nécessitant une correction manuelle
+- Il existe un cours, des questionnaires passés par étudiant avec questions nécessitant une correction manuelle.
 
 **Garanties en cas de succès (postconditions):**
 
 - Les questionnaires associés au cours ont été corrigés
-- Les notes des questionnaires ont été transmises au système de gestion des bordereaux (SGB).
+- Les notes des questionnaires corrigés ont été transmises au système de gestion des bordereaux (SGB).
 
 **Scénario principal (succès):**
 
@@ -470,22 +473,18 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 3. L'enseignant sélectionne un cours
 4. Le système affiche tous les questionnaires à corriger pour le cours.
 5. L'enseignant choisit un questionnaire à corriger.
-6. Le système affiche les questions ayant besoin de correction manuelle.
+6. Le système affiche les questions du questionnaire ayant besoin de correction manuelle.
 7. L'enseignant fait une correction manuelle à une question décidant les points à accorder à la réponse.
 8. L'enseignant indique qu'il a terminé sa correction manuelle du questionnaire.
 9. Le système calcule la note du questionnaire.
 
-*L'enseignant répète les étapes 6 à 7 jusqu'à ce qu'il n'ait plus de questions à corriger.*
+*L'enseignant répète les étapes 6 à 7 jusqu'à ce qu'il n'ait plus de questions à corriger ou qu'il ne souhaite plus corriger.*
 
-*L'enseignant répète les étapes 5 à 9 jusqu'à ce qu'il n'ait plus de questionnaires à corriger.*
-
-**Extensions (ou scénarios alternatifs):**
-
-&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension “.note” pour associer la note au devoir corrigé. Un fichier “.note” par devoir (facultatif)
+*L'enseignant répète les étapes 5 à 9 jusqu'à ce qu'il n'ait plus de questionnaires à corriger ou qu'il ne souhaite plus corriger.*
 
 ---
 
-## CU07 - Remettre devoir
+### CU07 - Remettre devoir
 
 **Acteur principal:**  Étudiant
 
@@ -512,7 +511,7 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 ---
 
-## CU08 - Passer questionnaire
+### CU08 - Passer questionnaire
 
 **Acteur principal:**  Étudiant
 
@@ -542,30 +541,30 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Extensions (ou scénarios alternatifs):**
 
-Sans objet.
+&nbsp;&nbsp;&nbsp;7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
 
-# Spécifications supplémentaires (FURPS+)
+## Spécifications supplémentaires (FURPS+)
 
 Rappel de l'acronyme FURPS+:
 
 - **F**unctionality: Fonctionnalité courante dans beaucoup de cas d'utilisation (la sécurité est considérée comme des Fonctionnalités dans FURPS)
-- **U**sability: Convivialité? Combien de clics pour réaliser chaque cas d'utilisation?
-- **R**eliability: Fiabilité? Définir ce qui se passe lors d'une panne de système externe? Reprise?
+- **U**sability (Aptitude à l'utilisation): L'interface humain-machine est-elle conviviale? Combien de clics pour réaliser chaque cas d'utilisation?
+- **R**eliability (Fiabilité): Définir ce qui se passe lors d'une panne de système externe? Reprise?
 - **P**erformance: Combien d'utilisateurs en même temps?
-- **S**upportability: Rajout facile de nouveaux types de questions, internationalisation (i18n) facile des textes dans l'interface?
-- **+** le reste… Licences du code source? OpenSource? Politiques de confidentialité?
+- **S**upportability (Possibilités de prise en charge): Rajout facile de nouveaux types de questions?
+- **+** le reste… Licences du code source? Contraintes avec l'utilisation de SGB (système externe)? OpenSource? Politiques de confidentialité?
 
-## Fonctionnalité
+### Fonctionnalités
 
 En dehors des cas d'utilisation (les fonctionnalités principales), il y a les exigences suivantes:
 
-### F1 - Journalisation et traitement d'erreurs
+#### F1 - Journalisation et traitement d'erreurs
 
 Toutes les erreurs doivent être journalisées en mémoire persistante.
 
 **Note:** Larman F30.3/A35.3 propose plusieurs patrons pour aider avec cette exigence.
 
-### F2 - Sécurité
+#### F2 - Sécurité
 
 Toute utilisation implique une authentification avec le Système d'authentification (SSO).
 
@@ -573,70 +572,87 @@ Vous devez remplacer la mécanique d'authentification actuelle par une authentif
 
 Référence: https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node
 
-## Convivialité
+### Aptitude à l'utilisation (Usability)
 
-### U1 - Facteurs humains
+#### U1 - Facteurs humains
 
-Le client doit voir les informations (surtout les questions) clairement sur plusieurs formats d'écran: téléphone, tablette et écran PC. Alors, les pages web doivent supporter des appareils avec une taille d'écran de 320 par 568 pixels jusqu'à 1920 par 1080 pixels et le texte doit être lisible à une distance de 25 cm. Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
+Le client doit voir les informations (surtout les questions) clairement sur plusieurs formats d'écran: téléphone, tablette et écran PC.
+Alors, les pages web doivent supporter des appareils avec une taille d'écran de 320 par 568 pixels jusqu'à 1920 par 1080 pixels et le texte doit être lisible à une distance de 25 cm.
+Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 
-**Note:** vous pouvez utiliser les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran. Les PUG sont déjà basés sur Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
+- Utilisez les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran.
+- Les PUG du squelette intégrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
+- Une conception modulaire de vos PUG (layout) facilitera la réalisation de cette exigence.
 
-## Fiabilité (Reliability)
+### Fiabilité (Reliability)
 
-### R1 – Robustesse
+#### R1 – Tolérer panne temporaire de SGB
 
-En cas d'indisponibilité du système connecté (SGB - système de gestion des bordereaux de saisie de notes), il faut une solution de recouvrement. P. ex. un stockage temporaire qui permet de sauvegarder quand même les résultats de la correction d'un devoir. Lorsque le SGB est à nouveau disponible, les notes locales doivent y être transférées.
+En cas d'indisponibilité du système de gestion des bordereaux (SGB), il faut une solution de recouvrement lors de la sauvegarde de notes.
+P. ex. une mise en place de stockage temporaire permettant de sauvegarder quand-même les résultats de la correction d'un devoir ou d'un questionnaire.
+Lorsque le SGB est à nouveau disponible, les notes locales doivent y être transférées.
 
-**Note:** Larman propose des solutions avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
+Pour faire R1, il faut avoir déjà réalisé au moins un des cas d'utilisation **Corriger devoir**, **Passer questionnaire** et **Corriger questionnaire**.
+Vous devez montrer que:
 
-<!-- on met 2 espaces à la fin de markdown pour avoir un <br/> -->
-R1 s'applique au cas d'utilisation **Corriger devoir** pour les scénarios suivants:  
-&nbsp;&nbsp;&nbsp;&nbsp;9. L'enseignant téléverse (“upload”) la version corrigée du devoir.  
-&nbsp;&nbsp;&nbsp;10. L'enseignant indique la note du devoir.
-R1 s'applique également au cas d'utilisations **Passer questionnaire** (lors de la correction automatique) et **Corriger questionnaire** (lors de la correction manuelle).
+- plusieurs exécutions du cas d'utilisation où une note est générée tolèrent la panne de SGB (vous arrêtez SGB temporairement)
+- le recouvrement se fait automatiquement, sans que les étapes des cas d'utilisation soit modifiées (il est correct d'informer l'utilisateur par contre qu'il y a eu une panne mais que sa note sera transférée lorsque le système est de nouveau disponible)
+- finalement les notes générées se rendent à SGB une fois qu'il est redémarré
 
-## Performance
+**Note:** Larman propose une solution élégante avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
 
-### P1 – Performance pour le passage de questionnaire
+### Performance
 
-Les étudiants supportent mal l'attente. L'un des goulets d'étranglement possibles est la durée d'enregistrement de résultats de passage de questionnaire. Notre objectif sera donc que le délai séparant la demande de la réponse soit inférieur à 5 secondes dans 90% des cas.
+#### P1 – Performance (2 points)
 
-**Note:** pour démontrer que vous avez réalisé cette exigence, il faudra automatiser les passages de questionnaire en parallèle pour créer une charge et mesurer le temps de réponse. Voir le chapitre F30/A35.
+Les étudiants supportent mal l'attente.
+L'un des goulots d'étranglement possibles est la récupération des informations de SGB.
+Vous devez utiliser un cache mémoire pour éviter l'accès à SGB au niveau de l'authentification et des requètes d'information subséquentes.
+Notre objectif sera donc que le délai séparant la demande de la réponse soit inférieur à 30ms dans 90% des cas.
 
-Outils pour la mesure de performance
+**Note:** pour démontrer que vous avez réalisé cette exigence, il faudra mesurer le temps d'exécution des différentes requètes et montrer avec des chiffres à l'appuie l'avantage d'utiliser le cache mémoire. Voir le chapitre F30/A35.
 
-- ab - Apache HTTP server benchmarking tool
-- curl
+Voici quelques outils pour mesurer la performance
 
-## Support
+- `ab` - Apache HTTP server benchmarking tool
+- `curl`
+
+Exemple:
+
+```
+curl -w %{time_total} http://localhost:3200/api/v3/course/all
+0,002213 secondes
+```
+
+### Possibilités de prise en charge (Supportability)
 
 Ces exigences doivent être implémentées durant **au moins deux itérations** pour obtenir vos points.
 
-### S1 - Contrainte de développement: environnement de test
+#### S1 - Contrainte de développement: environnement de test
 
 Les décisionnaires de SGA insistent pour des technologies de test, qui, selon eux, fourniront à long terme la robustesse du code.
 
 **Note:** pour réaliser cette exigence, il faudra automatiser les tests de l'ensemble des opérations système de chaque cas d'utilisation et s'assurer que les contrats sont respectés. Les tests devront être séparés en suites pour chaque cas d'utilisation.
 
-### S2 - Contrainte de développement: environnement d'intégration continue
+#### S2 - Contrainte de développement: environnement d'intégration continue
 
 Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
 
 **Note:** pour réaliser cette exigence il faudra utiliser travis-ci.org et GitHub avec les badges, comme dans les squelettes.
 
-### S3 - Contrainte de développement: gestion sémantique de version
+#### S3 - Contrainte de développement: gestion sémantique de version
 
 Les décisionnaires de SGA insistent pour une gestion sémantique de version pour le logiciel. Vous devez avoir rempli les exigences pendant au moins deux itérations.
 
 **Note:** pour réaliser cette exigence il faudra comprendre https://linuxfr.org/news/gestion-semantique-de-version et https://docs.npmjs.com/about-semantic-versioning
 
-### S4 - Contrainte d'implémentation: banque de questions en format GIFT
+#### S4 - Contrainte d'implémentation: banque de questions en format GIFT
 
 Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
 
 **Note:** pour réaliser cette exigence vous pouvez utiliser [ce projet](https://github.com/fuhrmanator/GIFT-grammar-PEG.js).
 
-# Glossaire
+## Glossaire
 
 SGA - Système de gestion de l'apprentissage
 
@@ -646,25 +662,10 @@ GIFT - PEG grammar to support GIFT (quiz) format
 
 Tag - Catégorie non hiérarchique
 
-# Modèle de données des questions Moodle
+## Modèle de données des questions Moodle
 
 Le modèle suivant existe pour expliquer les différents types de questions dans Moodle. Vous pouvez vous en inspirer pour votre analyse dans ce projet.
 
 **Note:** un modèle du domaine (MDD) devrait être limité à la portée de votre logiciel. L'exemple ci-dessous est hors de portée pour la plupart des exigences au sujet des questions. C'est plus un modèle de données qu'un modèle du domaine.
 
 ![Questions](http://www.plantuml.com/plantuml/img/bLNVRzem47xtNt7YgPq6j7j4wjI8WlemqZ6GDgchAfCSYLN7PhOZHYV-zvsJ469e7_eIAVxkntVVtTctrd7Zoa8o-oBKXXjUW7KxYVGr8Zb1LZnvoOmkLPfegGqumvKb29LZkKWH2dIvJctzWyN6xUYeMA6np0b7KUzqmOM2Yplk-2NCT8eIrXHffdLAyBmKh_2dHEk4LXOkVis-NR94SckXvx4US0jp-CVsXzCnTvXfiwkGCI6WU84mWYN-TMHsi8krwjyBDDmakKYu_Aq2p_Y-yWN7ipZqvojIWYSEMXerkyejcbTUtPJGylU_TFf397c3PAY8WPmYfbxABjWMD2kb4nk9uroB18Dii_4SW8nHfMrgOHTvkLvBJ2dQIck9N37GIkuU54RARj54KkfjW1zb2RFLzask2C1d47QiZS74TUFpoZ0eRdqigYd8q-rTzw3VXzwdNXLn13d5_jgcNveIfrpQiCxbT1wMkJztw51TJgEQg0UxB3Te4XhDdoYotDCNYZgEvYskJ6c7vEcSBbZe9rHA0-FG0ajg9HGI5HnaWulhgwkRvl0pkxeHglcvP4GUV4p6V3K76RxqAhQj3CS-S4TpgRAmtoSolDdhVH02q-zSrB8igW4v36Cxdcth3bqAcaHEfprQvDguMkw0tI9wjqiTbyRKKt7rFbHhyR7c-5HTakU359S56h_NzJQVCJirwv2BAtBlqb6XIwlZ6pJZW6Lypd9YBQ_lcybx32kJ3hj9z84btBD9G67IeH00qR7DNbewwLVmsCT7gLLc-qvtK8bhrvHrVsR494b5y-u59CcM6knE9RdHIhmYR8NBuV4nTsup6WvJdTX1KTts0sso8QfXVVS_qrt_J4z1mTtJ4ri-t3sC84fJA8Irj1ZzhJPfvscWn8L_FVoYrUaPkwKlFLZ_0G00)
-
-# Idées d'évolution pour les prochaines sessions
-
-N'hésitez pas à faire des propositions.
-
-1. En tant qu'enseignant, je veux réutiliser les questions d'une banque de questions dans plusieurs cours, pour éviter de copier les questions sur la matière qui est commune.
-1. En tant qu'enseignant, je veux proposer des devoirs réalisés en équipe, puisque le travail en équipe est souhaité pour des raisons pédagogiques.
-1. OAuth de G suite avec etsmtl.net
-1. Gestion des rôles (étudiant, enseignant, etc.)
-1. En tant qu'étudiant, je veux consulter toutes mes notes (note globale et par cours aussi)
-1. Avoir une date limite pour les questionnaires
-1. En tant qu'étudiant, je veux avoir une vue globale de mes devoirs et mes questionnaires à réaliser grâce à un calendrier (pour tous les cours et pour chaque cours)
-1. L'enseignant veut informer les étudiants des derniers développements par un forum de nouvelles
-1. En tant qu'enseignant, je veux ajouter un étudiant pour qu'il soit enseignant (c.-à-d. chargé de laboratoire)
-1. Une route (en JSON) qui indique la santé de l'application. (c.-à-d. Si le SGB est disponible ou non pour l'équipe de DevOps, et toute autre dépendance du système)
