@@ -1,5 +1,37 @@
+@startuml activite-demonstration
+title Activité de démonstration
+skinparam style strictuml
+skinparam DefaultTextAlignment center
+|#AntiqueWhite|Auxiliaire d'enseignement|
+start
+|Équipe|
+fork
+:Ouvrir exigences;
+fork again
+:Lancer application;
+end fork
+|Auxiliaire d'enseignement|
+while (FURPS à démontrer?) is (vrai)
+:Choisir une FURPS
+(considérer //Issues// existants);
+|Équipe|
+:Lancer FURPS;
+|#AntiqueWhite|SGA|
+:Exécuter FURPS;
+|Auxiliaire d'enseignement|
+:Identifier problème;
+|Équipe|
+:Créer //Issue//;
+|GitHub|
+://Issue// ]
+endwhile (faux)
+|Auxiliaire d'enseignement|
+stop
+@enduml
+
 @startuml dss-demonstration
 skinparam style strictuml
+
 participant ":Auxiliaire\nd'enseignement\n(Chargé.e de lab)" as C
 participant ":Équipe" as E
 participant ":System" as S
@@ -14,6 +46,34 @@ loop Tant que l'auxiliaire d'enseignement n'est pas satisfait
     E --> G:  création d'une tâche pour correction
 end
 
+@enduml
+
+
+@startuml activite-évaluation-implémentation
+title Évaluation de l'implémentation (dernière itération)
+skinparam style strictuml
+skinparam DefaultTextAlignment center
+|#AntiqueWhite|Auxiliaire d'enseignement|
+start
+:Ouvrir code et rapport de l'itération;
+:Vérifier correspondance code et MDD
+(écart des représentations);
+while (RDCU à valider?) is (vrai)
+:Choisir une RDCU
+(considérer //Issues// existants);
+:Identifier problème;
+|Équipe|
+:Créer //Issue//;
+|#AntiqueWhite|GitHub|
+://Issue// ]
+endwhile (faux)
+|Auxiliaire d'enseignement|
+:Lancer tests;
+:Identifier problème(s);
+|Équipe|
+:Créer //Issue(s)//;
+|GitHub|
+://Issue(s)// ]
 @enduml
 
 @startuml dss-evaluation-implementation

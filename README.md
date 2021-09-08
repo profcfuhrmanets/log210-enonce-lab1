@@ -84,13 +84,13 @@ Les corrections interactives à chaque itération seront réalisées en suivant 
 
 L'objectif de cette partie est de montrer le fonctionnement de l'application au client. Elle suit les étapes suivantes :
 
-![DSS pour le processus de démonstration](README/dss-demonstration.svg "DSS pour le processus de démonstration")
+![DSS pour le processus de démonstration](README/activite-demonstration.svg) "DSS pour le processus de démonstration")
 
 #### Évaluation de l'implémentation et des tests
 
 L'objectif de cette partie et de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
 
-![DSS pour le processus d'évaluation de l'implémentation](README/dss-evaluation-implementation.svg)
+![DSS pour le processus d'évaluation de l'implémentation](README/activite-évaluation-implémentation.svg)
 
 * Vérifier correspondance code et RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
@@ -100,7 +100,7 @@ L'objectif de cette partie et de montrer que l'application est conforme aux prin
         4. faire un seul appel à la méthode du contrôleur et retourne sa réponse sous forme de JSON avec le code HTTP approprié
         5. intercepter et traiter les erreurs adéquatement
         6. :warning: [Cette méthode ne doit pas retourner une vue](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/wiki/Vue-sans-route-d'API-(endpoint)). Pour ce faire, il faut faire une autre route qui appelle l'opération système.
-    1. une méthode avec la même signature est présente dans un contrôleur.
+    2. une méthode avec la même signature est présente dans un contrôleur.
        1. L'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception: [le réusinage "Introduce Parameter Object"](https://refactoring.com/catalog/introduceParameterObject.html))
        2. Le retour d'opération correspond à une valeur primitive
 * exécuter les tests
