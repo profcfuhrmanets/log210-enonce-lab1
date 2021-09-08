@@ -133,7 +133,7 @@ Cependant, il peut y avoir une pénalité à la fin d'une itération si les crit
 
 Le calcul de la note pour cette évaluation est le suivant :
 
-![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.latex?d%3D%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
+> ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
 Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
 |Nombre d'étudiants| NbPoints|
