@@ -173,7 +173,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 
 ## Plan d'itération
 
-Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération](rapports/plan-iteration-exemple.md).
+Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération](rapports/plan-iteration-gabarit.md).
 
 ### Pour planifier vos itérations
 
