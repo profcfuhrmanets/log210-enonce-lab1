@@ -1,5 +1,5 @@
 @startuml activite-demonstration
-title Activité de démonstration
+title Évaluation de la démonstration
 skinparam style strictuml
 skinparam DefaultTextAlignment center
 skinparam BackgroundColor #fefefe
@@ -7,26 +7,40 @@ skinparam BackgroundColor #fefefe
 start
 |Équipe|
 fork
-:Ouvrir exigences;
+:Ouvrir
+exigences;
 fork again
-:Lancer application;
+:Ouvrir
+Plan d'itération;
+fork again
+:Lancer
+application;
 end fork
 |Auxiliaire d'enseignement|
-while (FURPS à démontrer?) is (vrai)
-:Choisir une FURPS
+while (Reste des objectifs à démontrer\n(selon le plan d'itération)?) is (vrai)
+:Choisir objectif (FURPS)
 (considérer //Issues// existants);
 |Équipe|
 :Lancer FURPS;
 |#AntiqueWhite|SGA|
 :Exécuter FURPS;
 |Auxiliaire d'enseignement|
-:Identifier problème;
+:Identifier problème(s) selon les
+**critères d'évaluation** du 
+plan d'itération (le cas échéant);
 |Équipe|
 :Créer //Issue//;
 |GitHub|
 ://Issue// ]
 endwhile (faux)
 |Auxiliaire d'enseignement|
+:Annoncer la fin de la démo;
+|Équipe|
+:Compléter section **Évaluation**
+du plan d'itération;
+|GitHub|
+:Plan d'itération
+(actualisé)]
 stop
 @enduml
 
@@ -51,7 +65,7 @@ end
 
 
 @startuml activite-evaluation-implementation
-title Évaluation de l'implémentation (dernière itération)
+title Évaluation de la conception et des tests
 skinparam style strictuml
 skinparam DefaultTextAlignment center
 skinparam BackgroundColor #fefefe

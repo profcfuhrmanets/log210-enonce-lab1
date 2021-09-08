@@ -76,21 +76,27 @@ Chaque itération nécessite un avancement (**évolution**) sur le plan des exig
 
 Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
 
+Cet avancement est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
+
 ## Déroulement des corrections interactives
 
-Les corrections interactives à chaque itération seront réalisées en suivant le processus suivant. Les chargés de laboratoire veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
+Les corrections interactives à chaque itération se déroulent selon le processus suivant.
+Les chargés de laboratoire veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
 
 ### Démonstration
 
-L'objectif de cette partie est de montrer le fonctionnement de l'application au client. Elle suit les étapes suivantes :
+L'objectif de cette partie est de montrer le fonctionnement de l'application au client et de documenter sa rétroaction dans la section **Évaluation** du plan d'itération.
+Dans le plan d'itération, vous identifiez des critères d'évaluation.
+Ces critères d'évaluation seront considérés lors de la démonstration.
+La démonstration se déroule selon les étapes suivantes :
 
 ![Diagramme d'activités pour le processus de démonstration](README/activite-demonstration.svg "Diagramme d'activités pour le processus de démonstration")
 
-#### Évaluation de l'implémentation et des tests
+#### Évaluation de la conception et des tests
 
 L'objectif de cette partie et de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
 
-![DSS pour le processus d'évaluation de l'implémentation](README/activite-evaluation-implementation.svg)
+![DSS pour le processus d'évaluation de la conception](README/activite-evaluation-implementation.svg)
 
 * Vérifier correspondance code et RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
@@ -159,49 +165,25 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin séance 7 du labo  | Début séance 9  |
 |         3 | Fin séance 10 du labo | Début séance 12 |
 
+**Note:** le Plan d'itération doit être actualisé après l'évaluation. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel *avant* de faire le prochain plan.
+
 ### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
 
-À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
+À la deuxième semaine de l'itération 1, vous devrez présenter les artefacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
-Au lieu de faire un plan d'itération sous forme de document texte qui est généralement statique, vous devez utiliser Github issues.
-
-Je vous suggère d'utiliser les Labels pour [classer les issues](https://softwareengineering.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc).
-
-Vous trouverez ci-dessous les différents types de tâches que nous nous attendons à retrouver dans votre Github issues.
-
-### Tâches: Étapes jalons
-
-> Dates clés montrant les délais, comme date de début et de fin; étapes intermédiaires; points de synchronisation avec d'autres équipes; démonstrations; et ainsi de suite pour l'itération.
-
-Vous devez utiliser les étapes-jalon (Milestones) suivantes pour regrouper vos tâches:
-
-1. Correction interactive du rapport de l'itération #1
-2. Rapport itération #1
-3. Implémentation itération #1
-4. Rapport itération #2
-5. Implémentation itération #2
-6. Rapport itération #3
-7. Implémentation itération #3
-
-### Tâches: Objectifs clés (issues)
-
-> Afficher les tâches d'objectifs clés pour l'itération, généralement un à cinq. *(exemples)*
-> **⚠️Faites attention de respecter les points minima d'avancement par itération indiqués dans l'énoncé, sinon vous pouvez avoir une pénalité si vous n'avancez pas assez. Vérifiez avec un chargé de laboratoire avant de commencer l'itération!**
-> Assurez-vous d'assigner chaque tâche à un étudiant qui en sera responsable
-> Le changement d'état d'une tâche doit nécessairement être justifié par un commentaire.
-
-* CU06 - Présenter une démonstration technique
-* CU07 - Faire vidéo pour la démonstration technique avec les tests
-* Réviser CU07
-    > Le CU06 a été convaincant pour le chargé de laboratoire, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale. Donc une nouvelle tâche pour réviser les CU07 a été créée et assignée.  Je peux retrouver cette tâche dans un comprenant tous les commentaires du chargé de laboratoire.
+Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération](rapports/plan-iteration-exemple.md).
 
 ### Pour planifier vos itérations
 
 * [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
 * [Comment estimer la taille d'une itération](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
+
+### Compléter la section Évaluation
+
+Après l'évaluation de votre itération, vous devez compléter la section **Évaluation** de votre plan.
 
 ## Modalités d'évaluation
 
