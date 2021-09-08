@@ -84,7 +84,7 @@ Les corrections interactives à chaque itération seront réalisées en suivant 
 
 L'objectif de cette partie est de montrer le fonctionnement de l'application au client. Elle suit les étapes suivantes :
 
-![DSS pour le processus de démonstration](README/activite-demonstration.svg) "DSS pour le processus de démonstration")
+![Diagramme d'activités pour le processus de démonstration](README/activite-demonstration.svg "Diagramme d'activités pour le processus de démonstration")
 
 #### Évaluation de l'implémentation et des tests
 
@@ -133,7 +133,7 @@ Cependant, il peut y avoir une pénalité à la fin d'une itération si les crit
 
 Le calcul de la note pour cette évaluation est le suivant :
 
-> ![d = (Sommation (Points) / Nb Points)](https://latex.codecogs.com/svg.latex?d%3D%5Cfrac%7B%5Csum%20Points%7D%7BnbPoints%7D)
+![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.latex?d%3D%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
 Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
 |Nombre d'étudiants| NbPoints|
