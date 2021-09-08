@@ -165,7 +165,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin séance 7 du labo  | Début séance 9  |
 |         3 | Fin séance 10 du labo | Début séance 12 |
 
-**Note:** le Plan d'itération doit être actualisé après l'évaluation. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel *avant* de faire le prochain plan.
+**Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
 
 ### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
 
@@ -187,77 +187,11 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 ## Modalités d'évaluation
 
-### Grille de pointage de tous les artéfacts
+Toutes les grilles d'évaluation se trouve dans un chiffrier Google:
 
-Cette grille d'évaluation présente le pointage associé à chacun des artéfacts que vous avez à remettre pour ce laboratoire.
-
-| Artéfact                            |                               Pondération                                |
-| ----------------------------------- | :----------------------------------------------------------------------: |
-| Plan d'itération 1                  |                                    1                                     |
-| Correction interactive du rapport 1 |                                    2                                     |
-| Rapport 1                           |                                    5                                     |
-| Plan d'itération 2                  |                                    1                                     |
-| Rapport 2                           |                                    6                                     |
-| Plan d'itération 3                  |                                    1                                     |
-| Rapport 3                           |                                    6                                     |
-| Implémentation                      | Réalisation exigences (10)<br/>Test (2.5)<br/>Qualité du code (2.5)<br/> |
-| Total                               |                                   35%                                    |
-
-### Grille de pointage des exigences
-
-[voir les exigences client](README-exigences-client.md)
-
-## Grilles de correction
-
-### Critères appliqués au plan d'itération
-
-| Plan d'itération   | Pondération | Niveau                                                                                                                                                             |
-| ------------------ | :---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Qualité du Plan    |      3      | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                         |
-| Complétude du Plan |      3      | Toutes les tâches sont présentes (3)<br/>Quelques tâches sont manquantes (2)<br/>Beaucoup de tâches sont manquantes (1)<br/>La planification n'est pas réaliste(0) |
-
-### Critères appliqués au rapport
-
-| Déductions                                                     | Pondération | Critères                                                                                                                                                                         |
-| -------------------------------------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mauvaise qualité du français                                   |     -3      | Quelques fautes (-1)<br/>Beaucoup de fautes (-2)<br/>Énormément de fautes (-3)                                                                                                   |
-| Mauvaise présentation du rapport                               |     -3      | Peu d'erreurs de présentation (-1)<br/>Quelques erreurs de présentation OU absence du rapport en PDF (-2)<br/>Quelques erreurs de présentation ET absence du rapport en PDF (-3) |
-| Pénalité pour refus de correction par le chargé de laboratoire |     -6      |                                                                                                                                                                                  |
-
-**Pénalité pour refus de correction par le chargé de laboratoire:**
-Un travail qui contient trop d'erreurs fréquentes peut être refusé par le chargé de laboratoire. L'équipe peut reprendre le travail avec une pénalité.
-
-### Critères appliqués aux artéfacts d'analyse et de conception du rapport
-
-| MDD                               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| --------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du MDD                    |      3      | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du MDD                 |      3      | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-| Cohérence entre le MDD et le code |      3      | L'artéfact et le code correspondent parfaitement (3)<br/>L'artéfact le code ont quelques différences (2)<br/>L'artéfact et le code ont beaucoup de différences (1)<br/>L'artéfact et le code ne correspondent pas (0)                              |
-
-| DSS               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ----------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du DSS    | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du DSS | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-
-| Contrats<br/>(le cas échéant) | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ------------------------------ | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du contrat             | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du contrat          | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-
-| RDCU                               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ---------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du RDCU                    | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du RDCU                 | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-| Cohérence entre le RDCU et le code | 3           | L'artéfact et le code correspondent parfaitement (3)<br/>L'artéfact le code ont quelques différences (2)<br/>L'artéfact et le code ont beaucoup de différences (1)<br/>L'artéfact et le code ne correspondent pas (0)                              |
-
-| Démonstration              | Pondération | Niveau                                                                                                                                   |
-| -------------------------- | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Réalisation d'une exigence | 1           | Exigence satisfaite (3)<br/>Cas alternatif non fonctionnel (2)<br/>Exigence partiellement satisfaite (1)<br/>Exigence non satisfaite (0) |
-
-| Test automatisé       | Pondération | Niveau                                                |
-| --------------------- | :---------: | ----------------------------------------------------- |
-| Réalisation des tests | 3           | 95-100% (3)<br/>90-95% (2)<br/>80-90 (1)<br/>0-79 (0) |
+* [Plan d'itération](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
+* [Rapport](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
+* [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
 ## Conclusion
 
