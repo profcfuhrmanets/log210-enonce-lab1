@@ -2,6 +2,7 @@
 title Activité de démonstration
 skinparam style strictuml
 skinparam DefaultTextAlignment center
+skinparam BackgroundColor White
 |#AntiqueWhite|Auxiliaire d'enseignement|
 start
 |Équipe|
@@ -49,10 +50,11 @@ end
 @enduml
 
 
-@startuml activite-évaluation-implémentation
+@startuml activite-evaluation-implementation
 title Évaluation de l'implémentation (dernière itération)
 skinparam style strictuml
 skinparam DefaultTextAlignment center
+skinparam BackgroundColor White
 |#AntiqueWhite|Auxiliaire d'enseignement|
 start
 :Ouvrir code et rapport de l'itération;

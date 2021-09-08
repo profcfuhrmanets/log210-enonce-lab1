@@ -90,7 +90,7 @@ L'objectif de cette partie est de montrer le fonctionnement de l'application au 
 
 L'objectif de cette partie et de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
 
-![DSS pour le processus d'évaluation de l'implémentation](README/activite-évaluation-implémentation.svg)
+![DSS pour le processus d'évaluation de l'implémentation](README/activite-evaluation-implementation.svg)
 
 * Vérifier correspondance code et RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
