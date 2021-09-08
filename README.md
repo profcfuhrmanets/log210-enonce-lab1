@@ -1,7 +1,7 @@
 # Système de gestion de l'apprentissage
 
 Version: Automne 2021 (1.0.0)  
-Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
+Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
 
@@ -169,7 +169,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 
 ### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
 
-À la deuxième semaine de l'itération 1, vous devrez présenter les artefacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
+À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
@@ -261,7 +261,7 @@ Un travail qui contient trop d'erreurs fréquentes peut être refusé par le cha
 
 ## Conclusion
 
-Vous ne devez implémenter que les cas d'utilisation que vous aurez spécifiés dans votre plan d'itération, mais vous pouvez utiliser le document d'exigences complet pour trouver l'information nécessaire à la réalisation de vos cas d'utilisation.
+Vous ne devez implémenter que les cas d'utilisation que vous aurez spécifiés dans les objectifs de votre plan d'itération, mais vous pouvez utiliser le document d'exigences complet pour trouver l'information nécessaire à la réalisation de vos cas d'utilisation.
 
 Assurez-vous que votre implémentation respecte la séparation des couches présentation et domaine.
 
