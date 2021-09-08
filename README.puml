@@ -2,7 +2,7 @@
 title Activité de démonstration
 skinparam style strictuml
 skinparam DefaultTextAlignment center
-skinparam BackgroundColor White
+skinparam BackgroundColor #fefefe
 |#AntiqueWhite|Auxiliaire d'enseignement|
 start
 |Équipe|
@@ -54,7 +54,7 @@ end
 title Évaluation de l'implémentation (dernière itération)
 skinparam style strictuml
 skinparam DefaultTextAlignment center
-skinparam BackgroundColor White
+skinparam BackgroundColor #fefefe
 |#AntiqueWhite|Auxiliaire d'enseignement|
 start
 :Ouvrir code et rapport de l'itération;
