@@ -1,6 +1,6 @@
-# [Plan d'itération](#commentPlanifier "Comment planifier?") - 2
+# Plan d'itération 2 (exemple)
 
-> Note: Texte en bloc comme ceci indique des directives aux auteurs
+> Note: Texte en bloc comme ceci indique des directives aux auteurs. Vous devez supprimer ces directives des plan soumis.
 
 ## Étapes jalons
 
@@ -14,14 +14,15 @@
 
 ## Objectifs clés
 
-> Afficher les objectifs clés pour l'itération, généralement un à cinq.
+> Afficher les objectifs clés pour l'itération, généralement un à cinq. **Les objectifs sont normalement la réalisation des exigences FURPS de l'énoncé.** Vérifier que les minima des points sont respectés pour l'itération avant de commencer!
 
-- Résoudre les problèmes de la dernière itération soulevés par le chargé de laboratoire.
-- Présenter une démonstration technique des CU06 et CU07 avec tests.
+- Résoudre le problème de separation des couches soulevé par l'auxiliaire d'enseignement lors de la dernière itération.
+- Présenter une démonstration technique de CU06 avec tests (x points).
+- Présenter une démonstration technique de CU07 avec tests (y points).
 
 ## Affectations d'éléments de travail
 
-> Cette partie fait référence aux éléments de travail à compléter dans cette itération.
+> Cette partie fait référence aux éléments de travail à compléter dans cette itération. C'est pour vous aider à répartir le travail dans l'équipe. Vous pouvez créer des tâches dans un autre logiciel (GitHub) pour cette partie si vous voulez.
 
 Les éléments de travail suivants seront abordés dans cette itération:
 
@@ -39,7 +40,7 @@ Les éléments de travail suivants seront abordés dans cette itération:
 ## Problèmes
 
 > Afficher tous les problèmes à résoudre lors de l'itération. Mettre à jour le statut lorsque de nouvelles questions sont présentées au cours des réunions.
-> Si vous n'avez pas de problème, écrivez-le. Sinon, c'est comme si vous n'aviez pas fait la section.
+> Si vous n'avez pas (eu) de problème, écrivez-le avec "Sans objet". Sinon, c'est comme si vous n'aviez pas fait la section.
 
 | Problème                                                                                             | Notes |
 | ---------------------------------------------------------------------------------------------------- | ----- |
@@ -51,15 +52,15 @@ Les éléments de travail suivants seront abordés dans cette itération:
 ## Critères d'évaluation
 
 > Une brève description de la façon d'évaluer si les objectifs (définis plus haut) de haut niveau ont été atteints.
-> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par le chargé de laboratoire).
+> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par le chargé de laboratoire). En voici des exemples:
 
 - 97% des cas de test passent.
 - Démonstration des fonctionnalités CU06 et CU07 pas à pas avec le chargé de laboratoire a reçu une réponse favorable.
 
 ## Évaluation
 
-> Utiliser cette section pour la saisie et la communication des résultats et les actions des évaluations, qui sont généralement faites à la fin de chaque itération. Si vous ne le faites pas, l'équipe ne peut pas être en mesure d'améliorer la façon dont ils développent des logiciels.
-> **Note:** cette section n'est pas complétée avant l'évaluation faite par le chargé de lab lors de la démo en lab.
+> Utiliser cette section pour la saisie et la communication des résultats et les actions des évaluations, qui sont généralement faites à la fin de chaque itération. Si vous ne le faites pas, l'équipe ne peut pas être en mesure d'améliorer la façon dont elle développe des logiciels.
+> **Note:** cette section est complétée seulement après l'évaluation faite par l'auxiliaire d'enseignement, lors de la démo en lab.
 
 <!-- GitHub ne supporte pas les tables sans entête: https://stackoverflow.com/a/17543474/1168342 -->
 | Résumé | |
@@ -74,9 +75,9 @@ Les éléments de travail suivants seront abordés dans cette itération:
 > Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. *(on reprend les objectifs)*
 
 - Résoudre les problèmes de la dernière itération soulevés par le chargé de laboratoire.
-    > La rétroaction du chargé de laboratoire a été positive. Bon travail l'équipe!
+    - La rétroaction du chargé de laboratoire a été positive. Bon travail l'équipe!
 - Présenter une démonstration technique.
-    > Le CU06 a été convaincant pour le chargé de laboratoire, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
+    - Le CU06 a été convaincant pour le chargé de laboratoire, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
 
 ### Éléments de travail: prévus vs réalisés
 
@@ -84,7 +85,7 @@ Les éléments de travail suivants seront abordés dans cette itération:
 
 Tous les éléments ont été complétés, mais il faut étoffer les tests du CU07:
 
-> CU07 - test et implémentation assignés à Hélène
+- CU07 - test et implémentation assignés à Hélène
 
 ### Évaluation par rapport aux résultats selon les critères d'évaluation
 
