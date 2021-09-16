@@ -1,4 +1,8 @@
-# [Plan d'itération](#commentPlanifier "Comment planifier?") - 2
+## Au lieu de faire un plan d'itération sous forme de document texte qui est généralement statique, vous devez utiliser Github issues. 
+
+## Ce document présente le type d'information que vos issues devraient contenir.
+
+# [Plan d'itération](#commentPlanifier "Comment planifier?") 
 
 > Note: Texte en bloc comme ceci indique des directives aux auteurs
 

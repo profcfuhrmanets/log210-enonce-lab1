@@ -159,7 +159,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin séance 7 du labo  | Début séance 9  |
 |         3 | Fin séance 10 du labo | Début séance 12 |
 
-### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
+### Correction interactive du [rapport](rapports/RAPPORT-iteration-i.md) de l'itération 1
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 

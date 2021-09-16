@@ -42,6 +42,8 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 - <codeMoodle5>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle5>
 - <githubAccount5>Entrer l'identifiant de votre compte GitHub</githubAccount5>
 
+<!-- Enlever les sections membres non utilisés -->
+
 ## Exigences
 
 > Liste des exigences et personnes responsables de celles-ci.
@@ -51,7 +53,7 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 | CU01     | Yvan        |
 
 ## Modèle du domaine (MDD)
-
+Le MDD est cumulatif : vous devez y ajouter des éléments à chaque itération (ou corriger les erreurs), selon la portée (et votre meilleure compréhension du problème) visée par votre solution. Utilisez une légende dans le MDD pour indiquer la couleur de chaque itération afin de faire ressortir les changements (ce n'est pas toujours possible pour les associations et les attributs). Voir les stéréotypes personnalisés : <https://plantuml.com/fr/class-diagram> et [comment faire une légende avec couleurs en PlantUML](https://stackoverflow.com/questions/30999290/how-to-generate-a-legend-with-colors-in-plantuml).
 ## Diagramme de séquence système (DSS)
 
 > Un seul DSS sera choisi et corrigé par le chargé de laboratoire
@@ -75,6 +77,7 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
   - [ ] Vous avez mis un verbe à chaque association
   - [ ] Chaque association a une multiplicité
 - [ ] Vous avez un DSS par cas d'utilisation
+  - [ ] Chaque DSS à un titre
   - [ ] Chaque opération synchrone a un retour d'opération
   - [ ] L'utilisation d'une boucle (LOOP) est justifiée par les exigences
 - [ ] Vous avez autant de contrats que d'opérations système
