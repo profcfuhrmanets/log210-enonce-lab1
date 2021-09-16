@@ -271,7 +271,7 @@ Un travail qui contient trop d'erreurs fréquentes peut être refusé par le cha
 
 | Démonstration              | Pondération | Niveau                                                                                                                                   |
 | -------------------------- | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Réalisation d'une exigence | 1           | Exigence satisfaite (3)<br/>Cas alternatif non fonctionnel (2)<br/>Exigence partiellement satisfaite (1)<br/>Exigence non satisfaite (0) |
+| Réalisation d'une exigence | 3           | Exigence satisfaite (3)<br/>Cas alternatif non fonctionnel (2)<br/>Exigence partiellement satisfaite (1)<br/>Exigence non satisfaite (0) |
 
 | Test automatisé       | Pondération | Niveau                                                |
 | --------------------- | :---------: | ----------------------------------------------------- |
