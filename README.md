@@ -60,7 +60,7 @@ Lisez le README.md de SGB pour savoir comment générer cette documentation.
 
 Ce texte est normalement un extrait du plan de cours:
 
-> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **Avant la remise du travail**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux chargés de laboratoire ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
+> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **Avant la remise du travail**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux auxiliaires d'enseignement ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
 
 ## Application frontale et persistance minimalistes
 
@@ -81,7 +81,7 @@ Cet avancement est prévu dans les objectifs du plan d'itération et sera évalu
 ## Déroulement des corrections interactives
 
 Les corrections interactives à chaque itération se déroulent selon le processus suivant.
-Les chargés de laboratoire veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
+Les auxiliaires d'enseignement veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
 
 ### Démonstration
 
@@ -165,11 +165,12 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin séance 7 du labo  | Début séance 9  |
 |         3 | Fin séance 10 du labo | Début séance 12 |
 
+<!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
 **Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
 
 ### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
 
-À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
+À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
@@ -187,7 +188,7 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 ## Modalités d'évaluation
 
-Toutes les grilles d'évaluation se trouve dans un chiffrier Google:
+Toutes les grilles d'évaluation se trouvent dans un chiffrier Google:
 
 * [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
 * [Plan d'itération](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)

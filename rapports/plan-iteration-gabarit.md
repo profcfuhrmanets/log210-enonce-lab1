@@ -1,6 +1,6 @@
 # Plan d'itération 2 (exemple)
 
-> Note: Texte en bloc comme ceci indique des directives aux auteurs. Vous devez supprimer ces directives des plan soumis.
+> Note: Texte en bloc comme ceci indique des directives aux auteurs. Vous devez supprimer ces directives des plans soumis.
 
 ## Étapes jalons
 
@@ -16,7 +16,7 @@
 
 > Afficher les objectifs clés pour l'itération, généralement un à cinq. **Les objectifs sont normalement la réalisation des exigences FURPS de l'énoncé.** Vérifier que les minima des points sont respectés pour l'itération avant de commencer!
 
-- Résoudre le problème de separation des couches soulevé par l'auxiliaire d'enseignement lors de la dernière itération.
+- Résoudre le problème de séparation des couches soulevé par l'auxiliaire d'enseignement lors de la dernière itération.
 - Présenter une démonstration technique de CU06 avec tests (x points).
 - Présenter une démonstration technique de CU07 avec tests (y points).
 
@@ -31,11 +31,11 @@ Les éléments de travail suivants seront abordés dans cette itération:
 | CU06                             | 1        | 4                           | (tous)          | Exigences pour le lab  |
 |   CU06 - conception                |          |                             | Jacques-Éric    |                        |
 |   CU06 - test et implémentation     |          |                             | Hélène          |                        |
-|   CU06 - mise à jour modèles |          |                             | Pierre          |                        |
+|   CU06 - mise à jour des modèles |          |                             | Pierre          |                        |
 | CU07                             | 1        | 2                           | (tous)          | Exigences pour le lab  |
 | CU07 - conception                |          |                             | Jérémie         |                        |
 | CU07 - test et implémentation     |          |                             | Hélène          |                        |
-| CU07 - mise à jour modèles |          |                             | Pierre          |                        |
+| CU07 - mise à jour des modèles |          |                             | Pierre          |                        |
 
 ## Problèmes
 
@@ -52,32 +52,32 @@ Les éléments de travail suivants seront abordés dans cette itération:
 ## Critères d'évaluation
 
 > Une brève description de la façon d'évaluer si les objectifs (définis plus haut) de haut niveau ont été atteints.
-> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par le chargé de laboratoire). En voici des exemples:
+> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par l’auxiliaire d'enseignement). En voici des exemples:
 
 - 97% des cas de test passent.
-- Démonstration des fonctionnalités CU06 et CU07 pas à pas avec le chargé de laboratoire a reçu une réponse favorable.
+- Démonstration des fonctionnalités CU06 et CU07 pas à pas avec l’auxiliaire d'enseignement a reçu une réponse favorable.
 
 ## Évaluation
 
 > Utiliser cette section pour la saisie et la communication des résultats et les actions des évaluations, qui sont généralement faites à la fin de chaque itération. Si vous ne le faites pas, l'équipe ne peut pas être en mesure d'améliorer la façon dont elle développe des logiciels.
 > **Note:** cette section est complétée seulement après l'évaluation faite par l'auxiliaire d'enseignement, lors de la démo en lab.
 
-<!-- GitHub ne supporte pas les tables sans entête: https://stackoverflow.com/a/17543474/1168342 -->
+<!-- GitHub ne supporte pas les tables sans en-tête: https://stackoverflow.com/a/17543474/1168342 -->
 | Résumé | |
 | ------------------------------------- | ------------------------------------------------------------------------ |
 | Cible d'évaluation                    | Itération <!-- *Cela pourrait être toute l'itération ou simplement un composant spécifique* -->                            |
 | Date d'évaluation  |   2019/05/16 |
-| Participants       | **Coéquipiers** : Jérémie, Jacques-Éric, Pierre (Hélène avait une absence justifiée),<br> **Chargé de laboratoire** : Jonathan Mayhem |
+| Participants       | **Coéquipiers** : Jérémie, Jacques-Éric, Pierre (Hélène avait une absence justifiée),<br> **auxiliaire d'enseignement** : Jonathan Mayhem |
 | État du projet     | 🟢 <!-- 🔴🟠🟢 *Rouge, Orange, ou Vert.* --> |
 
 ### Évaluation par rapport aux objectifs
 
 > Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. *(on reprend les objectifs)*
 
-- Résoudre les problèmes de la dernière itération soulevés par le chargé de laboratoire.
-    - La rétroaction du chargé de laboratoire a été positive. Bon travail l'équipe!
+- Résoudre les problèmes de la dernière itération soulevés par l’auxiliaire d'enseignement.
+  - La rétroaction de l’auxiliaire d'enseignement a été positive. Bon travail l'équipe!
 - Présenter une démonstration technique.
-    - Le CU06 a été convaincant pour le chargé de laboratoire, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
+  - Le CU06 a été convaincant pour l’auxiliaire d'enseignement, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
 
 ### Éléments de travail: prévus vs réalisés
 
