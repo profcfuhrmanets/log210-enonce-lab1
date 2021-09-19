@@ -73,6 +73,7 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 ## Diagramme de classe logicielle (DCL)
 
 > Facultatif, mais fortement suggéré
+> Ce diagramme vous aidera à planifier l'ordre d'implémentation des classes.  Très utile losrqu'on utilise TDD.
 
 ## Vérification finale
 
@@ -90,3 +91,4 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
   - [ ] Votre code source (implémentation) est cohérent avec la RDCU (ce n'est pas juste un diagramme)
 - [ ] Vous avez un seul DCL
 - [ ] Vous avez remis la version PDF de ce document dans votre répertoire
+- [ ] [Vous avez regarder cette petite présentation pour l'architecture en couche et avez appliqué ces concepts](https://log210-cfuhrman.github.io/log210-valider-architecture-couches/#/) 
