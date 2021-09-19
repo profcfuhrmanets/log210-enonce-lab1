@@ -28,7 +28,7 @@ Notez que la logique du routeur (web) est simple :
 
 ### Squelette pour commencer le SGA
 
-En plus du [squelette](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/squelette.md) de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
+En plus du [squelette](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md) de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
 
 > Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
 
