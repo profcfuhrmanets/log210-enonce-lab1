@@ -1,7 +1,7 @@
 # Système de gestion de l'apprentissage
 
-Version: Automne 2021 (1.0.0)
-Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
+Version: Automne 2021 (1.0.0)  
+Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
 
@@ -60,7 +60,7 @@ Lisez le README.md de SGB pour savoir comment générer cette documentation.
 
 Ce texte est normalement un extrait du plan de cours:
 
-> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **Avant la remise du travail**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux chargés de laboratoire ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
+> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **Avant la remise du travail**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux auxiliaires d'enseignement ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
 
 ## Application frontale et persistance minimalistes
 
@@ -76,21 +76,27 @@ Chaque itération nécessite un avancement (**évolution**) sur le plan des exig
 
 Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
 
+Cet avancement est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
+
 ## Déroulement des corrections interactives
 
-Les corrections interactives à chaque itération seront réalisées en suivant le processus suivant. Les chargés de laboratoire veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
+Les corrections interactives à chaque itération se déroulent selon le processus suivant.
+Les auxiliaires d'enseignement veillent au bon déroulement de la correction, mais ce sont les étudiants qui doivent prendre l'initiative de suivre ces étapes à la lettre.
 
 ### Démonstration
 
-L'objectif de cette partie est de montrer le fonctionnement de l'application au client. Elle suit les étapes suivantes :
+L'objectif de cette partie est de montrer le fonctionnement de l'application au client et de documenter sa rétroaction dans la section **Évaluation** du plan d'itération.
+Dans le plan d'itération, vous identifiez des critères d'évaluation.
+Ces critères d'évaluation seront considérés lors de la démonstration.
+La démonstration se déroule selon les étapes suivantes :
 
-![DSS pour le processus de démonstration](README/dss-demonstration.svg "DSS pour le processus de démonstration")
+![Diagramme d'activités pour le processus de démonstration](README/activite-demonstration.svg "Diagramme d'activités pour le processus de démonstration")
 
-#### Évaluation de l'implémentation et des tests
+#### Évaluation de la conception et des tests
 
 L'objectif de cette partie et de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
 
-![DSS pour le processus d'évaluation de l'implémentation](README/dss-evaluation-implementation.svg)
+![DSS pour le processus d'évaluation de la conception](README/activite-evaluation-implementation.svg)
 
 * Vérifier correspondance code et RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
@@ -100,7 +106,7 @@ L'objectif de cette partie et de montrer que l'application est conforme aux prin
         4. faire un seul appel à la méthode du contrôleur et retourne sa réponse sous forme de JSON avec le code HTTP approprié
         5. intercepter et traiter les erreurs adéquatement
         6. :warning: [Cette méthode ne doit pas retourner une vue](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/wiki/Vue-sans-route-d'API-(endpoint)). Pour ce faire, il faut faire une autre route qui appelle l'opération système.
-    1. une méthode avec la même signature est présente dans un contrôleur.
+    2. une méthode avec la même signature est présente dans un contrôleur.
        1. L'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception: [le réusinage "Introduce Parameter Object"](https://refactoring.com/catalog/introduceParameterObject.html))
        2. Le retour d'opération correspond à une valeur primitive
 * exécuter les tests
@@ -133,7 +139,7 @@ Cependant, il peut y avoir une pénalité à la fin d'une itération si les crit
 
 Le calcul de la note pour cette évaluation est le suivant :
 
-> ![d = (Sommation (Points) / Nb Points)](https://latex.codecogs.com/svg.latex?d%3D%5Cfrac%7B%5Csum%20Points%7D%7BnbPoints%7D)
+> ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
 Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
 |Nombre d'étudiants| NbPoints|
@@ -159,43 +165,16 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin séance 7 du labo  | Début séance 9  |
 |         3 | Fin séance 10 du labo | Début séance 12 |
 
+<!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
+**Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
+
 ### Correction interactive du [rapport](rapports/RAPPORT-iteration-i.md) de l'itération 1
 
-À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre chargé de laboratoire. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
+À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
-Au lieu de faire un plan d'itération sous forme de document texte qui est généralement statique, vous devez utiliser Github issues.
-
-Je vous suggère d'utiliser les Labels pour [classer les issues](https://softwareengineering.stackexchange.com/questions/129714/how-to-manage-github-issues-for-priority-etc).
-
-Vous trouverez ci-dessous les différents types de tâches que nous nous attendons à retrouver dans votre Github issues.
-
-### Tâches: Étapes jalons
-
-> Dates clés montrant les délais, comme date de début et de fin; étapes intermédiaires; points de synchronisation avec d'autres équipes; démonstrations; et ainsi de suite pour l'itération.
-
-Vous devez utiliser les étapes-jalon (Milestones) suivantes pour regrouper vos tâches:
-
-1. Correction interactive du rapport de l'itération #1
-2. Rapport itération #1
-3. Implémentation itération #1
-4. Rapport itération #2
-5. Implémentation itération #2
-6. Rapport itération #3
-7. Implémentation itération #3
-
-### Tâches: Objectifs clés (issues)
-
-> Afficher les tâches d'objectifs clés pour l'itération, généralement un à cinq. *(exemples)*
-> **⚠️Faites attention de respecter les points minima d'avancement par itération indiqués dans l'énoncé, sinon vous pouvez avoir une pénalité si vous n'avancez pas assez. Vérifiez avec un chargé de laboratoire avant de commencer l'itération!**
-> Assurez-vous d'assigner chaque tâche à un étudiant qui en sera responsable
-> Le changement d'état d'une tâche doit nécessairement être justifié par un commentaire.
-
-* CU06 - Présenter une démonstration technique
-* CU07 - Faire vidéo pour la démonstration technique avec les tests
-* Réviser CU07
-    > Le CU06 a été convaincant pour le chargé de laboratoire, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale. Donc une nouvelle tâche pour réviser les CU07 a été créée et assignée.  Je peux retrouver cette tâche dans un comprenant tous les commentaires du chargé de laboratoire.
+Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération](rapports/plan-iteration-gabarit.md).
 
 ### Pour planifier vos itérations
 
@@ -203,83 +182,22 @@ Vous devez utiliser les étapes-jalon (Milestones) suivantes pour regrouper vos 
 
 * [Comment estimer la taille d'une itération](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
 
+### Compléter la section Évaluation
+
+Après l'évaluation de votre itération, vous devez compléter la section **Évaluation** de votre plan.
+
 ## Modalités d'évaluation
 
-### Grille de pointage de tous les artéfacts
+Toutes les grilles d'évaluation se trouvent dans un chiffrier Google:
 
-Cette grille d'évaluation présente le pointage associé à chacun des artéfacts que vous avez à remettre pour ce laboratoire.
-
-| Artéfact                            |                               Pondération                                |
-| ----------------------------------- | :----------------------------------------------------------------------: |
-| Plan d'itération 1                  |                                    1                                     |
-| Correction interactive du rapport 1 |                                    2                                     |
-| Rapport 1                           |                                    5                                     |
-| Plan d'itération 2                  |                                    1                                     |
-| Rapport 2                           |                                    6                                     |
-| Plan d'itération 3                  |                                    1                                     |
-| Rapport 3                           |                                    6                                     |
-| Implémentation                      | Réalisation exigences (10)<br/>Test (2.5)<br/>Qualité du code (2.5)<br/> |
-| Total                               |                                   35%                                    |
-
-### Grille de pointage des exigences
-
-[voir les exigences client](README-exigences-client.md)
-
-## Grilles de correction
-
-### Critères appliqués au plan d'itération
-
-| Plan d'itération   | Pondération | Niveau                                                                                                                                                             |
-| ------------------ | :---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Qualité du Plan    |      3      | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                         |
-| Complétude du Plan |      3      | Toutes les tâches sont présentes (3)<br/>Quelques tâches sont manquantes (2)<br/>Beaucoup de tâches sont manquantes (1)<br/>La planification n'est pas réaliste(0) |
-
-### Critères appliqués au rapport
-
-| Déductions                                                     | Pondération | Critères                                                                                                                                                                         |
-| -------------------------------------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mauvaise qualité du français                                   |     -3      | Quelques fautes (-1)<br/>Beaucoup de fautes (-2)<br/>Énormément de fautes (-3)                                                                                                   |
-| Mauvaise présentation du rapport                               |     -3      | Peu d'erreurs de présentation (-1)<br/>Quelques erreurs de présentation OU absence du rapport en PDF (-2)<br/>Quelques erreurs de présentation ET absence du rapport en PDF (-3) |
-| Pénalité pour refus de correction par le chargé de laboratoire |     -6      |                                                                                                                                                                                  |
-
-**Pénalité pour refus de correction par le chargé de laboratoire:**
-Un travail qui contient trop d'erreurs fréquentes peut être refusé par le chargé de laboratoire. L'équipe peut reprendre le travail avec une pénalité.
-
-### Critères appliqués aux artéfacts d'analyse et de conception du rapport
-
-| MDD                               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| --------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du MDD                    |      3      | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du MDD                 |      3      | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-| Cohérence entre le MDD et le code |      3      | L'artéfact et le code correspondent parfaitement (3)<br/>L'artéfact le code ont quelques différences (2)<br/>L'artéfact et le code ont beaucoup de différences (1)<br/>L'artéfact et le code ne correspondent pas (0)                              |
-
-| DSS               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ----------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du DSS    | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du DSS | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-
-| Contrats<br/>(le cas échéant) | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ------------------------------ | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du contrat             | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du contrat          | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-
-| RDCU                               | Pondération | Niveau                                                                                                                                                                                                                                             |
-| ---------------------------------- | :---------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Qualité du RDCU                    | 3           | Pas de problème de qualité (3)<br/>Quelques problèmes de qualité (2)<br/>Beaucoup de problèmes de qualité (1)<br/>Qualité inacceptable (0)                                                                                                         |
-| Complétude du RDCU                 | 3           | Tous les éléments conceptuels sont présents (3)<br/>Quelques éléments sont manquantes (2)<br/>Beaucoup d'éléments sont manquantes (1)<br/>L'artéfact ne répond pas aux exigences (0)<br/>Éléments: classes, associations, attributs, multiplicités |
-| Cohérence entre le RDCU et le code | 3           | L'artéfact et le code correspondent parfaitement (3)<br/>L'artéfact le code ont quelques différences (2)<br/>L'artéfact et le code ont beaucoup de différences (1)<br/>L'artéfact et le code ne correspondent pas (0)                              |
-
-| Démonstration              | Pondération | Niveau                                                                                                                                   |
-| -------------------------- | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Réalisation d'une exigence | 3           | Exigence satisfaite (3)<br/>Cas alternatif non fonctionnel (2)<br/>Exigence partiellement satisfaite (1)<br/>Exigence non satisfaite (0) |
-
-| Test automatisé       | Pondération | Niveau                                                |
-| --------------------- | :---------: | ----------------------------------------------------- |
-| Réalisation des tests | 3           | 95-100% (3)<br/>90-95% (2)<br/>80-90 (1)<br/>0-79 (0) |
+* [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
+* [Plan d'itération](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
+* [Rapport](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
+* [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
 ## Conclusion
 
-Vous ne devez implémenter que les cas d'utilisation que vous aurez spécifiés dans votre plan d'itération, mais vous pouvez utiliser le document d'exigences complet pour trouver l'information nécessaire à la réalisation de vos cas d'utilisation.
+Vous ne devez implémenter que les cas d'utilisation que vous aurez spécifiés dans les objectifs de votre plan d'itération, mais vous pouvez utiliser le document d'exigences complet pour trouver l'information nécessaire à la réalisation de vos cas d'utilisation.
 
 Assurez-vous que votre implémentation respecte la séparation des couches présentation et domaine.
 
