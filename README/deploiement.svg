@@ -9,7 +9,7 @@ entity SimpleDB--><path d="M93.5,439 C93.5,429 133,429 133,429 C133,429 172.5,42
 reverse link Router to GUI--><path d="M152.403,93.5 C182.369,93.5 241.998,93.5 294.994,93.5 " fill="none" id="Router-backto-GUI" style="stroke:#A80036;stroke-width:1.0;"/><path d="M145.2002,101.9572 A9,9 0 0 0 145.2002 85.0428" style="stroke:#A80036;stroke-width:1.5;fill:none;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="160.5" y="86.5669">API REST niveau 2</text><!--MD5=[ee207bd21a41d647759085e7fca34991]
 link Router to App--><path d="M133,102.579 C133,131.012 133,227.692 133,282.59 " fill="none" id="Router-App" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b87fad3cf41de54d892cd606074f6fe5]
 link App to SimpleDB--><path d="M133,362.329 C133,383.444 133,409.172 133,428.7769 " fill="none" id="App-SimpleDB" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8ceabf8ea623773f41dcf93e05bd7474]
-link App to SGB--><path d="M232.609,322.5 C254.73,322.5 276.633,322.5 293.6619,322.5 C297.9191,322.5 301.8717,322.5 305.4469,322.5 C307.2345,322.5 308.9277,322.5 310.5176,322.5 C310.915,322.5 311.306,322.5 311.6904,322.5 C311.7865,322.5 311.8822,322.5 311.9774,322.5 " fill="none" id="App-SGB" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="250.57" y="315.5669">API REST</text><!--MD5=[e9d1d518d19cd3268b88dd5694900959]
+link App to SGB--><path d="M232.609,322.5 C254.73,322.5 276.633,322.5 293.6619,322.5 C297.9191,322.5 301.8717,322.5 305.4469,322.5 C307.2345,322.5 308.9277,322.5 310.5176,322.5 C310.915,322.5 311.306,322.5 311.6904,322.5 C311.7865,322.5 311.8822,322.5 311.9774,322.5 " fill="none" id="App-SGB" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="250.57" y="315.5669">API REST</text><!--MD5=[ce2224760e2ce076738a6885b8d44a8c]
 @startuml
 skinparam style strictuml
 skinparam componentStyle uml2
@@ -42,7 +42,7 @@ App -down- SimpleDB
 App -right- SGB : API REST
 @enduml
 
-PlantUML version 1.2021.10beta2(Unknown compile time)
+PlantUML version 1.2021.10(Mon Aug 30 13:43:48 UTC 2021)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
