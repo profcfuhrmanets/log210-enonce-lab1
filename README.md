@@ -168,7 +168,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
 **Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
 
-### Correction interactive du [rapport](docs/rapports/RAPPORT-iteration-i.md) de l'itération 1
+### Correction interactive du [rapport](rapports/RAPPORT-iteration-i.md) de l'itération 1
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
