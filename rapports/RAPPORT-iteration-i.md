@@ -84,11 +84,11 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
   - [ ] Chaque DSS a un titre
   - [ ] Chaque opération synchrone a un retour d'opération
   - [ ] L'utilisation d'une boucle (LOOP) est justifiée par les exigences
-- [ ] Vous avez autant de contrats que d'opérations système
+- [ ] Vous avez autant de contrats que d'opérations système (pour les cas d'utilisation nécessitant des contrats)
   - [ ] Les postconditions des contrats sont écrites au passé
 - [ ] Vous avez autant de RDCU que d'opérations système
-  - [ ] Chaque patron GRASP est identifié et surtout **justifié**
+  - [ ] Chaque décision de conception (affectation de responsabilité) est identifiée et surtout **justifiée** (par un GRASP ou autre heuristique)
   - [ ] Votre code source (implémentation) est cohérent avec la RDCU (ce n'est pas juste un diagramme)
-- [ ] Vous avez un seul DCL
+- [ ] Vous avez un seul diagramme de classes
 - [ ] Vous avez remis la version PDF de ce document dans votre répertoire
 - [ ] [Vous avez regardé cette petite présentation pour l'architecture en couche et avez appliqué ces concepts](https://log210-cfuhrman.github.io/log210-valider-architecture-couches/#/) 
