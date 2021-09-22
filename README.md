@@ -77,7 +77,7 @@ Chaque itération nécessite un avancement (**évolution**) sur le plan des exig
 Note: Ces minima d'avancement sont proposés pour une équipe à 4 personnes. Ils représentent un avancement nécessaire mais pas suffisant (il faut faire plus) pour avoir 100% sur la note finale (voir le calcul de la note plus bas).
 Si une équipe est composée de moins de 4 personnes, l'auxiliaire d'enseignement peut permettre un minimum réduit pour une itération (ex. 2 points plutôt que 3), uniquement pour ne pas pénaliser l'équipe, tout en rappelant à l'équipe que faire moins que le minimum nuit à la chance d'avoir une bonne note.
 
-Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
+Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml).
 
 Cet avancement est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
 
@@ -188,11 +188,11 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 ## Modalités d'évaluation
 
-Toutes les grilles d'évaluation se trouvent dans un chiffrier Google:
+Toutes les grilles d'évaluation se trouvent dans [un chiffrier](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml) Google:
 
 * [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
-* [Plan d'itération](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
-* [Rapport](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
+* [Plan d'itération (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
+* [Rapport (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
 * [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
 ## Conclusion
