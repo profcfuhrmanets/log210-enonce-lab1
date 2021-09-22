@@ -68,11 +68,14 @@ Vous devez implémenter une interface utilisateur minimaliste pour la réalisati
 
 ## Déroulement des itérations
 
-Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale** indiquée, sinon il y a une pénalité à l'itération (voir la grille).
+Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale** indiquée, sinon il y a une pénalité à l'itération (voir la grille):
 
 * Itération 1 - 3 points
 * Itération 2 - 3 points supplémentaires
 * Itération 3 - 4 points supplémentaires
+
+Note: Ces minima d'avancement sont proposés pour une équipe à 4 personnes. Ils représentent un avancement nécessaire mais pas suffisant (il faut faire plus) pour avoir 100% sur la note finale (voir le calcul de la note plus bas).
+Si une équipe est composée de moins de 4 personnes, l'auxiliaire d'enseignement peut permettre un minimum réduit pour une itération (ex. 2 points plutôt que 3), uniquement pour ne pas pénaliser l'équipe, tout en rappelant à l'équipe que faire moins que le minimum nuit à la chance d'avoir une bonne note.
 
 Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
 
