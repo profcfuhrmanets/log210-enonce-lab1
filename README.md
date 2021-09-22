@@ -68,7 +68,7 @@ Vous devez implémenter une interface utilisateur minimaliste pour la réalisati
 
 ## Déroulement des itérations
 
-Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale** indiquée.
+Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale** indiquée, sinon il y a une pénalité à l'itération (voir la grille).
 
 * Itération 1 - 3 points
 * Itération 2 - 3 points supplémentaires
@@ -135,21 +135,18 @@ Les critères d'évaluation de chaque itération (a, b, c) sont documentés dans
 
 Vous recevrez une rétroaction vers la fin de chaque itération, selon le processus itératif et évolutif. Notez que seulement l'évaluation (d) de la dernière itération comptera pour la note. De cette manière, on peut réduire les conséquences négatives des erreurs de planification et des difficultés avec la maîtrise des nouvelles technologies qui sont normales au début du projet.
 
-Cependant, il peut y avoir une pénalité à la fin d'une itération si les critères de la grille de pointage ne sont pas respectés.
-
 Le calcul de la note pour cette évaluation est le suivant :
 
 > ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
-Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
+NbPoints dépend du nombre de personnes dans l'équipe:
+
 |Nombre d'étudiants| NbPoints|
 |---|---|
 |3| 8.25|
 |4|11.00|
 |5|13.75|
 |6|16.50|
-
-Vous pouvez implémenter plus de points pour compenser les pertes durant la correction, mais la note maximale sera de 100%.
 
 Pour les valeurs de *d* dépassant 100&nbsp;%, le maximum est 110&nbsp;%.
 
