@@ -603,7 +603,7 @@ Vous devez montrer que:
 
 ### Performance
 
-#### P1 – Performance (2 points)
+#### P1 – Performance
 
 Les étudiants supportent mal l'attente.
 L'un des goulots d'étranglement possibles est la récupération des informations de SGB.
