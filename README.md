@@ -187,6 +187,8 @@ Toutes les grilles d'évaluation se trouvent dans [un chiffrier](https://docs.go
 * [Rapport (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
 * [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
+Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=drivesdk&ouid=100642354018215358554&rtpof=true&sd=true).
+
 ## Conclusion
 
 Vous ne devez implémenter que les cas d'utilisation que vous aurez spécifiés dans les objectifs de votre plan d'itération, mais vous pouvez utiliser le document d'exigences complet pour trouver l'information nécessaire à la réalisation de vos cas d'utilisation.
