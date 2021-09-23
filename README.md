@@ -66,17 +66,6 @@ Ce texte est normalement un extrait du plan de cours:
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
 
-## Déroulement des itérations
-
-Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale** indiquée.
-
-* Itération 1 - 3 points
-* Itération 2 - 3 points supplémentaires
-* Itération 3 - 4 points supplémentaires
-
-Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
-
-Cet avancement est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
 
 ## Déroulement des corrections interactives
 
@@ -131,7 +120,7 @@ Voir la grille de correction pour plus de détails.
 
 Les critères d'évaluation de chaque itération (a, b, c) sont documentés dans la section [modalités d'évaluation](#modalités-dévaluation).
 
-### Implémentation
+## Déroulement des itérations et implémentation
 
 Vous recevrez une rétroaction vers la fin de chaque itération, selon le processus itératif et évolutif. Notez que seulement l'évaluation (d) de la dernière itération comptera pour la note. De cette manière, on peut réduire les conséquences négatives des erreurs de planification et des difficultés avec la maîtrise des nouvelles technologies qui sont normales au début du projet.
 
@@ -142,16 +131,21 @@ Le calcul de la note pour cette évaluation est le suivant :
 > ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
 Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
-|Nombre d'étudiants| NbPoints|
-|---|---|
-|3| 8.25|
-|4|11.00|
-|5|13.75|
-|6|16.50|
+|Nombre d'étudiants| NbPoints| Évolution minimum<br>Itération #1 | Évolution minimum<br>Itération #2| Évolution minmimum<br>Itération #3|
+|---|---|----|--|--|
+|2| **5.50**|1.50|1.50|2.00|
+|3| **8.25**|2.25|2.25|3.00|
+|4|**11.00**|3.00|3.00|4.00|
+|5|**13.75**|3.75|3.75|5.00|
+|6|**16.50**|4.50|4.50|6.00|
 
-Vous pouvez implémenter plus de points pour compenser les pertes durant la correction, mais la note maximale sera de 100%.
+Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale**.
 
-Pour les valeurs de *d* dépassant 100&nbsp;%, le maximum est 110&nbsp;%.
+Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
+
+Cet avancement (**évolution**) est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
+
+Vous pouvez implémenter plus de points pour compenser les pertes durant la correction, mais pour les valeurs de *d* dépassant 100&nbsp;%, le maximum est 110&nbsp;%.
 
 Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonctionnalité, tests, correspondance aux artéfacts), cette dernière ne sera pas utilisée dans le calcul.
 
