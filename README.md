@@ -139,7 +139,7 @@ Le nombre de points minimal requis pour une note de 100% correspond au tableau s
 
 Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale**.
 
-Les points associés à chaque exigence sont définis dans la [grille de correction](https://docs.google.com/spreadsheets/d/17Ks_0Q60R8Ti1CMTIYo9Pw6gUO_OS8Wf?rtpof=true&authuser=cc-yvan.ross%40etsmtl.net&usp=drive_fs).
+Les points associés à chaque exigence sont définis dans la [grille de correction](#modalités-dévaluation)
 
 Cet avancement (**évolution**) est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
 
