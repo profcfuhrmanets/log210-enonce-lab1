@@ -9,10 +9,10 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 
 ## Membre 1
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte GitHub</githubAccount1>
+- <nomComplet1>Kendrick Chan Hing Wah</nomComplet1>
+- <courriel1>kendrick.chan-hing-wah.1@ens.etsmtl.ca</courriel1>
+- <codeMoodle1>AQ95070</codeMoodle1>
+- <githubAccount1>KenChanA</githubAccount1>
 
 ## Membre 2
 
