@@ -66,7 +66,6 @@ Ce texte est normalement un extrait du plan de cours:
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
 
-
 ## Déroulement des corrections interactives
 
 Les corrections interactives à chaque itération se déroulent selon le processus suivant.
@@ -129,8 +128,8 @@ Le calcul de la note pour cette évaluation est le suivant :
 > ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
 Le nombre de points minimal requis pour une note de 100% correspond au tableau suivant:
-|Nombre d'étudiants| NbPoints| Évolution minimum<br>Itération #1 | Évolution minimum<br>Itération #2| Évolution minmimum<br>Itération #3|
-|---|---|----|--|--|
+|Nombre d'étudiants| NbPoints| Évolution minimum<br>Itération #1 | Évolution minimum<br>Itération #2| Évolution minimum<br>Itération #3|
+|---:|---:|----:|--:|--:|
 |2| **5.50**|1.50|1.50|2.00|
 |3| **8.25**|2.25|2.25|3.00|
 |4|**11.00**|3.00|3.00|4.00|
