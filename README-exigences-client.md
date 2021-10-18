@@ -638,7 +638,7 @@ Les décisionnaires de SGA insistent pour des technologies de test, qui, selon e
 
 Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
 
-**Note:** pour réaliser cette exigence il faudra utiliser travis-ci.org et GitHub avec les badges, comme dans les squelettes.
+**Note:** pour réaliser cette exigence il faudra utiliser travis-ci.org et GitHub action avec les badges, comme dans les squelettes.
 
 #### S3 - Contrainte de développement: gestion sémantique de version
 
