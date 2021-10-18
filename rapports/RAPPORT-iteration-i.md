@@ -9,38 +9,38 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 
 ## Membre 1
 
-- <nomComplet1>Entrer votre nom</nomComplet1>
-- <courriel1>Entrer votre courriel</courriel1>
-- <codeMoodle1>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle1>
-- <githubAccount1>Entrer l'identifiant de votre compte GitHub</githubAccount1>
+- <nomComplet1>Saisissez votre nom</nomComplet1>
+- <courriel1>Saisissez votre courriel</courriel1>
+- <codeMoodle1>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle1>
+- <githubAccount1>Saisissez l'identifiant de votre compte GitHub</githubAccount1>
 
 ## Membre 2
 
-- <nomComplet2>Entrer votre nom</nomComplet2>
-- <courriel2>Entrer votre courriel</courriel2>
-- <codeMoodle2>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle2>
-- <githubAccount2>Entrer l'identifiant de votre compte GitHub</githubAccount2>
+- <nomComplet2>Saisissez votre nom</nomComplet2>
+- <courriel2>Saisissez votre courriel</courriel2>
+- <codeMoodle2>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle2>
+- <githubAccount2>Saisissez l'identifiant de votre compte GitHub</githubAccount2>
 
 ## Membre 3
 
-- <nomComplet3>Entrer votre nom</nomComplet3>
-- <courriel3>Entrer votre courriel</courriel3>
-- <codeMoodle3>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle3>
-- <githubAccount3>Entrer l'identifiant de votre compte GitHub</githubAccount3>
+- <nomComplet3>Saisissez votre nom</nomComplet3>
+- <courriel3>Saisissez votre courriel</courriel3>
+- <codeMoodle3>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle3>
+- <githubAccount3>Saisissez l'identifiant de votre compte GitHub</githubAccount3>
 
 ## Membre 4
 
-- <nomComplet4>Entrer votre nom</nomComplet4>
-- <courriel4>Entrer votre courriel</courriel4>
-- <codeMoodle4>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle4>
-- <githubAccount4>Entrer l'identifiant de votre compte GitHub</githubAccount4>
+- <nomComplet4>Saisissez votre nom</nomComplet4>
+- <courriel4>Saisissez votre courriel</courriel4>
+- <codeMoodle4>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle4>
+- <githubAccount4>Saisissez l'identifiant de votre compte GitHub</githubAccount4>
 
 ## Membre 5
 
-- <nomComplet5>Entrer votre nom</nomComplet5>
-- <courriel5>Entrer votre courriel</courriel5>
-- <codeMoodle5>Entrer votre code Moodle obtenu à partir de Signets</codeMoodle5>
-- <githubAccount5>Entrer l'identifiant de votre compte GitHub</githubAccount5>
+- <nomComplet5>Saisissez votre nom</nomComplet5>
+- <courriel5>Saisissez votre courriel</courriel5>
+- <codeMoodle5>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle5>
+- <githubAccount5>Saisissez l'identifiant de votre compte GitHub</githubAccount5>
 
 <!-- Enlever les sections membres non utilisées -->
 
