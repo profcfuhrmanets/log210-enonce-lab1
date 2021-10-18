@@ -1,6 +1,6 @@
 # Exigences SGA
 
-Version: Automne 2021 (1.0.0)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Automne 2021 (1.0.1)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
@@ -30,13 +30,13 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 **Préconditions:**
 
-- L'enseignant est authentifié. SGA transfère l'information à SGB pour l'authentification. SGB retourne un jeton que SGA retourne à l'utilisateur. L'utilisateur doit nécessairement utiliser ce jeton pour faire ses requêtes à SGA..
+- L'enseignant est authentifié. SGA transfère l'information à SGB pour l'authentification. SGB retourne un jeton que SGA retourne à l'utilisateur. L'utilisateur doit nécessairement utiliser ce jeton pour faire ses requêtes à SGA.
 
 **Garanties en cas de succès (postconditions):**
 
 - Un nouveau cours est créé.
 - L'enseignant est associé au cours
-- Les étudiants inscrits dans le groupe-cours(SGB) sont associés au cours
+- Les étudiants inscrits dans le groupe-cours (SGB) sont associés au cours
 
 **Scénario principal (succès):**
 
@@ -144,7 +144,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. L'enseignant sélectionne une question
 1. Le système affiche les détails de la question
 
-*On répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
 
 ### CU02c - Modifier question
 
@@ -216,7 +216,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. L'enseignant crée un nouveau devoir avec une description et un nom, une note maximale, une date de début, une date de fin et un état visible ou non.
 1. Le système confirme l'ajout du devoir et affiche tous les devoirs associés au cours.
 
-*On répète les étapes 5-6 tant qu'il y a un devoir à ajouter.*
+*L'enseignant répète les étapes 5-6 tant qu'il y a un devoir à ajouter.*
 
 **Extensions (ou scénarios alternatifs):**
 
@@ -246,9 +246,9 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. Le système affiche le détail du devoir
 1. Le système affiche la liste des étudiants ayant fait le devoir ainsi que la note leur étant associée.
 
-*On répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
 
-*On répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs):**
 
@@ -272,7 +272,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 1. L'enseignant commence la modification d'un devoir
 1. Le système affiche les valeurs actuelles du devoir à modifier.
-1. L'enseignant effectue les modifications du devoir et les sauvegarde.
+1. L'enseignant effectue les modifications du devoir et demande au système de les sauvegarder.
 1. Le système affiche tout le devoir modifié
 
 **Extensions (ou scénarios alternatifs):**
@@ -360,7 +360,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. Le système affiche les questions correspondant à la catégorie non hiérarchique ainsi que le nombre de questionnaires auxquels ces questions ont déjà été ajoutées.
 1. L'enseignant sélectionne une ou plusieurs questions et les ajoute au questionnaire.
 
-*On répète les étapes 7 à 10 tant que l'enseignant n'a pas terminé l'ajout de questions.*
+*L'enseignant répète les étapes 7 à 10 tant que l'enseignant n'a pas terminé l'ajout de questions.*
 
 **Extensions (ou scénarios alternatifs):**
 
@@ -389,9 +389,9 @@ Sans objet.
 1. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
 1. Le système affiche la liste des étudiants ayant réalisé le questionnaire ainsi que la note qu'ils ont obtenue.
 
-*On répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
 
-*On répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs):**
 
@@ -475,10 +475,11 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 5. L'enseignant choisit un questionnaire à corriger.
 6. Le système affiche les questions du questionnaire ayant besoin de correction manuelle.
 7. L'enseignant fait une correction manuelle à une question décidant les points à accorder à la réponse.
+
+*L'enseignant répète les étapes 6 et 7 jusqu'à ce qu'il n'ait plus de questions à corriger ou qu'il ne souhaite plus corriger.*
+
 8. L'enseignant indique qu'il a terminé sa correction manuelle du questionnaire.
 9. Le système calcule la note du questionnaire.
-
-*L'enseignant répète les étapes 6 à 7 jusqu'à ce qu'il n'ait plus de questions à corriger ou qu'il ne souhaite plus corriger.*
 
 *L'enseignant répète les étapes 5 à 9 jusqu'à ce qu'il n'ait plus de questionnaires à corriger ou qu'il ne souhaite plus corriger.*
 
@@ -498,7 +499,7 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Scénario principal (succès):**
 
-1. L'étudiant sélectionne un cours parmi la liste des cours auxquels il est inscrit
+1. L'étudiant sélectionne un cours parmi les cours auxquels il est inscrit
 1. Le système affiche les devoirs à remettre
 1. L'étudiant sélectionne un devoir
 1. Le système affiche les détails du devoir
@@ -533,11 +534,11 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 1. Le système affiche une question
 1. L'étudiant répond à la question
 
-*On répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
+*L'enseignant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
 
 7. Le système affiche la note obtenue et le texte de rétroaction (bonne ou mauvaise réponse) pour chaque question ainsi que la note résultante en pourcentage
 
-*On répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
+*L'enseignant répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs):**
 
@@ -568,7 +569,7 @@ Toutes les erreurs doivent être journalisées en mémoire persistante.
 
 Toute utilisation implique une authentification avec le Système d'authentification (SSO).
 
-Vous devez remplacer la mécanique d'authentification actuelle par une authentification par Intergiciel de type JWT (Json Web Token)
+Vous devez remplacer la mécanique d'authentification actuelle par une authentification par Intergiciel de type JWT (JSON Web Token)
 
 Référence: https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node
 
@@ -581,7 +582,7 @@ Alors, les pages web doivent supporter des appareils avec une taille d'écran de
 Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 
 - Utilisez les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran.
-- Les PUG du squelette intégrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
+- Les PUG du squelette intègrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
 - Une conception modulaire de vos PUG (layout) facilitera la réalisation de cette exigence.
 
 ### Fiabilité (Reliability)
@@ -589,15 +590,15 @@ Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 #### R1 – Tolérer panne temporaire de SGB
 
 En cas d'indisponibilité du système de gestion des bordereaux (SGB), il faut une solution de recouvrement lors de la sauvegarde de notes.
-P. ex. une mise en place de stockage temporaire permettant de sauvegarder quand-même les résultats de la correction d'un devoir ou d'un questionnaire.
+P. ex. une mise en place de stockage temporaire permettant de sauvegarder quand même les résultats de la correction d'un devoir ou d'un questionnaire.
 Lorsque le SGB est à nouveau disponible, les notes locales doivent y être transférées.
 
 Pour faire R1, il faut avoir déjà réalisé au moins un des cas d'utilisation **Corriger devoir**, **Passer questionnaire** et **Corriger questionnaire**.
 Vous devez montrer que:
 
 - plusieurs exécutions du cas d'utilisation où une note est générée tolèrent la panne de SGB (vous arrêtez SGB temporairement)
-- le recouvrement se fait automatiquement, sans que les étapes des cas d'utilisation soit modifiées (il est correct d'informer l'utilisateur par contre qu'il y a eu une panne mais que sa note sera transférée lorsque le système est de nouveau disponible)
-- finalement les notes générées se rendent à SGB une fois qu'il est redémarré
+- le recouvrement se fait automatiquement, sans que les étapes des cas d'utilisation soient modifiées (il est correct d'informer l'utilisateur par contre qu'il y a eu une panne, mais que sa note sera transférée lorsque le système est de nouveau disponible)
+- finalement, les notes générées se rendent à SGB une fois qu'il est redémarré
 
 **Note:** Larman propose une solution élégante avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
 
@@ -607,10 +608,10 @@ Vous devez montrer que:
 
 Les étudiants supportent mal l'attente.
 L'un des goulots d'étranglement possibles est la récupération des informations de SGB.
-Vous devez utiliser un cache mémoire pour éviter l'accès à SGB au niveau de l'authentification et des requètes d'information subséquentes.
+Vous devez utiliser un cache mémoire pour éviter l'accès à SGB au niveau de l'authentification et des requêtes d'information subséquentes.
 Notre objectif sera donc que le délai séparant la demande de la réponse soit inférieur à 30ms dans 90% des cas.
 
-**Note:** pour démontrer que vous avez réalisé cette exigence, il faudra mesurer le temps d'exécution des différentes requètes et montrer avec des chiffres à l'appuie l'avantage d'utiliser le cache mémoire. Voir le chapitre F30/A35.
+**Note:** pour démontrer que vous avez réalisé cette exigence, il faudra mesurer le temps d'exécution des différentes requêtes et montrer avec des chiffres à l'appui l'avantage d'utiliser le cache mémoire. Voir le chapitre F30/A35.
 
 Voici quelques outils pour mesurer la performance
 
