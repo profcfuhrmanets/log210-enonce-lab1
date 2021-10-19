@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: markdown-link-check
+      - name: markdown-link-check --config mlc_config.json
         uses: gaurav-nelson/github-action-markdown-link-check@1.0.13
