@@ -1,6 +1,6 @@
 # Système de gestion de l'apprentissage
 
-Version: Automne 2021 (1.0.1)  
+Version: Automne 2021 (1.0.1)
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
@@ -197,3 +197,20 @@ Assurez-vous que votre implémentation respecte la séparation des couches prés
 Prenez note que nous sommes ouverts à toutes suggestions permettant d'apporter des améliorations au laboratoire. Nous analyserons chacune de vos suggestions.
 
 Merci de votre participation et bon laboratoire.
+
+## Accès rapides
+Ici vous trouverez des liens rapides vers les documents et éléments importants de l'énoncé.
+##### Projet
+- [Document d'exigences du client](README-exigences-client.md)
+- [Squelette de démarrage du projet](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md)
+- [Code source de SGB](https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts)
+
+##### Gabarits
+- [Gabarit de plan d'itération](rapports/plan-iteration-gabarit.md)
+- [Gabarit de rapport](rapports/RAPPORT-iteration-i.md)
+
+##### Grilles de correction
+- [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
+- [Plan d'itération (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
+- [Rapport (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
+- [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
