@@ -1,11 +1,11 @@
 # Système de gestion de l'apprentissage
 
-Version: Automne 2021 (1.0.1)  
+Version: Automne 2021 (1.0.2)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
 
-Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client](README-exigences-client.md)
+Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client][projet-exigences]
 
 ## Déploiement du système
 
@@ -28,7 +28,7 @@ Notez que la logique du routeur (web) est simple :
 
 ### Squelette pour commencer le SGA
 
-En plus du [squelette](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md) de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
+En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
 
 > Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
 
@@ -53,7 +53,7 @@ SGB est une application ayant son propre modèle du domaine (comprenant les conc
 
 Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données. Il possède une interface de configuration permettant de nettoyer le contenu correspondant aux notes.
 
-L'API de SGB est disponible avec [le code source](https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts).
+L'API de SGB est disponible avec [le code source][projet-sgb].
 Lisez le README.md de SGB pour savoir comment générer cette documentation.
 
 ## Travail d'équipe
@@ -138,7 +138,7 @@ Le nombre de points minimal requis pour une note de 100% correspond au tableau s
 
 Chaque itération nécessite un avancement (**évolution**) sur le plan des exigences par une **valeur minimale**.
 
-Les points associés à chaque exigence sont définis dans la [grille de correction](#modalités-dévaluation)
+Les points associés à chaque exigence sont définis dans la [grille de correction][grille-implementation]
 
 Cet avancement (**évolution**) est prévu dans les objectifs du plan d'itération et sera évalué lors de la démonstration.
 
@@ -146,7 +146,9 @@ Vous pouvez implémenter plus de points pour compenser les pertes durant la corr
 
 Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonctionnalité, tests, correspondance aux artéfacts), cette dernière ne sera pas utilisée dans le calcul.
 
-### Dates de remises
+### Dates clés et remises
+
+Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale ("main" ou "master"). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé "iteration-i", où i est le numéro de l'itération (p.ex.: iteration-1). Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
@@ -159,15 +161,15 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
 **Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
 
-### Correction interactive du [rapport](rapports/RAPPORT-iteration-i.md) de l'itération 1
+### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
-Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération](rapports/plan-iteration-gabarit.md).
+Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
 
-### Pour planifier vos itérations
+#### Pour planifier vos itérations
 
 * [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
@@ -179,12 +181,12 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 ## Modalités d'évaluation
 
-Toutes les grilles d'évaluation se trouvent dans [un chiffrier](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml) Google:
+Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale] Google:
 
-* [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
-* [Plan d'itération (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
-* [Rapport (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
-* [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
+* [Pointage de tous les artéfacts][grille-artefacts]
+* [Plan d'itération][grille-plan-iteration]
+* [Rapport][grille-rapport]
+* [Implémentation][grille-implementation]
 
 Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
 
@@ -201,16 +203,33 @@ Merci de votre participation et bon laboratoire.
 ## Accès rapides
 Ici vous trouverez des liens rapides vers les documents et éléments importants de l'énoncé.
 ##### Projet
-- [Document d'exigences du client](README-exigences-client.md)
-- [Squelette de démarrage du projet](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md)
-- [Code source de SGB](https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts)
+- [Document d'exigences du client][projet-exigences]
+- [Squelette de démarrage du projet][projet-squelette]
+- [Code source de SGB][projet-sgb]
 
 ##### Gabarits
-- [Gabarit de plan d'itération](rapports/plan-iteration-gabarit.md)
-- [Gabarit de rapport](rapports/RAPPORT-iteration-i.md)
+- [Gabarit de plan d'itération][gabarit-plan-iteration]
+- [Gabarit de rapport][gabarit-rapport]
 
 ##### Grilles de correction
-- [Pointage de tous les artéfacts](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true)
-- [Plan d'itération (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true)
-- [Rapport (1)](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true)
-- [Implémentation](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
+- [Pointage de tous les artéfacts][grille-artefacts]
+- [Plan d'itération][grille-plan-iteration]
+- [Rapport][grille-rapport]
+- [Implémentation][grille-implementation]
+
+<!-- Définition de tous les liens multi-référencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
+<!-- Projet -->
+[projet-exigences]: README-exigences-client.md
+[projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md
+[projet-sgb]: https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts
+
+<!-- Gabarits -->
+[gabarit-rapport]: rapports/RAPPORT-iteration-i.md
+[gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
+
+<!-- Grilles de correction -->
+[grille-globale]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml
+[grille-artefacts]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true
+[grille-plan-iteration]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true
+[grille-rapport]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true
+[grille-implementation]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true
