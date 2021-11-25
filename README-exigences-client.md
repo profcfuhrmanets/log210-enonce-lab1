@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Automne 2021 (1.0.1)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Automne 2021 (1.0.2)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
