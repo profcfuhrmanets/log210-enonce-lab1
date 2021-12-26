@@ -202,6 +202,9 @@ Merci de votre participation et bon laboratoire.
 
 ## Accès rapides
 Ici vous trouverez des liens rapides vers les documents et éléments importants de l'énoncé.
+##### Théorie
+- [Notes de cours de LOG210](https://tinyurl.com/log210ndc)
+
 ##### Projet
 - [Document d'exigences du client][projet-exigences]
 - [Squelette de démarrage du projet][projet-squelette]
