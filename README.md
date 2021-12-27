@@ -150,14 +150,26 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération      | Démo / Rapport  |
-| --------: | :-------------------- | :-------------- |
-|         1 | Fin séance 3 du labo  | Début séance 6  |
-|         2 | Fin séance 7 du labo  | Début séance 9  |
-|         3 | Fin séance 10 du labo | Début séance 12 |
+| Itération | Plan d'itération              | Démo / Rapport  |Plan d'itération section évaluation|
+| --------: | :---------------------------- | :-------------- |-----------------------------------|
+|         1 | Fin journée séance 3 du labo  | Début séance 6  | Fin journée séance 6 du labo      |     
+|         2 | Fin journée séance 7 du labo  | Début séance 9  | Fin journée séance 9 du labo      |
+|         3 | Fin journée séance 10 du labo | Début séance 12 | Fin journée séance 12 du labo     |
 
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
-**Note:** le Plan d'itération doit être actualisé après l'évaluation et vous devez faire un "commit" dans le dépôt sur GitHub. C'est-à-dire qu'il faut compléter la section Évaluation du plan actuel et le remettre *avant* de faire le prochain plan.
+**Note:** le Plan d'itération doit être actualisé après l'évaluation.
+
+### Processus de remises
+Toutes les remises se font directement dans github.  Vous devez mettre vos sources à jours dans la branche master, et ensuite vous générer un tag correspondant à votre remise.  Voir le tableau suivant pour savoir quel tag générer selon votre remise.
+
+Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
+
+| Itération | Plan d'itération  | Rapport           |Plan d'itération section évaluation|
+| --------: | :-----------------| :---------------- |-----------------------------------|
+|         1 | git tag plan1     | git tag rapport1  | git tag plan1evaluation           |     
+|         2 | git tag plan2     | git tag rapport2  | git tag plan2evaluatio            |
+|         3 | git tag plan3     | git tag rapport3  | git tag plan3evaluation           |
+
 
 ### Correction interactive du [rapport](rapports/RAPPORT-iteration-i.md) de l'itération 1
 
