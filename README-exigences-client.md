@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Automne 2021 (1.0.1)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Automne 2021 (1.0.2)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
@@ -353,7 +353,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. Le système affiche les cours de l'enseignant ainsi que le nombre de questionnaires associés à chaque cours
 1. L'enseignant sélectionne un cours
 1. Le système affiche tous les questionnaires associés au cours.
-1. L'enseignant crée un nouveau questionnaire avec une description et un état pour indiquer si le questionnaire est actif
+1. L'enseignant crée un nouveau questionnaire avec un nom, une description et un état pour indiquer si le questionnaire est actif
 1. Le système confirme la création du questionnaire
 1. Le système affiche la liste de catégories non hiérarchiques de questions
 1. L'enseignant sélectionne la catégorie non hiérarchique de question
