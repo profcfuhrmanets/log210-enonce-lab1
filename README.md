@@ -1,36 +1,8 @@
 # Système de gestion de l'apprentissage
 
-Version: Automne 2021 (1.0.2)  
+Version: Hiver 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
-- [Système de gestion de l'apprentissage](#système-de-gestion-de-lapprentissage)
-  - [Introduction](#introduction)
-  - [Déploiement du système](#déploiement-du-système)
-  - [Documents de référence](#documents-de-référence)
-    - [Squelette pour commencer le SGA](#squelette-pour-commencer-le-sga)
-    - [SGB](#sgb)
-  - [Travail d'équipe](#travail-déquipe)
-  - [Application frontale et persistance minimalistes](#application-frontale-et-persistance-minimalistes)
-  - [Déroulement des corrections interactives](#déroulement-des-corrections-interactives)
-    - [Démonstration](#démonstration)
-      - [Évaluation de la conception et des tests](#évaluation-de-la-conception-et-des-tests)
-  - [Processus d'évaluation des laboratoires](#processus-dévaluation-des-laboratoires)
-    - [Rapport et planification](#rapport-et-planification)
-  - [Déroulement des itérations et implémentation](#déroulement-des-itérations-et-implémentation)
-    - [Dates clés et remises](#dates-clés-et-remises)
-    - [Processus de remises](#processus-de-remises)
-    - [Correction interactive du rapport de l'itération 1](#correction-interactive-du-rapport-de-litération-1)
-  - [Plan d'itération](#plan-ditération)
-      - [Pour planifier vos itérations](#pour-planifier-vos-itérations)
-    - [Compléter la section Évaluation](#compléter-la-section-évaluation)
-  - [Modalités d'évaluation](#modalités-dévaluation)
-  - [Directive d'implémentation](#directive-dimplémentation)
-  - [Conclusion](#conclusion)
-  - [Accès rapides](#accès-rapides)
-        - [Théorie](#théorie)
-        - [Projet](#projet)
-        - [Gabarits](#gabarits)
-        - [Grilles de correction](#grilles-de-correction)
 ## Introduction
 
 Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client][projet-exigences]
@@ -63,7 +35,7 @@ En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, d
 Beaucoup de cadres d'application Web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
 
 * Cadre d'application d'interface utilisateur: Vue.js, React, Angular, etc.
-* Base de données: SQL et NoSQL
+* Base de données: SQL, NoSQL, etc.
 
 ### SGB
 
@@ -152,11 +124,14 @@ Voir la grille de correction pour plus de détails.
 Les critères d'évaluation de chaque itération (a, b, c) sont documentés dans la section [modalités d'évaluation](#modalités-dévaluation).
 
 ## Déroulement des itérations et implémentation
-Voici quelques informations à considérer lorsque vous faites une itération
-- La rédaction du plan d'itération ne devrait pas prende plus d'une heure.
+
+Voici quelques conseils par rapport à la planification et le déroulement des itérations selon la théorie du cours (chapitre 2 du livre obligatoire):
+
+- La rédaction du plan d'itération ne devrait pas prendre plus d'une heure.
 - La réalisation des MDD, DSS et contrats devrait prendre 1 à 2 heures.
 - La réalisation des RDCU devrait prendre environ une demi-journée.
-- Le codage prend tous le temps qui reste et encore plus si vous n'avez pas fait adéquatement les étapes précédentes.
+- Le codage (implémentation et tests) n'est pas trivial et prend tous le temps qui reste.
+- À la mi-itération, si les objectifs semblent trop ambitieux, vous devez réduire le nombre d'objectifs. Une démonstration partielle vaut beaucoup plus qu'aucune démonstration.
 - La démonstration doit se faire en moins de 10 minutes.
 - La rédaction de l'évaluation de l'itération ne devrait pas prendre plus d'une heure.
 
