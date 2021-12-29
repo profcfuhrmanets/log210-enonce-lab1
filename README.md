@@ -32,7 +32,7 @@ En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, d
 
 > Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
 
-Beaucoup de cadres d'application Web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
+Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
 
 * Cadre d'application d'interface utilisateur: Vue.js, React, Angular, etc.
 * Base de données: SQL, NoSQL, etc.
@@ -68,7 +68,7 @@ Ce texte est normalement un extrait du plan de cours:
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
 
-Prenez note qu'il est possible de remplacer les pages pug par des pages HTML et javascript.
+Prenez note qu'il est possible de remplacer les pages pug par des pages HTML et JavaScript.
 
 ## Déroulement des corrections interactives
 
@@ -130,7 +130,7 @@ Voici quelques conseils par rapport à la planification et le déroulement des i
 - La rédaction du plan d'itération ne devrait pas prendre plus d'une heure.
 - La réalisation des MDD, DSS et contrats devrait prendre 1 à 2 heures.
 - La réalisation des RDCU devrait prendre environ une demi-journée.
-- Le codage (implémentation et tests) n'est pas trivial et prend tous le temps qui reste.
+- Le codage (implémentation et tests) n'est pas trivial et prend tout le temps qui reste.
 - À la mi-itération, si les objectifs semblent trop ambitieux, vous devez réduire le nombre d'objectifs. Une démonstration partielle vaut beaucoup plus qu'aucune démonstration.
 - La démonstration doit se faire en moins de 10 minutes.
 - La rédaction de l'évaluation de l'itération ne devrait pas prendre plus d'une heure.
@@ -162,22 +162,23 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 ### Dates clés et remises
 
-Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale ("main" ou "master"). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé "iteration-i", où i est le numéro de l'itération (p.ex.: iteration-1). Assurez-vous que votre rapport est au format PDF.
+Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale ("main" ou "master"). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé "iteration-i", où i est le numéro de l'itération (p. ex.: iteration-1). Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              |Vérification conception<sup>2</sup> | Démo / Rapport  |Plan d'itération section évaluation <sup>1</sup>|
+| Itération | Plan d'itération              |Vérification conception<sup>2</sup> | Démo / Rapport  |Plan d'itération section évaluation<sup>1</sup>|
 | --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
 |         1 | Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
 |         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
 |         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
 
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
-**Note 1 :** le Plan d'itération doit être actualisé après l'évaluation.
-**Note 2:** 
+**Note 1:** le Plan d'itération doit être actualisé après l'évaluation.  
+**Note 2:** Un diagramme de classe généré à partir de votre code source est inclus dans votre rapport.
 
 ### Processus de remises
-Toutes les remises se font directement dans github.  Vous devez mettre vos sources à jours dans la branche master, et ensuite vous générer un tag correspondant à votre remise.  Voir le tableau suivant pour savoir quel tag générer selon votre remise.
+
+Toutes les remises se font directement dans GitHub.  Vous devez mettre vos sources à jour dans la branche master, et ensuite vous générez un tag correspondant à votre remise.  Voir le tableau suivant pour savoir quel tag générer selon votre remise.
 
 Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
 
@@ -187,7 +188,6 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 |         2 | git tag plan2     | git tag rdcu2           | git tag rapport2  | git tag plan2evaluatio            |
 |         3 | git tag plan3     | git tag rdcu3           | git tag rapport3  | git tag plan3evaluation           |
 
-
 ### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
@@ -196,7 +196,7 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
 
-#### Pour planifier vos itérations
+### Pour planifier vos itérations
 
 * [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
@@ -217,21 +217,21 @@ Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale]
 
 Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
 
+## Directives d'implémentation
 
-## Directive d'implémentation
-Voici quelques directive qui ont fait leurs preuves lorsque les étudiants les respectent.
-- Réaliser un diagramme de classe avant de débuter votre implémentation.
-- Débuter votre implémentation par la classe ayant le moins de couplage.
-- Utiliser TDD comme processus d'implémentation. 
-- Assurez vous d'avoir une très bonne couverture de test.
-- Terminer votre implémentation d'un cas d'utilisation par la classe contrôleur et ensuite par la classe route.
-- Assurez vous d'utiliser une classe de route pour chaque contrôleur pour maximiser la cohésion.
-- Utiliser github issus pour faire le suivie des tâches à réaliser. 
-  - Il faut que chaque membre de l'équipe puisse clairement identifier les tâches qu'il a à faire et ce en tout temps.  
-- Utiliser des outils pour mesurer les métriques de qualité de code et assurez vous que votre code est de bonne qualité.  
-  - Le plugin "Tech Debt Metrics" dans visual studio code
-  - le plugin "SonarLint" dans visual studio code
+Voici quelques directives qui ont fait leurs preuves lorsque les étudiants les respectent.
 
+- Réalisez un diagramme de classe avant de commencer votre implémentation.
+- Débutez votre implémentation par la classe ayant le moins de couplage.
+- Utilisez TDD comme processus d'implémentation. 
+- Assurez-vous d'avoir une très bonne couverture de test.
+- Terminez votre implémentation d'un cas d'utilisation par la classe contrôleur et ensuite par la classe route.
+- Assurez-vous d'utiliser une classe de route pour chaque contrôleur pour maximiser la cohésion.
+- Utilisez les billets (*issues*) de GitHub pour faire le suivie des tâches à réaliser. 
+  - Il faut que chaque membre de l'équipe puisse clairement identifier les tâches qu'il a à faire, et ce en tout temps.  
+- Utilisez des outils pour mesurer les métriques de qualité de code et assurez-vous que votre code est de bonne qualité.  
+  - l'extension "Tech Debt Metrics" dans Visual Studio Code
+  - l'extension "SonarLint" dans Visual Studio Code
 
 ## Conclusion
 
@@ -263,7 +263,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 - [Rapport][grille-rapport]
 - [Implémentation][grille-implementation]
 
-<!-- Définition de tous les liens multi-référencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
+<!-- Définition de tous les liens multiréférencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
 <!-- Projet -->
 [projet-exigences]: README-exigences-client.md
 [projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md
