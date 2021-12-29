@@ -3,6 +3,34 @@
 Version: Automne 2021 (1.0.2)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
+- [Système de gestion de l'apprentissage](#système-de-gestion-de-lapprentissage)
+  - [Introduction](#introduction)
+  - [Déploiement du système](#déploiement-du-système)
+  - [Documents de référence](#documents-de-référence)
+    - [Squelette pour commencer le SGA](#squelette-pour-commencer-le-sga)
+    - [SGB](#sgb)
+  - [Travail d'équipe](#travail-déquipe)
+  - [Application frontale et persistance minimalistes](#application-frontale-et-persistance-minimalistes)
+  - [Déroulement des corrections interactives](#déroulement-des-corrections-interactives)
+    - [Démonstration](#démonstration)
+      - [Évaluation de la conception et des tests](#évaluation-de-la-conception-et-des-tests)
+  - [Processus d'évaluation des laboratoires](#processus-dévaluation-des-laboratoires)
+    - [Rapport et planification](#rapport-et-planification)
+  - [Déroulement des itérations et implémentation](#déroulement-des-itérations-et-implémentation)
+    - [Dates clés et remises](#dates-clés-et-remises)
+    - [Processus de remises](#processus-de-remises)
+    - [Correction interactive du rapport de l'itération 1](#correction-interactive-du-rapport-de-litération-1)
+  - [Plan d'itération](#plan-ditération)
+      - [Pour planifier vos itérations](#pour-planifier-vos-itérations)
+    - [Compléter la section Évaluation](#compléter-la-section-évaluation)
+  - [Modalités d'évaluation](#modalités-dévaluation)
+  - [Directive d'implémentation](#directive-dimplémentation)
+  - [Conclusion](#conclusion)
+  - [Accès rapides](#accès-rapides)
+        - [Théorie](#théorie)
+        - [Projet](#projet)
+        - [Gabarits](#gabarits)
+        - [Grilles de correction](#grilles-de-correction)
 ## Introduction
 
 Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client][projet-exigences]
@@ -60,11 +88,15 @@ Lisez le README.md de SGB pour savoir comment générer cette documentation.
 
 Ce texte est normalement un extrait du plan de cours:
 
-> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **Avant la remise du travail**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux auxiliaires d'enseignement ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
+> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d’un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l’itération. **A la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l’équipe, aux auxiliaires d'enseignement ainsi qu’à l’enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de "0" pour le travail.
+
+
 
 ## Application frontale et persistance minimalistes
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
+
+Prenez note qu'il est possible de remplacer les pages pug par des pages HTML et javascript.
 
 ## Déroulement des corrections interactives
 
@@ -120,10 +152,17 @@ Voir la grille de correction pour plus de détails.
 Les critères d'évaluation de chaque itération (a, b, c) sont documentés dans la section [modalités d'évaluation](#modalités-dévaluation).
 
 ## Déroulement des itérations et implémentation
+Voici quelques informations à considérer lorsque vous faites une itération
+- La rédaction du plan d'itération ne devrait pas prende plus d'une heure.
+- La réalisation des MDD, DSS et contrats devrait prendre 1 à 2 heures.
+- La réalisation des RDCU devrait prendre environ une demi-journée.
+- Le codage prend tous le temps qui reste et encore plus si vous n'avez pas fait adéquatement les étapes précédentes.
+- La démonstration doit se faire en moins de 10 minutes.
+- La rédaction de l'évaluation de l'itération ne devrait pas prendre plus d'une heure.
 
-Vous recevrez une rétroaction vers la fin de chaque itération, selon le processus itératif et évolutif. Notez que seulement l'évaluation (d) de la dernière itération comptera pour la note. De cette manière, on peut réduire les conséquences négatives des erreurs de planification et des difficultés avec la maîtrise des nouvelles technologies qui sont normales au début du projet.
+Vous recevrez une rétroaction vers la fin de chaque itération, selon le processus itératif et évolutif. Notez que seulement l'évaluation (d) de la dernière itération comptera pour la note de l'implémentation. De cette manière, on peut réduire les conséquences négatives des erreurs de planification et des difficultés avec la maîtrise des nouvelles technologies qui sont normales au début du projet.
 
-Le calcul de la note pour cette évaluation est le suivant :
+Le calcul de la note d'implémentation pour cette évaluation est le suivant :
 
 > ![d = (Sommation (Points) / NbPoints)](https://latex.codecogs.com/png.image?%5Cdpi%7B200%7D%20%5Cbg_white%20%5Cinline%20d=%5Cfrac%7B%5Csum%20Points%7D%7BNbPoints%7D)
 
@@ -152,25 +191,26 @@ Toutes les remises se font directement sur le répertoire Github de votre équip
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              | Démo / Rapport  |Plan d'itération section évaluation|
-| --------: | :---------------------------- | :-------------- |-----------------------------------|
-|         1 | Fin journée séance 3 du labo  | Début séance 6  | Fin journée séance 6 du labo      |     
-|         2 | Fin journée séance 7 du labo  | Début séance 9  | Fin journée séance 9 du labo      |
-|         3 | Fin journée séance 10 du labo | Début séance 12 | Fin journée séance 12 du labo     |
+| Itération | Plan d'itération              |Vérification conception<sup>2</sup> | Démo / Rapport  |Plan d'itération section évaluation <sup>1</sup>|
+| --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
+|         1 | Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
+|         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
+|         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
 
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
-**Note:** le Plan d'itération doit être actualisé après l'évaluation.
+**Note 1 :** le Plan d'itération doit être actualisé après l'évaluation.
+**Note 2:** 
 
 ### Processus de remises
 Toutes les remises se font directement dans github.  Vous devez mettre vos sources à jours dans la branche master, et ensuite vous générer un tag correspondant à votre remise.  Voir le tableau suivant pour savoir quel tag générer selon votre remise.
 
 Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
 
-| Itération | Plan d'itération  | Rapport           |Plan d'itération section évaluation|
-| --------: | :-----------------| :---------------- |-----------------------------------|
-|         1 | git tag plan1     | git tag rapport1  | git tag plan1evaluation           |     
-|         2 | git tag plan2     | git tag rapport2  | git tag plan2evaluatio            |
-|         3 | git tag plan3     | git tag rapport3  | git tag plan3evaluation           |
+| Itération | Plan d'itération  | Vérification conception | Rapport           |Plan d'itération section évaluation|
+| --------: | :-----------------| :---------------------- |:----------------- |:----------------------------------|
+|         1 | git tag plan1     | git tag rdcu1           | git tag rapport1  | git tag plan1evaluation           |     
+|         2 | git tag plan2     | git tag rdcu2           | git tag rapport2  | git tag plan2evaluatio            |
+|         3 | git tag plan3     | git tag rdcu3           | git tag rapport3  | git tag plan3evaluation           |
 
 
 ### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
@@ -201,6 +241,22 @@ Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale]
 * [Implémentation][grille-implementation]
 
 Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
+
+
+## Directive d'implémentation
+Voici quelques directive qui ont fait leurs preuves lorsque les étudiants les respectent.
+- Réaliser un diagramme de classe avant de débuter votre implémentation.
+- Débuter votre implémentation par la classe ayant le moins de couplage.
+- Utiliser TDD comme processus d'implémentation. 
+- Assurez vous d'avoir une très bonne couverture de test.
+- Terminer votre implémentation d'un cas d'utilisation par la classe contrôleur et ensuite par la classe route.
+- Assurez vous d'utiliser une classe de route pour chaque contrôleur pour maximiser la cohésion.
+- Utiliser github issus pour faire le suivie des tâches à réaliser. 
+  - Il faut que chaque membre de l'équipe puisse clairement identifier les tâches qu'il a à faire et ce en tout temps.  
+- Utiliser des outils pour mesurer les métriques de qualité de code et assurez vous que votre code est de bonne qualité.  
+  - Le plugin "Tech Debt Metrics" dans visual studio code
+  - le plugin "SonarLint" dans visual studio code
+
 
 ## Conclusion
 
@@ -239,8 +295,8 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 [projet-sgb]: https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts
 
 <!-- Gabarits -->
-[gabarit-rapport]: rapports/RAPPORT-iteration-i.md
-[gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
+[gabarit-rapport]: rapports/gabarit/RAPPORT-iteration-i.md
+[gabarit-plan-iteration]: rapports/gabarit/plan-iteration-gabarit.md
 
 <!-- Grilles de correction -->
 [grille-globale]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml

@@ -55,7 +55,6 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 ## Modèle du domaine (MDD)
 
 > Le MDD est cumulatif : vous devez y ajouter des éléments à chaque itération (ou corriger les erreurs), selon la portée (et votre meilleure compréhension du problème) visée par votre solution. Utilisez une légende dans le MDD pour indiquer la couleur de chaque itération afin de faire ressortir les changements (ce n'est pas toujours possible pour les associations et les attributs). Voir les stéréotypes personnalisés : <https://plantuml.com/fr/class-diagram> et [comment faire une légende avec couleurs en PlantUML](https://stackoverflow.com/questions/30999290/how-to-generate-a-legend-with-colors-in-plantuml).
-
 ## Diagramme de séquence système (DSS)
 
 > Un seul DSS sera choisi et corrigé par l'auxiliaire d'enseignement
@@ -64,17 +63,25 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 
 > Si vous avez choisi un cas d'utilisation nécessitant un contrat, il faut le mettre dans cette section.
 > Note: même s'il y a plusieurs contrats, un seul contrat sera choisi et corrigé par l'auxiliaire d'enseignement
+> Note: il n'est pas nécessaire de mettre les préconditions mais je vous suggère fortement des les ajouter dans votre rapport. 
 
 ## Réalisation de cas d'utilisation (RDCU)
 
 > Chaque cas d'utilisation nécessite une RDCU.
 > Note: une seule RDCU sera choisie et corrigée par l'auxiliaire d'enseignement
+> Suivez les directives d'implémentation dans le fichier README.md pour vous faciliter la tâche d'implémentation.
 
 ## Diagramme de classe logicielle (DCL)
 
 > Facultatif, mais fortement suggéré
 > Ce diagramme vous aidera à planifier l'ordre d'implémentation des classes.  Très utile lorsqu'on utilise TDD.
 
+### Diagramme de classe TPLANT
+- Générer un diagramme de classe avec l'outil TPLANT et commenter celui-ci par rapport à votre MDD.
+- https://www.npmjs.com/package/tplant
+  
+## Retour sur la correction du rapport précédent
+Démontrer avec des preuves à l'appuie que vous avez réglé les problèmes identifé dans le rapport de l'itération précédente.
 ## Vérification finale
 
 - [ ] Vous avez un seul MDD
