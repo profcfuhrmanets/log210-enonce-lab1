@@ -1,4 +1,4 @@
-# Plan d'itération 2 (exemple)
+# Plan d'itération 1 (exemple)
 
 > Note: Texte en bloc comme ceci indique des directives aux auteurs. Vous devez supprimer ces directives des plans soumis.
 
@@ -70,6 +70,26 @@ Les éléments de travail suivants seront abordés dans cette itération:
 | Participants       | **Coéquipiers** : Jérémie, Jacques-Éric, Pierre (Hélène avait une absence justifiée),<br> **auxiliaire d'enseignement** : Jonathan Mayhem |
 | État du projet     | 🟢 <!-- 🔴🟠🟢 *Rouge, Orange, ou Vert.* --> |
 
+### Questions d'évaluation
+Regardez votre diagramme TPLANT et répondez aux questions suivantes?
+1. Est-ce qu’il y a un décalage de représentation?
+  - Est-ce que tous les noms de classs ont un rapport avec le domaine?
+2. Est-ce que l’architecture en couche est respecté?
+   - Est-ce que les contrôleur GRASP sont bien identifié?
+   - Est ce que les paramètres des opérations systèmes sont tous de type primitif ou sont des objets de paramètres de type primitif?
+   - Est-ce que vous avez un fichier de route par contrôleur?
+3. Évaluer votre conception par rapport aux GRASP "forte cohésion" et "faible couplage"
+   - Avez vous des classes qui sont couplées avec "beaucoup" d'autres classes?
+   - Avez vous des classes qui ont beaucoup de responsabilités (d'opérations)?
+     - Faite surtout attention aux responsabilités que vous avez donné à vos contrôleurs.
+4. Y a t'il des problèmes de Code smell à identifier avec l'aide de TPLANT
+   1. Mysterious name relié au décalage des représentations ou pas
+      1. Identifier le renommage (réusinage) éventuel de classe et/ou méthodes
+   2. Large class (cohésion)
+      1. Proposer d'appliquer le réusinage Extract class / GRAPS fabrication pure 
+   3. Trop de paramètres (4+)
+      1. Proposer d'appliquer le réusinage Objet de paramètre
+   
 ### Évaluation par rapport aux objectifs
 
 > Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. *(on reprend les objectifs)*
@@ -106,6 +126,11 @@ Nous avons discuté avec plusieurs professeurs pour comprendre le flux de travai
 Selon les statistiques générées par `gitinspector` Pierre et Jérémie font 90 % de la programmation et les deux autres membres doivent contribuer plus.
 
 Nous devons trouver un autre moyen de faire les commits (peut-être avec des branches et PR), car il y avait trop de merges difficiles de la documentation.
+
+### Retrait d'un membre de l'équipe pour contribution non significative
+
+- C'est ici que vous mettez le nom de la personne ainsi que les raisons du retrait. Cette section doit nécessairement inclure une liste d'objectifs que cette personne doit respecter pour pouvoir s'assurer de faire partie de l'itération suivante. 
+
 
 ---
 

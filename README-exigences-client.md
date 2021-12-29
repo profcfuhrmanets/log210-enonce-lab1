@@ -24,6 +24,8 @@ Dans cette étude de cas, il est proposé de réaliser un système de gestion de
 
 Vous devez vous assurer d'implémenter une mécanique de gestion des états permettant de s'assurer que les opérations système sont appelées dans un ordre cohérent avec le cas d'utilisation. Toute séquence d'utilisation autre que la séquence normale devrait automatiquement générer une erreur.  Nous couvrirons cette mécanique lors du cours sur les diagrammes d'états.
 
+La majorité des cas d'utilisation ont une précondition d'authentification pour un enseignant ou un étudiant. La connexion d'un enseignant ou d'un étudiant s'accompagne de mécanismes d'authentification (récupération et gestion du token) et d'autorisation (permissions étudiants vs permissions enseignant), ce qui a pour but de sécuriser le logiciel et de permettre à plusieurs utilisateurs d'être connectés en même temps. Vous devez donc réaliser la mécanique d'authentification au plus tard durant la seconde itération.
+
 ### CU01a - Ajouter cours
 
 **Acteur principal:**  Enseignant
@@ -50,6 +52,9 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 &nbsp;&nbsp;&nbsp;3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.
+**Test supplémentaire**
+- Faire un test pour démontrer qu'un cours est associé à un enseignant
+- Faire un test pour démontrer que les étudiants sont associé au cours.
 
 ### CU01b - Récupérer cours
 
@@ -69,6 +74,9 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. Le système affiche la liste de ses cours.
 1. L'enseignant demande les détails d'un cours.
 1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
+
+**Test supplémentairess à réaliser**
+- Démontre que la liste de cours affiché correspond aux cours de l'enseignant
 
 ### CU01c - Retirer cours
 
@@ -92,6 +100,10 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 1. Le système demande une confirmation pour supprimer le cours.
 1. L'enseignant confirme.
 1. Le système supprime le cours et affiche la nouvelle liste de cours.
+
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que le cours a été détruit
+
 
 ---
 
@@ -125,6 +137,10 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que la question est associé au cours de l'enseignant
+
+
 ### CU02b - Récupérer question
 
 **Acteur principal:**  Enseignant
@@ -146,6 +162,8 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 *L'enseignant répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que le système ne retourne que les questions de l'enseignant.
 ### CU02c - Modifier question
 
 **Acteur principal:**  Enseignant
@@ -170,6 +188,8 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 &nbsp;&nbsp;&nbsp;3a. Le nom (modifié) de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
+**Test supplémentairess à réaliser**
+- Démonter qu'un enseignant ne peut pas modifier une question ne lui appartenant pas.
 
 ### CU02d - Supprimer question
 
@@ -192,6 +212,10 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 **Extensions (ou scénarios alternatifs):**
 
 &nbsp;&nbsp;&nbsp;2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
+
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer qu'il est impossible de détruire une question utilisé dans un questionnaire.
+
 
 ---
 
@@ -224,6 +248,9 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déja.
+- Démontre que le devoir est associé au cours.
 ### CU03b - Récupérer devoir
 
 **Acteur principal:**  Enseignant
@@ -256,6 +283,10 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;7b. Le système affiche les étudiants par ordre croissant de la note.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que les cours sont associé à cet enseignant.
+- Faire un test pour démontrer que les devoirs appartiennent à ce cours..
+
 ### CU03c - Modifier devoir
 
 **Acteur principal:**  Enseignant
@@ -279,6 +310,9 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 &nbsp;&nbsp;&nbsp;1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que c'est impossible de nommer un questionnaire avec un nom qui existe déja..
+
 ### CU03d - Supprimer devoir
 
 **Acteur principal:**  Enseignant
@@ -300,6 +334,8 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 **Extensions (ou scénarios alternatifs):**
 
 &nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
+**Test supplémentairess à réaliser**
+- Démonter qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
 
 ---
 
@@ -330,7 +366,13 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 **Extensions (ou scénarios alternatifs):**
 
-&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension “.note” pour associer la note au devoir corrigé. Un fichier “.note” par devoir (facultatif)
+&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension “.note” pour associer la note au devoir corrigé. Un fichier “.note” par devoir  ou une fichier note.txt pour tout les devoirs
+
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que les notes sont associé au devoir de l'étudiant.
+- Faire un test pour démontrer que la note à bien été transféré dans SGB
+- Faire un test pour démontrer que la mécanique de téléchargement est fonctionnelle.
+- Faire un test pour démontrer que la mécanique de téléversement est fonctionnelle.
 
 ---
 
@@ -366,6 +408,10 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 Sans objet.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déja.
+
+
 ### CU05b - Afficher questionnaire
 
 **Acteur principal:**  Enseignant
@@ -397,6 +443,9 @@ Sans objet.
 
 Sans objet.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démonter que le nombre de questionnaire correspond au nombre de questionnaires associé à l'enseignant.
+- Faire un test pour s'assurer que les étudiants ont répondu aux questionnaire sélectionné.
 ### CU05c - Modifier questionnaire
 
 **Acteur principal:**  Enseignant
@@ -425,6 +474,9 @@ Sans objet.
 
 &nbsp;&nbsp;&nbsp;4b. L'enseignant supprime une question du questionnaire.
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déja.
+
 ### CU05d - Supprimer questionnaire
 
 **Acteur principal:**  Enseignant
@@ -447,6 +499,9 @@ Sans objet.
 **Extensions (ou scénarios alternatifs):**
 
 &nbsp;&nbsp;&nbsp;1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
+
+**Test supplémentairess à réaliser**
+- Faire un test pour démonter qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant  à réalisé celui-ci.
 
 ---
 
@@ -483,6 +538,10 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 *L'enseignant répète les étapes 5 à 9 jusqu'à ce qu'il n'ait plus de questionnaires à corriger ou qu'il ne souhaite plus corriger.*
 
+**Test supplémentairess à réaliser**
+- Faire un test pour démonter que les questionnaires affichés appartiennent bien au cours.
+
+
 ---
 
 ### CU07 - Remettre devoir
@@ -509,6 +568,10 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 **Extensions (ou scénarios alternatifs):**
 
 &nbsp;&nbsp;&nbsp;3a. Un devoir ne peut être sélectionné si la date actuelle n'est pas à l'intérieur de la plage d'ouverture du devoir ou si celui-ci est inactif.
+
+**Test supplémentairess à réaliser**
+- Faire un test pour démonter qu'un étudiant ne peut sélectionner un devoir ne correspondant pas à la bonne plage horaire.
+- Faire un test pour démonter que les devoirs inactifs ne sont pas affiché.
 
 ---
 
@@ -544,6 +607,7 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 &nbsp;&nbsp;&nbsp;7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
 
+
 ## Spécifications supplémentaires (FURPS+)
 
 Rappel de l'acronyme FURPS+:
@@ -564,6 +628,8 @@ En dehors des cas d'utilisation (les fonctionnalités principales), il y a les e
 Toutes les erreurs doivent être journalisées en mémoire persistante.
 
 **Note:** Larman F30.3/A35.3 propose plusieurs patrons pour aider avec cette exigence.
+**Artéfacts à réaliser**
+- Document d'analyse et de conception
 
 #### F2 - Sécurité
 
@@ -572,6 +638,10 @@ Toute utilisation implique une authentification avec le Système d'authentificat
 Vous devez remplacer la mécanique d'authentification actuelle par une authentification par Intergiciel de type JWT (JSON Web Token)
 
 Référence: https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node
+
+**Artéfacts à réaliser**
+- Document d'analyse et de conception
+
 
 ### Aptitude à l'utilisation (Usability)
 
@@ -585,6 +655,8 @@ Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 - Les PUG du squelette intègrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
 - Une conception modulaire de vos PUG (layout) facilitera la réalisation de cette exigence.
 
+**Artéfacts à réaliser**
+- Copie d'écran des différents formats.
 ### Fiabilité (Reliability)
 
 #### R1 – Tolérer panne temporaire de SGB
@@ -601,6 +673,10 @@ Vous devez montrer que:
 - finalement, les notes générées se rendent à SGB une fois qu'il est redémarré
 
 **Note:** Larman propose une solution élégante avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
+
+**Artéfacts à réaliser**
+- Document d'analyse et de conception
+- Copie du fichier de persistance des information à sauvegarder
 
 ### Performance
 
@@ -624,22 +700,30 @@ Exemple:
 curl -w %{time_total} http://localhost:3200/api/v3/course/all
 0,002213 secondes
 ```
-
+**Artéfacts à réaliser**
+- Document d'analyse et de conception de la cache mémoire
+- Rapport des données sur la performance avant et après l'utilisation de la cache mémoire.
 ### Possibilités de prise en charge (Supportability)
 
 Ces exigences doivent être implémentées durant **au moins deux itérations** pour obtenir vos points.
 
-#### S1 - Contrainte de développement: environnement de test
+#### S1 - Contrainte de développement: environnement de  test (Obligatoire)
 
 Les décisionnaires de SGA insistent pour des technologies de test, qui, selon eux, fourniront à long terme la robustesse du code.
 
 **Note:** pour réaliser cette exigence, il faudra automatiser les tests de l'ensemble des opérations système de chaque cas d'utilisation et s'assurer que les contrats sont respectés. Les tests devront être séparés en suites pour chaque cas d'utilisation.
 
+La couverture de test est évaluée à chaque itération.  En haut de 95% de couverture de test vous avez 100%. En dessous de 95% on utilise la valeur de couverture pour calculer les points associés à l'itération.  Voir la grille de correction pour plus de détail.
+
 #### S2 - Contrainte de développement: environnement d'intégration continue
 
 Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
+Vous devez intégrer la réalisation des tests ainsi que la notifiation par courriel ou SMS de tous le membres de l'équipe lorsque les tests ne passe pas. Vous devez avoir une couverture de test de plus de 90% pour pouvoir réaliser cette exigence.
 
-**Note:** pour réaliser cette exigence il faudra utiliser travis-ci.org et GitHub action avec les badges, comme dans les squelettes.
+**Note:** pour réaliser cette exigence il faudra utiliser GitHub action avec les badges, comme dans les squelettes. 
+
+**Artéfacts à réaliser**
+- Le fichier github action correspondant à votre solution.
 
 #### S3 - Contrainte de développement: gestion sémantique de version
 
@@ -649,7 +733,11 @@ Les décisionnaires de SGA insistent pour une gestion sémantique de version pou
 
 #### S4 - Contrainte d'implémentation: banque de questions en format GIFT
 
-Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
+Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d’abord avoir une interface utilisateur pour ajouter une question(CU02a).
+
+L’entré du format GIFT doit être valider il faut donc implémenter CU02b Récupérer question pour montrer que cela fonctionne.
+
+Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.  Vous devez implémennter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse.  Voir un exemple: https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/master/tests/questions/TFTwoFeedback.gift
 
 **Note:** pour réaliser cette exigence vous pouvez utiliser [ce projet](https://github.com/fuhrmanator/GIFT-grammar-PEG.js).
 
@@ -662,6 +750,12 @@ SGB - Système externe de gestion des bordereaux
 GIFT - PEG grammar to support GIFT (quiz) format
 
 Tag - Catégorie non hiérarchique
+
+Cours SGB - La description générale d'un cours offert par l'université (sigle, titre, préalable)
+
+Groupe cours SGB - Les informations d'une « instance » d'un cours enseigné par un enseignant, à un horaire précis, dans un local précis, etc
+
+Cours SGA - Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant en charge d'un groupe cours SGB peut choisir de créer ou non un cours SGA.
 
 ## Modèle de données des questions Moodle
 
