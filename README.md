@@ -166,15 +166,15 @@ Toutes les remises se font directement sur le répertoire Github de votre équip
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              |Vérification conception<sup>2</sup> | Démo / Rapport  |Plan d'itération section évaluation<sup>1</sup>|
+| Itération | Plan d'itération              |Vérification conception<sup>1</sup> | Démo / Rapport  |Plan d'itération section évaluation<sup>2</sup>|
 | --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
 |         1 |Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
 |         2 |Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
 |         3 |Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
 
 <!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
-**Note 1:** le Plan d'itération doit être actualisé après l'évaluation.  
-**Note 2:** Un diagramme de classe généré à partir de votre code source est inclus dans votre rapport.
+**Note 1:** Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
+**Note 2:** le Plan d'itération doit être actualisé après l'évaluation.  
 
 ### Processus de remises
 
