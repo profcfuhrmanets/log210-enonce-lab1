@@ -5,42 +5,42 @@
 
 Veuillez éditer ce fichier afin de fournir les informations nécessaires à votre évaluation.
 
-Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce projet.
+Assurez-vous d'utiliser toujours le même compte Github pour accéder à ce projet.
 
 ## Membre 1
 
 - <nomComplet1>Saisissez votre nom</nomComplet1>
 - <courriel1>Saisissez votre courriel</courriel1>
 - <codeMoodle1>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle1>
-- <githubAccount1>Saisissez l'identifiant de votre compte GitHub</githubAccount1>
+- <githubAccount1>Saisissez l'identifiant de votre compte Github</githubAccount1>
 
 ## Membre 2
 
 - <nomComplet2>Saisissez votre nom</nomComplet2>
 - <courriel2>Saisissez votre courriel</courriel2>
 - <codeMoodle2>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle2>
-- <githubAccount2>Saisissez l'identifiant de votre compte GitHub</githubAccount2>
+- <githubAccount2>Saisissez l'identifiant de votre compte Github</githubAccount2>
 
 ## Membre 3
 
 - <nomComplet3>Saisissez votre nom</nomComplet3>
 - <courriel3>Saisissez votre courriel</courriel3>
 - <codeMoodle3>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle3>
-- <githubAccount3>Saisissez l'identifiant de votre compte GitHub</githubAccount3>
+- <githubAccount3>Saisissez l'identifiant de votre compte Github</githubAccount3>
 
 ## Membre 4
 
 - <nomComplet4>Saisissez votre nom</nomComplet4>
 - <courriel4>Saisissez votre courriel</courriel4>
 - <codeMoodle4>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle4>
-- <githubAccount4>Saisissez l'identifiant de votre compte GitHub</githubAccount4>
+- <githubAccount4>Saisissez l'identifiant de votre compte Github</githubAccount4>
 
 ## Membre 5
 
 - <nomComplet5>Saisissez votre nom</nomComplet5>
 - <courriel5>Saisissez votre courriel</courriel5>
 - <codeMoodle5>Saisissez votre code Moodle (code universel) obtenu à partir de SIGNETS</codeMoodle5>
-- <githubAccount5>Saisissez l'identifiant de votre compte GitHub</githubAccount5>
+- <githubAccount5>Saisissez l'identifiant de votre compte Github</githubAccount5>
 
 <!-- Enlever les sections membres non utilisées -->
 
@@ -63,7 +63,7 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 
 > Si vous avez choisi un cas d'utilisation nécessitant un contrat, il faut le mettre dans cette section.
 > Note: même s'il y a plusieurs contrats, un seul contrat sera choisi et corrigé par l'auxiliaire d'enseignement
-> Note: il n'est pas nécessaire de mettre les préconditions mais je vous suggère fortement des les ajouter dans votre rapport. 
+> Note: il n'est pas nécessaire de mettre les préconditions mais je vous suggère fortement de les ajouter dans votre rapport. 
 
 ## Réalisation de cas d'utilisation (RDCU)
 
@@ -81,7 +81,7 @@ Assurez-vous d'utiliser toujours le même compte GitHub pour accéder à ce proj
 - https://www.npmjs.com/package/tplant
   
 ## Retour sur la correction du rapport précédent
-Démontrer avec des preuves à l'appuie que vous avez réglé les problèmes identifé dans le rapport de l'itération précédente.
+Démontrer avec des preuves à l'appui que vous avez réglé les problèmes identifiés dans le rapport de l'itération précédente.
 ## Vérification finale
 
 - [ ] Vous avez un seul MDD
