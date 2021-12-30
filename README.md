@@ -1,6 +1,6 @@
 # Système de gestion de l'apprentissage
 
-Version: Hiver 2022 (1.0.0)  
+Version: Hiver 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
@@ -32,10 +32,10 @@ En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, d
 
 > Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
 
-Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
+Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
 
-* Cadre d'application d'interface utilisateur: Vue.js, React, Angular, etc.
-* Base de données: SQL, NoSQL, etc.
+* Cadre d'application d'interface utilisateur : Vue.js, React, Angular, etc.
+* Base de données : SQL, NoSQL, etc.
 
 ### SGB
 
@@ -162,30 +162,32 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 ### Dates clés et remises
 
-Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale ("main" ou "master"). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé "iteration-i", où i est le numéro de l'itération (p. ex.: iteration-1). Assurez-vous que votre rapport est au format PDF.
+Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale («main» ou «master»). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé «iteration-i», où i est le numéro de l'itération (p. ex. iteration-1). Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              |Vérification conception<sup>1</sup> | Démo / Rapport  |Plan d'itération section évaluation<sup>2</sup>|
+| Itération | Plan d'itération              |Vérification conception<sup>1</sup> | Démo/Rapport  |Plan d'itération section évaluation<sup>2</sup>|
 | --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
 |         1 |Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
 |         2 |Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
 |         3 |Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
 
-<!-- Ce point est essentiel pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
 **Note 1:** Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
+<!-- L'actualisation du plan d'itération (évaluation) est essentielle pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
 **Note 2:** le Plan d'itération doit être actualisé après l'évaluation.  
 
-### Processus de remises
+### Processus de remise
 
-Toutes les remises se font directement dans GitHub.  Vous devez mettre vos sources à jour dans la branche master, et ensuite vous générez un tag correspondant à votre remise.  Voir le tableau suivant pour savoir quel tag générer selon votre remise.
+Toutes les remises se font directement dans GitHub.
+Vous devez mettre vos sources à jour dans la branche master (main), et ensuite vous générez un tag correspondant à votre remise.
+Voir le tableau suivant pour savoir quel tag générer selon votre remise.
 
 Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
 
-| Itération |Plan d'itération  | Vérification conception |Rapport           |Plan d'itération section évaluation|
-| --------: | :-----------------| :---------------------- |:----------------- |:----------------------------------|
-|         1 |git tag plan1     | git tag rdcu1           | git tag rapport1  | git tag plan1evaluation           |     
-|         2 |git tag plan2     | git tag rdcu2           | git tag rapport2  | git tag plan2evaluatio            |
+| Itération |Plan d'itération  | Vérification conception | Rapport           |Plan d'itération section évaluation|
+| --------: | :----------------| :---------------------- |:----------------- |:----------------------------------|
+|         1 |git tag plan1     | git tag rdcu1           | git tag rapport1  | git tag plan1evaluation           |
+|         2 |git tag plan2     | git tag rdcu2           | git tag rapport2  | git tag plan2evaluation           |
 |         3 |git tag plan3     | git tag rdcu3           | git tag rapport3  | git tag plan3evaluation           |
 
 ### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
@@ -196,7 +198,7 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
 
-### Pour planifier vos itérations
+#### Pour planifier vos itérations
 
 * [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
 
@@ -217,21 +219,25 @@ Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale]
 
 Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
 
-## Directives d'implémentation
+## Directives d'implémentation (recommandations)
 
 Voici quelques directives qui ont fait leurs preuves lorsque les étudiants les respectent.
+Voir les [notes de cours][NotesDeCours] pour plus de détails.
+
+> Il n'est pas nécessaire d'installer chaque extension mentionnée ici.
 
 - Réalisez un diagramme de classe avant de commencer votre implémentation.
-- Débutez votre implémentation par la classe ayant le moins de couplage.
-- Utilisez TDD comme processus d'implémentation. 
-- Assurez-vous d'avoir une très bonne couverture de test.
+- Débutez votre implémentation par la classe ayant le moins de dépendances vers d'autres classes.
+- Utilisez TDD comme processus d'implémentation.
+- Assurez-vous d'avoir une très bonne couverture de test (mais une couverture de 100 % ne veut pas dire qu'il n'y a pas de bogues!).
 - Terminez votre implémentation d'un cas d'utilisation par la classe contrôleur et ensuite par la classe route.
 - Assurez-vous d'utiliser une classe de route pour chaque contrôleur pour maximiser la cohésion.
-- Utilisez les billets (*issues*) de GitHub pour faire le suivie des tâches à réaliser. 
-  - Il faut que chaque membre de l'équipe puisse clairement identifier les tâches qu'il a à faire, et ce en tout temps.  
-- Utilisez des outils pour mesurer les métriques de qualité de code et assurez-vous que votre code est de bonne qualité.  
-  - l'extension "Tech Debt Metrics" dans Visual Studio Code
-  - l'extension "SonarLint" dans Visual Studio Code
+- Utilisez les billets (*issues*) de GitHub pour faire le suivie des tâches à réaliser.
+  - Il faut que chaque membre de l'équipe puisse identifier les tâches qu'il a à faire, et ce en tout temps.  
+  - L'extension «GitHub Pull Requests and Issues» dans Visual Studio Code peut faciliter le travail.
+- Utilisez des outils pour mesurer la qualité du code.
+  - L'extension «Tech Debt Metrics» dans Visual Studio Code
+  - L'extension «SonarLint» dans Visual Studio Code
 
 ## Conclusion
 
@@ -249,7 +255,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 ### Théorie
 
-- [Notes de cours de LOG210](https://tinyurl.com/log210ndc)
+- [Notes de cours de LOG210][NotesDeCours]
 
 ### Projet
 
@@ -270,6 +276,9 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 - [Implémentation][grille-implementation]
 
 <!-- Définition de tous les liens multiréférencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
+<!-- Théorie -->
+[NotesDeCours]: https://tinyurl.com/log210ndc
+
 <!-- Projet -->
 [projet-exigences]: README-exigences-client.md
 [projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md
