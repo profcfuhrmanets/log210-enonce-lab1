@@ -10,15 +10,23 @@ Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issu
 
 Dans cette étude de cas, il est proposé de réaliser un système de gestion de l'apprentissage (SGA) qui ressemble à Moodle utilisé dans une université. La réalisation est principalement l'application dorsale (back-end), mais il faudra avoir une application frontale (front-end) minimaliste, p. ex. des pages web statiques (ou avec un peu de JavaScript), pour démontrer les fonctionnalités.
 
-## Survol des fonctionnalités
-
-![Cas d'utilisations SGA](./README-exigences-client/DiagCasUtilisation.svg)
-
 ## Parties prenantes et intérêts
 
 - **Enseignant.e :** Une personne employée par l'université et qui est responsable d'enseigner un groupe-cours offert par l'université. Si elle décide d'utiliser le SGA pour son groupe-cours (c'est facultatif, il peut y avoir des groupes-cours où SGA n'est pas utilisé), alors elle veut un moyen de gérer toutes les facettes de l'application d'apprentissage.
 
 - **Étudiant.e :** Une personne inscrite à l'université. Elle veut un moyen de remettre des devoirs et de réaliser des jeux-questionnaires pour les groupes-cours dans lesquels elle est inscrite.
+
+## Survol des fonctionnalités
+
+![Cas d'utilisations SGA](./README-exigences-client/DiagCasUtilisation.svg)
+
+## Importance des fonctionnalités
+
+La vraie valeur ajoutée par SGA est dans les cas d'utilisation les plus haut dans le graphe suivant. Pour réussir ces fonctionnalités importantes, il y a des fonctionnalités préalables. 
+
+> Note: pour avoir des points pour une fonctionnalité à la fin du projet, les CU préalables doivent fonctionner.
+
+![Importance et dépendance des cas d'utilisation](./README-exigences-client/DependanceCasUtilisations.svg)
 
 ## Cas d'utilisation
 
@@ -26,7 +34,7 @@ Vous devez vous assurer d'implémenter une mécanique de gestion des états perm
 
 La majorité des cas d'utilisation ont une précondition d'authentification pour un enseignant ou un étudiant. La connexion d'un enseignant ou d'un étudiant s'accompagne de mécanismes d'authentification (récupération et gestion du token) et d'autorisation (permissions étudiant vs permissions enseignant), ce qui a pour but de sécuriser le logiciel et de permettre à plusieurs utilisateurs d'être connectés en même temps. Vous devez donc réaliser la mécanique d'authentification au plus tard durant la seconde itération.
 
-### CU01a  ajouter cours
+### CU01a Ajouter cours
 
 **Acteur principal :**  Enseignant
 
@@ -62,7 +70,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 3. Démontrer qu'un deuxième cours peut être ajouté est qu'il est associé à l'enseignant.
 4. Démontrer que les bons étudiants sont associés aux cours.
 
-### CU01b  récupérer cours
+### CU01b Récupérer cours
 
 **Acteur principal :**  Enseignant
 
@@ -85,7 +93,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer que la liste de cours affichée correspond aux cours de l'enseignant
 
-### CU01c  retirer cours
+### CU01c Retirer cours
 
 **Acteur principal :**  Enseignant
 
@@ -118,7 +126,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ---
 
-### CU02a  ajouter question
+### CU02a Ajouter question
 
 **Acteur principal :**  Enseignant
 
@@ -157,7 +165,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 2. Démontrer que la question n'est pas associée à un autre cours.
 3. Faire un test pour créer une deuxième question associée au cours de l'enseignant.
 
-### CU02b - Récupérer question
+### CU02b Récupérer question
 
 **Acteur principal :**  Enseignant
 
@@ -183,7 +191,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer que le système retourne toutes les questions (plusieurs) du cours de l'enseignant
 1. Démontrer que le système ne retourne pas des questions (qui doivent exister) dans d'autres cours
 
-### CU02c - Modifier question
+### CU02c Modifier question
 
 **Acteur principal :**  Enseignant
 
@@ -284,7 +292,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer qu'un deuxième devoir peut être créé est associé au cours.
 1. Démontrer que c'est impossible de créer un devoir avec un nom qui existe déjà.
 
-### CU03b - Récupérer devoir
+### CU03b Récupérer devoir
 
 **Acteur principal :**  Enseignant
 
@@ -460,7 +468,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 - Démontrer avec plusieurs enseignants et plusieurs questionnaires que l'affichage du nombre de questionnaires est bon.
 - Démontrer que le nombre de fois qu'une question a été utilisée est calculé correctement.
 
-### CU05b - Afficher questionnaire
+### CU05b Afficher questionnaire
 
 **Acteur principal :**  Enseignant
 
@@ -497,7 +505,7 @@ Sans objet.
 <!-- 1. Faire un test pour s'assurer que les étudiants ont répondu aux questionnaire sélectionné. [C.Fuhrman je ne comprends pas] -->
 <!-- 1. Démontrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique. [cpf : est-ce que ça fait partie du CU?? -->
 
-### CU05c - Modifier questionnaire
+### CU05c Modifier questionnaire
 
 **Acteur principal :**  Enseignant
 
