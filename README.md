@@ -221,6 +221,7 @@ Voici quelques directives qui ont fait leurs preuves lorsque les étudiants les 
 - Débuter votre implémentation par la classe ayant le moins de couplage.
 - Utiliser TDD comme processus d’implémentation. 
 - Assurez-vous d’avoir une très bonne couverture de test.
+  - Nous avons créé une class SgbMock dans le code source d'implémentation qui permet de faire un Mock du serveur externe SGB. Vos tests devraient donc être indépendants du système externe.
 - Terminer votre implémentation d’un cas d’utilisation par la classe contrôleur et ensuite par la classe route.
 - Assurez-vous d’utiliser une classe de route pour chaque contrôleur pour maximiser la cohésion.
 - Utiliser Github issu pour faire le suivie des tâches à réaliser. 
