@@ -190,7 +190,7 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 ### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
 
-À la deuxième semaine de l'itération 1, vous devrez présenter les artéfacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
+À la deuxième semaine de l'itération 1, vous devrez présenter les artefacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
 ## Plan d'itération
 
@@ -210,10 +210,10 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale] Google :
 
-* [Pointage de tous les artéfacts] [grille-artefacts]
-* [Plan d'itération] [grille-plan-iteration]
-* [Rapport] [grille-rapport]
-* [Implémentation] [grille-implementation]
+* [Pointage de tous les artéfacts][grille-artefacts]
+* [Plan d'itération][grille-plan-iteration]
+* [Rapport][grille-rapport]
+* [Implémentation][grille-implementation]
 
 Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
 
@@ -244,20 +244,26 @@ Prenez note que nous sommes ouverts à toutes suggestions permettant d'apporter 
 Merci de votre participation et bon laboratoire.
 
 ## Accès rapides
+
 Ici vous trouverez des liens rapides vers les documents et éléments importants de l'énoncé.
-##### Théorie
+
+### Théorie
+
 - [Notes de cours de LOG210](https://tinyurl.com/log210ndc)
 
-##### Projet
+### Projet
+
 - [Document d'exigences du client][projet-exigences]
 - [Squelette de démarrage du projet][projet-squelette]
 - [Code source de SGB][projet-sgb]
 
-##### Gabarits
+### Gabarits
+
 - [Gabarit de plan d'itération][gabarit-plan-iteration]
 - [Gabarit de rapport][gabarit-rapport]
 
-##### Grilles de correction
+### Grilles de correction
+
 - [Pointage de tous les artéfacts][grille-artefacts]
 - [Plan d'itération][grille-plan-iteration]
 - [Rapport][grille-rapport]
