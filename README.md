@@ -276,8 +276,8 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 [projet-sgb]: https://github.com/yvanross/log210-systeme-gestion-bordereau-node-express-ts
 
 <!-- Gabarits -->
-[gabarit-rapport]: rapports/gabarit/RAPPORT-iteration-i.md
-[gabarit-plan-iteration]: rapports/gabarit/plan-iteration-gabarit.md
+[gabarit-rapport]: rapports/RAPPORT-iteration-i.md
+[gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
 
 <!-- Grille de correction -->
 [grille-globale]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml
