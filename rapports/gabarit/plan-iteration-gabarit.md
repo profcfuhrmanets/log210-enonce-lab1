@@ -22,7 +22,7 @@
 
 ## Affectations d'éléments de travail
 
-> Cette partie fait référence aux éléments de travail à compléter dans cette itération. C'est pour vous aider à répartir le travail dans l'équipe. Vous pouvez créer des tâches dans un autre logiciel (GitHub) pour cette partie si vous voulez.
+> Cette partie fait référence aux éléments de travail à compléter dans cette itération. C'est pour vous aider à répartir le travail dans l'équipe. Vous pouvez créer des tâches dans un autre logiciel (Github) pour cette partie si vous voulez.
 
 Les éléments de travail suivants seront abordés dans cette itération:
 
@@ -73,16 +73,16 @@ Les éléments de travail suivants seront abordés dans cette itération:
 ### Questions d'évaluation
 Regardez votre diagramme TPLANT et répondez aux questions suivantes?
 1. Est-ce qu’il y a un décalage de représentation?
-  - Est-ce que tous les noms de classs ont un rapport avec le domaine?
-2. Est-ce que l’architecture en couche est respecté?
-   - Est-ce que les contrôleur GRASP sont bien identifié?
-   - Est ce que les paramètres des opérations systèmes sont tous de type primitif ou sont des objets de paramètres de type primitif?
+  - Est-ce que tous les noms de classe ont un rapport avec le domaine?
+2. Est-ce que l’architecture en couche est respectée?
+   - Est-ce que les contrôleurs GRASP sont bien identifiés?
+   - Est-ce que les paramètres des opérations système sont tous de type primitif ou sont des objets de paramètres de type primitif?
    - Est-ce que vous avez un fichier de route par contrôleur?
 3. Évaluer votre conception par rapport aux GRASP "forte cohésion" et "faible couplage"
-   - Avez vous des classes qui sont couplées avec "beaucoup" d'autres classes?
-   - Avez vous des classes qui ont beaucoup de responsabilités (d'opérations)?
-     - Faite surtout attention aux responsabilités que vous avez donné à vos contrôleurs.
-4. Y a t'il des problèmes de Code smell à identifier avec l'aide de TPLANT
+   - Avez-vous des classes qui sont couplées avec "beaucoup" d'autres classes?
+   - Avez-vous des classes qui ont beaucoup de responsabilités (d'opérations)?
+     - Faite surtout attention aux responsabilités que vous avez données à vos contrôleurs.
+4. Y a-t-il des problèmes de Code smell à identifier avec l'aide de TPLANT
    1. Mysterious name relié au décalage des représentations ou pas
       1. Identifier le renommage (réusinage) éventuel de classe et/ou méthodes
    2. Large class (cohésion)
@@ -109,7 +109,7 @@ Tous les éléments ont été complétés, mais il faut étoffer les tests du CU
 
 ### Évaluation par rapport aux résultats selon les critères d'évaluation
 
-> Documentez si vous avez satisfait les critères d'évaluation précisés dans le plan d'itération. Cela pourrait inclure des informations telles que «&nbsp;Démo pour le département X a été bien accueilli, avec quelques préoccupations soulevées autour de la convivialité&nbsp;», ou «&nbsp;495 cas de tests ont été automatisés avec un taux de réussite de 98&nbsp;%. 9 cas de test ont été reportés parce que les éléments de travail correspondants ont été reportés.&nbsp;»
+> Documentez si vous avez satisfait les critères d'évaluation précisés dans le plan d'itération. Cela pourrait inclure des informations telles que «&nbsp;Démo pour le département X a été bien accueilli, avec quelques préoccupations soulevées autour de la convivialité&nbsp;», ou, «&nbsp;495 cas de tests ont été automatisés avec un taux de réussite de 98&nbsp;%. 9 cas de test ont été reportés parce que les éléments de travail correspondants ont été reportés.&nbsp;»
 
 La solution a répondu à tous les critères, mais attention: il faut rajouter des cas de tests.
 
@@ -123,7 +123,7 @@ Nous avons discuté avec plusieurs professeurs pour comprendre le flux de travai
 
 > Évaluez la contribution de chaque membre de l’équipe au projet durant l’itération. Pour vous aider, utilisez gitinspector (voir les notes du cours). Toutefois, tenez aussi compte des éléments qui ne peuvent être évalués par l’outil (apprentissage, connaissances préalables, etc.)
 
-Selon les statistiques générées par `gitinspector` Pierre et Jérémie font 90 % de la programmation et les deux autres membres doivent contribuer plus.
+Selon les statistiques générées par `gitinspector` Pierre et Jérémie font 90 % de la programmation et les deux autres membres doivent contribuer plus. Voir le script contribution.sh dans le répertoire scripts du projet.
 
 Nous devons trouver un autre moyen de faire les commits (peut-être avec des branches et PR), car il y avait trop de merges difficiles de la documentation.
 
