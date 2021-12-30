@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version: Hiver 2022 (1.0.0)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Hiver 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md] (./README.md)
@@ -108,7 +108,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 7. L'enseignant confirme.
 8. Le système supprime le cours et affiche la nouvelle liste de cours.
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
@@ -120,7 +120,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ### CU02a  ajouter question
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -159,7 +159,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ### CU02b - Récupérer question
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -178,7 +178,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 *L'enseignant répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 1. Démontrer que le système retourne toutes les questions (plusieurs) du cours de l'enseignant
 1. Démontrer que le système ne retourne pas des questions (qui doivent exister) dans d'autres cours
@@ -207,7 +207,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 &nbsp; &nbsp; &nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
@@ -286,7 +286,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ### CU03b - Récupérer devoir
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -353,7 +353,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ### CU03d  supprimer devoir
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -373,10 +373,10 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 &nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 - Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
-<!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf: comment faire un test comme ça?] -->
+<!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf : comment faire un test comme ça?] -->
 
 ---
 
@@ -409,9 +409,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 &nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension “.note” pour associer la note au devoir corrigé. Un fichier “.note” par devoir ou un fichier note.txt pour tous les devoirs
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
-<!-- 1. démontrer qu'on ne peut pas corriger un devoir n'appartenant pas au cours. [cpf: comment faire cela si on n'y a pas accès?] -->
+<!-- 1. démontrer qu'on ne peut pas corriger un devoir n'appartenant pas au cours. [cpf : comment faire cela si on n'y a pas accès?] -->
 1. Démontrer que les notes sont associées au devoir de l'étudiant.
 1. Démontrer que la note a bien été transférée dans SGB.
 1. Démontrer que la mécanique de téléchargement est fonctionnelle.
@@ -451,7 +451,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 Sans objet.
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
@@ -491,11 +491,11 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 Sans objet.
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 1. Démontrer que le nombre de questionnaires affichés correspond au nombre de questionnaires associés à l'enseignant.
 <!-- 1. Faire un test pour s'assurer que les étudiants ont répondu aux questionnaire sélectionné. [C.Fuhrman je ne comprends pas] -->
-<!-- 1. Démontrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique. [cpf: est-ce que ça fait partie du CU?? -->
+<!-- 1. Démontrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique. [cpf : est-ce que ça fait partie du CU?? -->
 
 ### CU05c - Modifier questionnaire
 
@@ -533,12 +533,12 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer qu'une question peut être dissociée d'un questionnaire existant.
 1. Démontrer que la description et l'état d'un questionnaire peuvent être modifiés.
 1. Démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.
-<!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf: comment est-ce possible?] -->
+<!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
 <!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
 
 ### CU05d  supprimer questionnaire
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -560,12 +560,12 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 &nbsp; &nbsp; &nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
 
-**Tests supplémentaires à réaliser:**
+**Tests supplémentaires à réaliser :**
 
 1. Démontrer pour au moins deux questionnaires distincts qu'il est possible de supprimer un questionnaire d'un cours.
 1. Démontrer que les questions associés à un questionnaire avant sa suppression existent encore.
 1. Démontrer qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant a réalisé celui-ci.
-<!-- 1. démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf: impossibe de faire un tel test?] -->
+<!-- 1. démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
 
 ---
 
@@ -573,9 +573,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doivent être corrigées par un enseignant.
 
-Note: il se peut qu'un enseignant ne corrige pas tous les questionnaires de son cours, mais ce cas d'utilisation fait l'hypothèse qu'il termine la correction d'au moins un questionnaire. Certains systèmes permettent à l'enseignant de reprendre plus tard une correction d'un questionnaire partiellement corrigé, mais cette fonctionnalité complique le cas d'utilisation et les tests).
+Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de son cours, mais ce cas d'utilisation fait l'hypothèse qu'il termine la correction d'au moins un questionnaire. Certains systèmes permettent à l'enseignant de reprendre plus tard une correction d'un questionnaire partiellement corrigé, mais cette fonctionnalité complique le cas d'utilisation et les tests).
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -694,7 +694,7 @@ Rappel de l'acronyme FURPS+ :
 - **U**sability (Aptitude à l'utilisation) : L'interface humain-machine est-elle conviviale? Combien de clics pour réaliser chaque cas d'utilisation?
 - **R**eliability (Fiabilité) : Définir ce qui se passe lors d'une panne de système externe? Reprise?
 - **P**erformance : Combien d'utilisateurs en même temps?
-- **S**upportability (Possibilités de prise en charge): Rajout facile de nouveaux types de questions?
+- **S**upportability (Possibilités de prise en charge) : Rajout facile de nouveaux types de questions?
 - **+** le reste… Licences du code source? Contraintes avec l'utilisation de SGB (système externe)? OpenSource? Politiques de confidentialité?
 
 ### Fonctionnalités
