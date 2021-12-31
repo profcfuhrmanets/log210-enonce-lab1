@@ -107,6 +107,7 @@ L'objectif de cette partie et de montrer que l'application est conforme aux prin
         2. appeler la route appropriée
         3. vérifier son code HTTP
         4. vérifier chacun des champs de la réponse
+  1. des **tests supplémentaires** selon le cas d'utilisation. Le test doit avoir un nom correspondant à son contexte, p. ex. `CU02d-t1` pour le premier test du cas d'utilisation **CU02d**.
 
 ## Processus d'évaluation des laboratoires
 
