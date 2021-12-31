@@ -861,7 +861,7 @@ Cours (SGA)
 > Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA. Synonymes: Espace-cours, cours sur SGA (Moodle)
 
 GIFT  
-> «General Import Format Template» 
+> [«General Import Format Template»](https://en.wikipedia.org/wiki/GIFT_(file_format)) - format textuel pour spécifier des questions et questionnaires.
 
 PEG  
 > [«Parsing Expression Grammaire»](https://fr.wikipedia.org/wiki/Parser_packrat)
