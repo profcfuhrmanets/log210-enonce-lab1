@@ -124,7 +124,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer que le cours a été détruit
 1. Démontrer que d'autres cours existent encore
-- Le cas échéant, démontrer que les éléments composants du cours (devoirs, questionnaires, etc.) ont aussi été détruits.
+1. Le cas échéant, démontrer que les éléments composants du cours (devoirs, questionnaires, etc.) ont aussi été détruits
 
 ---
 
@@ -281,7 +281,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 5a. La date de début est après la date de fin.
+&nbsp;&nbsp;&nbsp;5a. La date de début est après la date de fin.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
@@ -385,6 +385,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Tests supplémentaires à réaliser :**
 
+1. Démontrer pour au moins deux devoirs distincts qu'il est possible de supprimer un devoir et qu'il n'est plus associé au cours.
 1. Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
 <!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf : comment faire un test comme ça?] -->
 
@@ -409,23 +410,24 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Le système affiche les cours actifs de l'enseignant ainsi que le nombre de devoirs à corriger pour chaque cours
 1. L'enseignant sélectionne un cours
 1. Le système affiche tous les devoirs à corriger pour le cours.
-1. L'enseignant télécharge (« download ») le devoir de l'étudiant et le corrige.
-1. L'enseignant téléverse (« upload ») la version corrigée du devoir.
-1. L'enseignant indique la note du devoir.
+2. L'enseignant télécharge (« download ») un devoir remis par un étudiant et le corrige.
+3. L'enseignant téléverse (« upload ») la version corrigée du devoir.
+4. L'enseignant indique la note du devoir.
 
-*L'enseignant répète les étapes 5 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger.*
+*L'enseignant répète les étapes 5 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger ou qu'il ne souhaite plus corriger.*
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension “.note” pour associer la note au devoir corrigé. Un fichier “.note” par devoir ou un fichier note.txt pour tous les devoirs
+&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension `.note` pour associer la note au devoir corrigé. Un fichier `.note` par devoir ou un fichier `note.txt` pour tous les devoirs
 
 **Tests supplémentaires à réaliser :**
 
 <!-- 1. démontrer qu'on ne peut pas corriger un devoir n'appartenant pas au cours. [cpf : comment faire cela si on n'y a pas accès?] -->
 1. Démontrer que les notes sont associées au devoir de l'étudiant.
 1. Démontrer que la note a bien été transférée dans SGB.
-1. Démontrer que la mécanique de téléchargement est fonctionnelle.
-1. Démontrer que la mécanique de téléversement est fonctionnelle.
+2. Démontrer que le nombre de devoirs (remis) à corriger évolue après une correction.
+3. Démontrer que la mécanique de téléchargement est fonctionnelle.
+4. Démontrer que la mécanique de téléversement (correction en lot) est fonctionnelle.
 
 ---
 
@@ -529,23 +531,23 @@ Sans objet.
 1. L'enseignant commence la modification d'un questionnaire
 1. Le système affiche la liste de questions associées au questionnaire
 1. L'enseignant modifie la description et/ou l'état du questionnaire
-1. L'enseignant modifie les questions associées au questionnaire
+1. L'enseignant associe au questionnaire une question de la banque de questions
 1. Le système confirme la modification du questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;3a. 4a. L'enseignant associe au questionnaire une question de la banque de questions .
-
-&nbsp;&nbsp;&nbsp;4b. L'enseignant dissocie une question du questionnaire.
+&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une question du questionnaire  
+&nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
 
 **Tests supplémentaires à réaliser :**
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
-1. Démontrer qu'une question peut être associée à un questionnaire existant.
-1. Démontrer qu'une question peut être dissociée d'un questionnaire existant.
 1. Démontrer que la description et l'état d'un questionnaire peuvent être modifiés.
 1. Démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.
+1. Démontrer qu'une question peut être associée à un questionnaire existant.
+1. Démontrer qu'une question peut être dissociée d'un questionnaire existant.
+1. Démontrer que l'ordre des questions d'un questionnaire peut être modifié.
 <!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
 <!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
 
