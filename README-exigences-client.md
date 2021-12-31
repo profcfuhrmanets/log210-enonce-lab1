@@ -815,10 +815,10 @@ La couverture de test est évaluée à chaque itération. Voir la grille de corr
 
 #### S2 Contrainte de développement : environnement d'intégration continue
 
-Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec Github.
+Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
 Vous devez intégrer la réalisation des tests ainsi que la notification par courriel ou SMS de tout le membre de l'équipe lorsque les tests ne passent pas. Vous devez avoir une couverture de test de plus de 90 % pour pouvoir réaliser cette exigence.
 
-**Note :** pour réaliser cette exigence il faudra utiliser Github action avec les badges, comme dans les squelettes. 
+**Note :** pour réaliser cette exigence il faudra utiliser GitHub action avec les badges, comme dans les squelettes. 
 
  **Artefacts à réaliser :**
 
