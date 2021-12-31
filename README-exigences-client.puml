@@ -36,17 +36,17 @@ signets -u- cq
 @startuml DependanceCasUtilisations
 digraph foo {
     label="Dépendences (préalables) des cas d'utilisation"
-    labelloc=t fontsize=24 fontname=helvetica
-    node [style=filled; fillcolor=lightblue; fontname=helvetica]
+    labelloc=t fontsize=24 fontname="Arial"
+    node [style=filled; fillcolor=lightblue; fontname="Arial"; fontsize=12]
     CU01 [label="CU01 Gérer cours"]
     CU02 [label="CU02 Gérer questions"]
     CU03 [label="CU03 Gérer devoirs"]
-    CU04 [label="CU04 Corriger devoir"]
+    CU04 [label=<<B>*CU04 Corriger devoir</B>>]
     CU05 [label="CU05 Gérer questionnaires"]
     CU06 [label="CU06 Corriger questionnaire"]
     node [style=filled; fillcolor=lightgreen]
     CU07 [label="CU07 Remettre devoir"]
-    CU08 [label="CU08 Passer questionnaire"]
+    CU08 [label=<<B>*CU08 Passer questionnaire</B>>]
     ' dependences
     CU04 -> CU07 -> CU03;
     CU03 -> CU01

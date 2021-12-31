@@ -22,11 +22,13 @@ Dans cette étude de cas, il est proposé de réaliser un système de gestion de
 
 ## Importance des fonctionnalités
 
-La vraie valeur ajoutée par SGA est dans les cas d'utilisation les plus haut dans le graphe suivant. Pour réussir ces fonctionnalités importantes, il y a des fonctionnalités préalables. 
+La vraie valeur ajoutée du SGA est dans les cas d'utilisation indiqués par une étoile (*) dans le graphe suivant.
+Par exemple, une version de SGA sans ces fonctionnalités-là ne serait pas utile du tout pour les parties prenantes.
+Pour réussir ces fonctionnalités importantes, il y a des fonctionnalités préalables qui doivent être réalisées.
 
-> Note: pour avoir des points pour une fonctionnalité à la fin du projet, les CU préalables doivent fonctionner.
+> Note: pour avoir des points pour une fonctionnalité à la fin du projet, les CU préalables doivent aussi fonctionner.
 
-![Importance et dépendance des cas d'utilisation](./README-exigences-client/DependanceCasUtilisations.svg)
+![Importance et dépendance des cas d'utilisation](./README-exigences-client/DependanceCasUtilisations.svg "Graphe où les nœuds représentent les fonctionnalités (cas d'utilisation) et les liens représentent les dépendances. Les nœuds avec l'astérisque (*) sont les fonctionnalités les plus importantes pour les parties prenantes. Une version du SGA sans ces fonctionnalités n'aura pas de vraie valeur.")
 
 ## Cas d'utilisation
 
