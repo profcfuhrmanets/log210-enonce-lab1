@@ -3,8 +3,8 @@
 <!-- deux espaces à la fin pour faire un saut de ligne -->Version : Hiver 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
-- [README.md] (./README.md)
-- [Grille de pointage des exigences] (https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
+- [README.md](./README.md)
+- [Grille de pointage des exigences](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
 ## Introduction
 

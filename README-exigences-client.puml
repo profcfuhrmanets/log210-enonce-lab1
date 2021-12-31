@@ -1,7 +1,7 @@
 @startuml DiagCasUtilisation
 title Cas d'utilisation
 skinparam style strictuml
-skinparam backgroundcolor #ffffff
+skinparam backgroundcolor #FFFFFE
 'left to right direction
 rectangle "SGA Système de Gestion de l'Apprentissage" {
     (CU01\nGérer\ncours) as gc #lightblue
