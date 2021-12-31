@@ -122,8 +122,8 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
-- Démontrer que le cours a été détruit
-- Démontrer que d'autres cours existent encore
+1. Démontrer que le cours a été détruit
+1. Démontrer que d'autres cours existent encore
 - Le cas échéant, démontrer que les éléments composants du cours (devoirs, questionnaires, etc.) ont aussi été détruits.
 
 ---
@@ -222,9 +222,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer avec au moins deux questions différentes qu'une question a été modifiée dans la banque pour le cours.
-<!-- - Démontrer qu'un enseignant ne peut pas modifier une question ne lui appartenant pas. [C.Fuhrman est-ce faisable de faire un test?] -->
+<!-- 1. Démontrer qu'un enseignant ne peut pas modifier une question ne lui appartenant pas. [C.Fuhrman est-ce faisable de faire un test?] -->
 
-### CU02d  supprimer question
+### CU02d Supprimer question
 
 **Acteur principal :**  Enseignant
 
@@ -256,7 +256,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ---
 
-### CU03a  ajouter devoir
+### CU03a Ajouter devoir
 
 **Acteur principal :**  Enseignant
 
@@ -331,7 +331,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer avec au moins deux devoirs distincts qu'il est possible de récupérer un devoir.
 2. Démontrer que le devoir récupéré appartient au cours.
 
-### CU03c  Modifier devoir
+### CU03c Modifier devoir
 
 **Acteur principal :**  Enseignant
 
@@ -361,7 +361,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer avec au moins deux devoirs distincts qu'il est possible de modifier un devoir.
 1. Démontrer qu'il n'est pas possible de nommer un questionnaire avec un nom qui existe déjà.
 
-### CU03d  supprimer devoir
+### CU03d Supprimer devoir
 
 **Acteur principal :**  Enseignant
 
@@ -385,7 +385,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Tests supplémentaires à réaliser :**
 
-- Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
+1. Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
 <!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf : comment faire un test comme ça?] -->
 
 ---
@@ -429,7 +429,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ---
 
-### CU05a  ajouter questionnaire
+### CU05a Ajouter questionnaire
 
 **Acteur principal :**  Enseignant
 
@@ -440,7 +440,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Garanties en cas de succès (postconditions) :**
 
 - Un nouveau questionnaire a été créé et associé à un cours
-- Des questions ont été associées au questionnaire
+- Des questions ont été éventuellement associées au questionnaire (un questionnaire peut n'avoir aucune question)
 
 **Scénario principal (succès) :**
 
@@ -465,10 +465,13 @@ Sans objet.
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
-- Démontrer que le questionnaire créé n'est pas associé à un autre cours.
-- Démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
-- Démontrer avec plusieurs enseignants et plusieurs questionnaires que l'affichage du nombre de questionnaires est bon.
-- Démontrer que le nombre de fois qu'une question a été utilisée est calculé correctement.
+1. Démontrer qu'un nouveau questionnaire a été créé et il est associé au cours.
+1. Démontrer que le questionnaire créé n'est pas associé à un autre cours.
+2. Démontrer qu'un questionnaire créé peut être associé à 0 questions.
+3. Démontrer qu'un questionnaire créé peut être associé à plusieurs questions.
+4. Démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
+5. Démontrer avec plusieurs enseignants et plusieurs questionnaires que l'affichage du nombre de questionnaires est bon.
+6. Démontrer que le nombre de fois qu'une question a été utilisée est calculé correctement.
 
 ### CU05b Afficher questionnaire
 
@@ -546,7 +549,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 <!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
 <!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
 
-### CU05d  supprimer questionnaire
+### CU05d Supprimer questionnaire
 
 **Acteur principal :**  Enseignant
 
@@ -558,17 +561,17 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Garanties en cas de succès (postconditions) :**
 
 - Un questionnaire associé à un cours est supprimé
-- Les questions éventuellement associés au questionnaire existent toujours dans la banque de questions.
+- Les questions associés au questionnaire existent toujours dans la banque de questions.
 
 **Scénario principal (succès) :**
 
 1. L'enseignant commence la suppression d'un questionnaire
-1. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
-1. L'enseignant supprime le questionnaire
+2. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
+3. L'enseignant supprime le questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
+&nbsp;&nbsp;&nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
 
 **Tests supplémentaires à réaliser :**
 
@@ -579,9 +582,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ---
 
-### CU06 Corriger questionnaire (correction manuelle).
+### CU06 Corriger questionnaire (correction manuelle)
 
-Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doivent être corrigées par un enseignant.
+Il s'agit des questionnaires passés ayant au moins une question qui ne peut pas être corrigée automatiquement (ex. réponse longue) et donc nécessite une correction par un enseignant.
 
 Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de son cours, mais ce cas d'utilisation fait l'hypothèse qu'il termine la correction d'au moins un questionnaire. Certains systèmes permettent à l'enseignant de reprendre plus tard une correction d'un questionnaire partiellement corrigé, mais cette fonctionnalité complique le cas d'utilisation et les tests).
 
@@ -624,7 +627,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 ---
 
-### CU07 Remettre devoir 
+### CU07 Remettre devoir
 
 **Acteur principal :**  Étudiant
 
