@@ -9,7 +9,7 @@ Le laboratoire consiste à analyser, concevoir, implémenter et tester une solut
 
 ## Déploiement du système
 
-Le diagramme suivant décrit les différentes parties du système. Nous cherchons à simplifier les aspects techniques qui ne sont pas le sujet principal du cours : cadres d'application frontale, service REST, utilisation de bases de données, etc.
+Le diagramme suivant décrit les différentes parties du système. Nous cherchons à simplifier les aspects techniques qui ne sont pas le sujet principal du cours : cadres d'application frontale, services REST, utilisation de bases de données, etc.
 
 ![Diagramme de déploiement](README/deploiement.svg)
 
@@ -32,7 +32,7 @@ En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, d
 
 > Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
 
-Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour le respect des aspects importants de la conception (séparation des couches, opérations système avec contrôleur indépendant, possibilité d'avoir des modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
+Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible ou facile d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour vous concentrer sur des aspects importants de la conception (séparation des couches présentation et domaine, modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
 
 * Cadre d'application d'interface utilisateur : Vue.js, React, Angular, etc.
 * Base de données : SQL, NoSQL, etc.
@@ -68,7 +68,7 @@ Ce texte est normalement un extrait du plan de cours :
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
 
-Prenez note qu'il est possible de remplacer les pages pug par des pages HTML et JavaScript.
+Prenez note qu'il est possible de remplacer les pages Pug par des pages HTML et JavaScript.
 
 ## Déroulement des corrections interactives
 
@@ -131,7 +131,7 @@ Voici quelques conseils par rapport à la planification et le déroulement des i
 - La rédaction du plan d'itération ne devrait pas prendre plus d'une heure.
 - La réalisation des MDD, DSS et contrats devrait prendre 1 à 2 heures.
 - La réalisation des RDCU devrait prendre environ une demi-journée.
-- Le codage (implémentation et tests) n'est pas trivial et prend tout le temps qui reste.
+- Le codage (implémentation et tests) n'est pas insignifiant et prend tout le temps qui reste.
 - À la mi-itération, si les objectifs semblent trop ambitieux, vous devez réduire le nombre d'objectifs. Une démonstration partielle vaut beaucoup plus qu'aucune démonstration.
 - La démonstration doit se faire en moins de 10 minutes.
 - La rédaction de l'évaluation de l'itération ne devrait pas prendre plus d'une heure.
@@ -159,7 +159,7 @@ Cet avancement (**évolution**) est prévu dans les objectifs du plan d'itérati
 
 Vous pouvez implémenter plus de points pour compenser les pertes durant la correction, mais pour les valeurs de *d* dépassant 100&nbsp; %, le maximum est 110&nbsp; %.
 
-Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonctionnalité, tests, correspondance aux artéfacts), cette dernière ne sera pas utilisée dans le calcul.
+Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonctionnalité, tests, correspondance aux artefacts), cette dernière ne sera pas utilisée dans le calcul.
 
 ### Dates clés et remises
 
@@ -213,12 +213,12 @@ Après l'évaluation de votre itération, vous devez compléter la section **Év
 
 Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale] Google :
 
-* [Pointage de tous les artéfacts][grille-artefacts]
+* [Pointage de tous les artefacts][grille-artefacts]
 * [Plan d'itération][grille-plan-iteration]
 * [Rapport][grille-rapport]
 * [Implémentation][grille-implementation]
 
-Vous pouvez faire une copie du chiffrier des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
+Vous pouvez faire une copie du tableur des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
 
 ## Directives d'implémentation (recommandations)
 
@@ -271,7 +271,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 ### Grilles de correction
 
-- [Pointage de tous les artéfacts][grille-artefacts]
+- [Pointage de tous les artefacts][grille-artefacts]
 - [Plan d'itération][grille-plan-iteration]
 - [Rapport][grille-rapport]
 - [Implémentation][grille-implementation]
