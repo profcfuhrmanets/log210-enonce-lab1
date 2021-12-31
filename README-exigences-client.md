@@ -59,7 +59,7 @@ La majorité des cas d'utilisation ont une précondition d'authentification pour
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
+&nbsp;&nbsp;&nbsp; 3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.
 
@@ -153,11 +153,11 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
+&nbsp;&nbsp;&nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
 
-&nbsp; &nbsp; &nbsp; 5 b. Le nom de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 5 b. Le nom de la question n'est pas unique.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le Système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
 **Tests supplémentaires à réaliser :**
 
@@ -214,7 +214,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 **Tests supplémentaires à réaliser :**
@@ -244,7 +244,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
+&nbsp;&nbsp;&nbsp; 2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
 
 **Tests supplémentaires à réaliser :**
 
@@ -281,9 +281,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 5a. La date de début est après la date de fin.
+&nbsp;&nbsp;&nbsp; 5a. La date de début est après la date de fin.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le Système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
 **Tests supplémentaires à réaliser :**
 
@@ -322,9 +322,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 7a. Le système affiche les étudiants par ordre alphabétique.
+&nbsp;&nbsp;&nbsp; 7a. Le système affiche les étudiants par ordre alphabétique.
 
-&nbsp; &nbsp; &nbsp; 7 b. Le système affiche les étudiants par ordre croissant de la note.
+&nbsp;&nbsp;&nbsp; 7 b. Le système affiche les étudiants par ordre croissant de la note.
 
 **Tests supplémentaires à réaliser :**
 
@@ -352,9 +352,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
+&nbsp;&nbsp;&nbsp; 1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
 
-**Test supplémentaires à réaliser :**
+**Tests supplémentaires à réaliser :**
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
@@ -467,7 +467,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer qu'un nouveau questionnaire a été créé et il est associé au cours.
 1. Démontrer que le questionnaire créé n'est pas associé à un autre cours.
-2. Démontrer qu'un questionnaire créé peut être associé à 0 questions.
+2. Démontrer qu'un questionnaire créé peut être associé à 0 question.
 3. Démontrer qu'un questionnaire créé peut être associé à plusieurs questions.
 4. Démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
 5. Démontrer avec plusieurs enseignants et plusieurs questionnaires que l'affichage du nombre de questionnaires est bon.
@@ -507,7 +507,7 @@ Sans objet.
 **Tests supplémentaires à réaliser :**
 
 1. Démontrer que le nombre de questionnaires affichés correspond au nombre de questionnaires associés à l'enseignant.
-<!-- 1. Faire un test pour s'assurer que les étudiants ont répondu aux questionnaire sélectionné. [C.Fuhrman je ne comprends pas] -->
+<!-- 1. Faire un test pour s'assurer que les étudiants ont répondu aux questionnaires sélectionnés. [C.Fuhrman je ne comprends pas] -->
 <!-- 1. Démontrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique. [cpf : est-ce que ça fait partie du CU?? -->
 
 ### CU05c Modifier questionnaire
@@ -561,7 +561,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Garanties en cas de succès (postconditions) :**
 
 - Un questionnaire associé à un cours est supprimé
-- Les questions associés au questionnaire existent toujours dans la banque de questions.
+- Les questions associées au questionnaire existent toujours dans la banque de questions.
 
 **Scénario principal (succès) :**
 
@@ -576,9 +576,9 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Tests supplémentaires à réaliser :**
 
 1. Démontrer pour au moins deux questionnaires distincts qu'il est possible de supprimer un questionnaire d'un cours.
-1. Démontrer que les questions associés à un questionnaire avant sa suppression existent encore.
+1. Démontrer que les questions associées à un questionnaire avant sa suppression existent encore.
 1. Démontrer qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant a réalisé celui-ci.
-<!-- 1. démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
+<!-- 1. Démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
 
 ---
 
@@ -621,7 +621,7 @@ Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de so
 
 Il faut des tests pour les postconditions du cas d'utilisation.
 
-1. Démontrer pour au moins deux questionnaires distincts, chacun avec au moins deux questions distincts, qu'il est possible de corriger un questionnaire et que sa note soit transmise au SGB.
+1. Démontrer pour au moins deux questionnaires distincts, chacun avec au moins deux questions distinctes, qu'il est possible de corriger un questionnaire et que sa note soit transmise au SGB.
 1. Démontrer que les questionnaires affichés appartiennent bien au cours.
 1. Démontrer que le nombre de questionnaires à corriger pour un cours est bien calculé.
 
@@ -650,7 +650,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Un devoir ne peut être sélectionné si la date actuelle n'est pas à l'intérieur de la plage d'ouverture du devoir ou si celui-ci est inactif.
+&nbsp;&nbsp;&nbsp; 3a. Un devoir ne peut être sélectionné si la date actuelle n'est pas à l'intérieur de la plage d'ouverture du devoir ou si celui-ci est inactif.
 
 **Tests supplémentaires à réaliser :**
 
@@ -691,12 +691,12 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
+&nbsp;&nbsp;&nbsp; 7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
 
 **Tests supplémentaires à réaliser :**
 
 1. Démontrer que les questionnaires complétés et corrigés sont affichés avec l'information concernant la note et que ceux-ci appartiennent à l'étudiant.
-1. Démontrer que les questionnaires non complétés son bien associé à l'étudiant.
+1. Démontrer que les questionnaires non complétés sont bien associés à l'étudiant.
 1. Démontrer que le résultat (note) d'un questionnaire automatiquement corrigé a été sauvegardé dans le SGB.
 
 ## Spécifications supplémentaires (FURPS+)
@@ -771,7 +771,7 @@ Vous devez montrer que :
  **Artefacts à réaliser :**
 
 - Document d'analyse et de conception
-- Copie du fichier de persistance des information à sauvegarder
+- Copie du fichier de persistance des informations à sauvegarder
 
 ### Performance
 
@@ -822,7 +822,7 @@ Vous devez intégrer la réalisation des tests ainsi que la notification par cou
 
  **Artefacts à réaliser :**
 
-- Le fichier github action correspondant à votre solution.
+- Le fichier GitHub action correspondant à votre solution.
 
 #### S3 Contrainte de développement : gestion sémantique de version
 
@@ -834,32 +834,48 @@ Les décisionnaires de SGA insistent pour une gestion sémantique de version pou
 
 Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a).
 
-L'entré du format GIFT doit être validé il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
+La saisie du format GIFT doit être validée.
+Il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
 
-Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions. Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse. Voir un exemple : https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/master/tests/questions/TFTwoFeedback.gift
+Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
+Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse.
+Voir [cet exemple](https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/master/tests/questions/TFTwoFeedback.gift).
 
-**Note :** pour réaliser cette exigence, vous pouvez utiliser [ce projet](https://github.com/fuhrmanator/GIFT-grammar-PEG.js).
+> **Note :** pour réaliser facilement cette exigence, vous pouvez utiliser [cette bibliothèque](https://github.com/fuhrmanator/GIFT-grammar-PEG.js) qui décortique (transforme) n'importe quelle question GIFT en objet JavaScript.
 
 ## Glossaire
 
-SGA Système de gestion de l'apprentissage
+SGA  
+> Système de gestion de l'apprentissage
 
-SGB Système externe de gestion des bordereaux
+SGB  
+> Système externe de gestion des bordereaux
 
-GIFT PEG grammar to support GIFT (quiz) format
+Cours (SGB)  
+> La description générale d'un cours offert par l'université (sigle, titre, préalable)
 
-Tag  Catégorie non hiérarchique
+Groupe-cours (SGB)
+> Les informations d'une «&nbsp;instance&nbsp;» d'un cours enseigné par un enseignant, à un horaire précis, dans un local précis, etc. Synonymes: Cours-groupe, cours (perspective d'un.e étudiant.e)
 
-Cours SGB La description générale d'un cours offert par l'université (sigle, titre, préalable)
+Cours (SGA)
+> Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA. Synonymes: Espace-cours, cours sur SGA (Moodle)
 
-Groupe cours SGB - Les informations d'une «&nbsp;instance&nbsp;» d'un cours enseigné par un enseignant, à un horaire précis, dans un local précis, etc
+GIFT  
+> «General Import Format Template» 
 
-Cours SGA  Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA.
+PEG  
+> [«Parsing Expression Grammaire»](https://fr.wikipedia.org/wiki/Parser_packrat)
+
+Tag  
+> [Étiquette (métadonnée)](https://fr.wikipedia.org/wiki/Tag_(m%C3%A9tadonn%C3%A9e)), catégorie non hiérarchique permettant un regroupement facile des éléments (questions).
 
 ## Modèle de données des questions Moodle
 
-Le modèle suivant existe pour expliquer les différents types de questions dans Moodle. Vous pouvez vous en inspirer pour votre analyse dans ce projet.
+Le modèle suivant existe pour expliquer les différents types de questions dans Moodle.
+Vous pouvez vous en inspirer pour votre analyse du volet des types de questions dans ce projet.
 
-**Note :** un modèle du domaine (MDD) devrait être limité à la portée de votre logiciel. L'exemple ci-dessous est hors de portée pour la plupart des exigences au sujet des questions. C'est plus un modèle de données qu'un modèle du domaine.
+**Note :** un modèle du domaine (MDD) devrait être limité à la portée de votre logiciel.
+L'exemple ci-dessous est hors de portée si vous ne visez pas le support de tous les types de questions.
+C'est plus un modèle de données qu'un modèle du domaine, car il est fortement relié au format XML (qui est assez naïf) des questions Moodle.
 
 ![Questions](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/fuhrmanator/GIFT-grammar-PEG.js/master/MoodleQuestionDomainModel.txt&fmt=svg)
