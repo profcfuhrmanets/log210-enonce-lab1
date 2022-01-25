@@ -50,7 +50,7 @@ skinparam style strictuml
 participant ":Auxiliaire\nd'enseignement\n(Chargé.e de lab)" as C
 participant ":Équipe" as E
 participant ":System" as S
-participant ":Github" as G
+participant ":GitHub" as G
 
 C --> E: demande le début de\nla démonstration
 E --> S: ouvrir application et \ndocument d'exigence\ncôte à côte
@@ -97,7 +97,7 @@ skinparam style strictuml
 participant ":Auxiliaire\nd'enseignement\n(Chargé.e de lab)" as C
 participant ":System" as S
 participant ":Équipe" as E
-participant ":Github" as G
+participant ":GitHub" as G
 
 C --> S: ouvrir code et rapport de l'itération
 C --> S: vérifier correspondance code vs MDD
