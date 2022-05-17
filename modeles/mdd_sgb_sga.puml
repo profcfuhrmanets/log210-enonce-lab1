@@ -1,6 +1,6 @@
 @startuml MDD_SGB_SGA
 skinparam style strictuml
-skinparam backgroundcolor transparent
+'skinparam backgroundcolor transparent
 hide methods
 hide empty members
 'left to right direction
