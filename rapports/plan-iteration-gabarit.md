@@ -22,7 +22,7 @@
 
 ## Affectations d'éléments de travail
 
-> Cette partie fait référence aux éléments de travail à compléter dans cette itération. C'est pour vous aider à répartir le travail dans l'équipe. Vous pouvez créer des tâches dans un autre logiciel (Github) pour cette partie si vous voulez.
+> Cette partie fait référence aux éléments de travail à compléter dans cette itération. C'est pour vous aider à répartir le travail dans l'équipe. Vous pouvez créer des tâches dans un autre logiciel (GitHub) pour cette partie si vous voulez.
 
 Les éléments de travail suivants seront abordés dans cette itération:
 

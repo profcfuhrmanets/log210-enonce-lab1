@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2021 (1.0.0)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
@@ -10,25 +10,35 @@ Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issu
 
 Dans cette étude de cas, il est proposé de réaliser un système de gestion de l'apprentissage (SGA) qui ressemble à Moodle utilisé dans une université. La réalisation est principalement l'application dorsale (back-end), mais il faudra avoir une application frontale (front-end) minimaliste, p. ex. des pages web statiques (ou avec un peu de JavaScript), pour démontrer les fonctionnalités.
 
+## Parties prenantes et intérêts
+
+- **Enseignant.e :** Une personne employée par l'université et qui est responsable d'enseigner un groupe-cours offert par l'université. Si elle décide d'utiliser le SGA pour son groupe-cours (c'est facultatif, il peut y avoir des groupes-cours où SGA n'est pas utilisé), alors elle veut un moyen de gérer toutes les facettes de l'application d'apprentissage.
+
+- **Étudiant.e :** Une personne inscrite à l'université. Elle veut un moyen de remettre des devoirs et de réaliser des jeux-questionnaires pour les groupes-cours dans lesquels elle est inscrite.
+
 ## Survol des fonctionnalités
 
 ![Cas d'utilisations SGA](./README-exigences-client/DiagCasUtilisation.svg)
 
-## Parties prenantes et intérêts
+## Importance des fonctionnalités
 
-- **Enseignant :** Il est employé de l'université et il est responsable d'enseigner un groupe-cours d'un cours offert par l'université. S'il décide d'utiliser le SGA pour son groupe-cours (c'est facultatif, il peut y avoir des groupes-cours de cours où l'enseignant n'utilise pas SGA), alors il veut un moyen de gérer toutes les facettes de l'application d'apprentissage.
+La vraie valeur ajoutée du SGA est dans les cas d'utilisation indiqués par une étoile (*) dans le graphe suivant.
+Par exemple, une version de SGA sans ces fonctionnalités-là ne serait pas utile du tout pour les parties prenantes.
+Pour réussir ces fonctionnalités importantes, il y a des fonctionnalités préalables qui doivent être réalisées.
 
-- **Étudiant :** Il est inscrit à l'université. Il veut un moyen de remettre des devoirs et réaliser des jeux-questionnaires pour les groupes-cours dans lesquels il est inscrit.
+> Note: pour avoir des points pour une fonctionnalité à la fin du projet, les CU préalables doivent aussi fonctionner.
+
+![Importance et dépendance des cas d'utilisation](./README-exigences-client/DependanceCasUtilisations.svg "Graphe où les nœuds représentent les fonctionnalités (cas d'utilisation) et les liens représentent les dépendances. Les nœuds avec l'astérisque (*) sont les fonctionnalités les plus importantes pour les parties prenantes. Une version du SGA sans ces fonctionnalités n'aura pas de vraie valeur.")
 
 ## Cas d'utilisation
 
 Vous devez vous assurer d'implémenter une mécanique de gestion des états permettant de s'assurer que les opérations système sont appelées dans un ordre cohérent avec le cas d'utilisation. Toute séquence d'utilisation autre que la séquence normale devrait automatiquement générer une erreur. Nous couvrirons cette mécanique lors du cours sur les diagrammes d'états.
 
-La majorité des cas d'utilisation ont une condition préalable d'authentification pour un enseignant ou un étudiant. La connexion d'un enseignant ou d'un étudiant s'accompagne de mécanismes d'authentification (récupération et gestion du jeton) et d'autorisation (permissions d'étudiants vs permissions d'enseignants), ce qui a pour but de sécuriser le logiciel et de permettre à plusieurs utilisateurs d'être connectés en même temps. Vous devez donc réaliser la mécanique d'authentification au plus tard durant la seconde itération.
+La majorité des cas d'utilisation ont une précondition d'authentification pour un enseignant ou un étudiant. La connexion d'un enseignant ou d'un étudiant s'accompagne de mécanismes d'authentification (récupération et gestion du token) et d'autorisation (permissions étudiant vs permissions enseignant), ce qui a pour but de sécuriser le logiciel et de permettre à plusieurs utilisateurs d'être connectés en même temps. Vous devez donc réaliser la mécanique d'authentification au plus tard durant la seconde itération.
 
-### CU01a — ajouter cours
+### CU01a Ajouter cours
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -37,7 +47,7 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 **Garanties en cas de succès (postconditions) :**
 
 - Un nouveau cours est créé.
-- L'enseignant est associé au cours
+- Le nouveau cours est associé seulement à l'enseignant
 - Les étudiants inscrits dans le groupe-cours (SGB) sont associés au cours
 
 **Scénario principal (succès) :**
@@ -49,18 +59,22 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
+&nbsp;&nbsp;&nbsp; 3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.
 
 **Tests supplémentaires à réaliser :**
 
-- CU01a-t1 faire un test pour démontrer qu'un cours est associé à un enseignant
-- CU01a-t2 faire un test pour démontrer que les étudiants sont associés au cours.
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-### CU01b — récupérer cours
+1. Démontrer que le cours ajouté est associé à l'enseignant.
+2. Démontrer que le cours ajouté n'est pas associé à un autre enseignant.
+3. Démontrer qu'un deuxième cours peut être ajouté est qu'il est associé à l'enseignant.
+4. Démontrer que les bons étudiants sont associés aux cours.
 
-**Acteur principal:**  Enseignant
+### CU01b Récupérer cours
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -79,11 +93,11 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Tests supplémentaires à réaliser :**
 
-- CU01b-t1 faire un test pour démontre que la liste de cours affichée correspond au cours de l'enseignant
+1. Démontrer que la liste de cours affichée correspond aux cours de l'enseignant
 
-### CU01c — retirer cours
+### CU01c Retirer cours
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -91,29 +105,32 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Garanties en cas de succès (postconditions) :**
 
-- Le cours n'existe plus dans le système SGA
+1. Le cours (et seulement ce cours) a été supprimé du système SGA
 
 **Scénario principal (succès) :**
 
 1. L'enseignant demande la liste de ses cours.
-1. Le système affiche la liste de ses cours.
-1. L'enseignant demande les détails d'un cours.
-1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
-1. L'enseignant demande de supprimer le cours.
-1. Le système demande une confirmation pour supprimer le cours.
-1. L'enseignant confirme.
-1. Le système supprime le cours et affiche la nouvelle liste de cours.
+2. Le système affiche la liste de ses cours.
+3. L'enseignant demande les détails d'un cours.
+4. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
+5. L'enseignant demande de supprimer le cours.
+6. Le système demande une confirmation pour supprimer le cours.
+7. L'enseignant confirme.
+8. Le système supprime le cours et affiche la nouvelle liste de cours.
 
 **Tests supplémentaires à réaliser :**
 
-- CU01c-t1 faire un test pour démontre que la liste de cours affichée correspond au cours de l'enseignant
-- CU01c-t2 faire un test pour démontrer que le cours a été détruit
+Il faut des tests pour les postconditions du cas d'utilisation.
+
+1. Démontrer que le cours a été détruit
+1. Démontrer que d'autres cours existent encore
+1. Le cas échéant, démontrer que les éléments composants du cours (devoirs, questionnaires, etc.) ont aussi été détruits
 
 ---
 
-### CU02a — ajouter question
+### CU02a Ajouter question
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -121,7 +138,8 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Garanties en cas de succès (postconditions) :**
 
-- Une nouvelle question a été créée dans la banque pour le cours.
+- Une nouvelle question a été créée
+- Elle est associée uniquement à la banque du cours.
 
 **Scénario principal (succès) :**
 
@@ -135,19 +153,23 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
+&nbsp;&nbsp;&nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
 
-&nbsp; &nbsp; &nbsp; 5b. Le nom de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 5b. Le nom de la question n'est pas unique.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le Système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
 **Tests supplémentaires à réaliser :**
 
-- CU02a-t1 faire un test pour démontrer que la question est associée au cours de l'enseignant
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-### CU02b — récupérer question
+1. Démontrer que la question est associée au cours de l'enseignant.
+2. Démontrer que la question n'est pas associée à un autre cours.
+3. Faire un test pour créer une deuxième question associée au cours de l'enseignant.
 
-**Acteur principal:**  Enseignant
+### CU02b Récupérer question
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -168,11 +190,12 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Tests supplémentaires à réaliser :**
 
-- CU02b-t1 faire un test pour démontrer que le système affiche uniquement les questions de l'enseignant
+1. Démontrer que le système retourne toutes les questions (plusieurs) du cours de l'enseignant
+1. Démontrer que le système ne retourne pas des questions (qui doivent exister) dans d'autres cours
 
-### CU02c — modifier question
+### CU02c Modifier question
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -191,17 +214,19 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le Système signale l'erreur et rejette la saisie.
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 **Tests supplémentaires à réaliser :**
 
-- CU02c-t1 faire un test pour démontrer qu'un enseignant ne peut pas modifier une question ne lui appartenant pas.
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-### CU02d — supprimer question
+1. Démontrer avec au moins deux questions différentes qu'une question a été modifiée dans la banque pour le cours.
+<!-- 1. Démontrer qu'un enseignant ne peut pas modifier une question ne lui appartenant pas. [C.Fuhrman est-ce faisable de faire un test?] -->
 
-**Acteur principal:**  Enseignant
+### CU02d Supprimer question
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -219,18 +244,21 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
+&nbsp;&nbsp;&nbsp; 2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
 
 **Tests supplémentaires à réaliser :**
 
-- CU02d-t1 faire un test pour démontre qu'un enseignant ne peut pas détruire une question pour un cours ne lui étant pas associé.
-- CU02d-t2 faire un test pour démontrer qu'il est impossible de détruire une question utilisé dans un questionnaire.
+Il faut des tests pour les postconditions du cas d'utilisation.
+
+1. Démontrer avec au moins deux questions différentes qu'une question a été supprimée de la banque pour le cours.
+1. Démontrer qu'il existe encore des questions après la suppression d'une question.
+1. Démontrer qu'il est impossible de détruire une question utilisée dans un questionnaire.
 
 ---
 
-### CU03a — ajouter devoir
+### CU03a Ajouter devoir
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -238,7 +266,7 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Garanties en cas de succès (postconditions) :**
 
-- Un nouveau devoir est créé et associé à un cours
+- Un nouveau devoir a été créé et associé uniquement au cours
 
 **Scénario principal (succès) :**
 
@@ -253,18 +281,22 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 5a. La date de début est après la date de fin.
+&nbsp;&nbsp;&nbsp;5a. La date de début est après la date de fin.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1. Le Système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
 **Tests supplémentaires à réaliser :**
 
-- CU03a-t1 faire un test pour démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
-- CU03a-t2 faire un test pour démontrer que le devoir est associé au cours.
-  
-### CU03b — récupérer devoir
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-**Acteur principal:**  Enseignant
+1. Démontrer que le devoir créé est associé au cours.
+1. Démontrer que le devoir créé n'est pas associé à un autre cours.
+1. Démontrer qu'un deuxième devoir peut être créé est associé au cours.
+1. Démontrer que c'est impossible de créer un devoir avec un nom qui existe déjà.
+
+### CU03b Récupérer devoir
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -290,18 +322,18 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 7a. Le système affiche les étudiants par ordre alphabétique.
+&nbsp;&nbsp;&nbsp; 7a. Le système affiche les étudiants par ordre alphabétique.
 
-&nbsp; &nbsp; &nbsp; 7 b. Le système affiche les étudiants par ordre croissant de la note.
+&nbsp;&nbsp;&nbsp; 7 b. Le système affiche les étudiants par ordre croissant de la note.
 
 **Tests supplémentaires à réaliser :**
 
-- CU03b-t1 faire un test pour démontrer que les cours sont associés à cet enseignant.
-- CU03b-t2 faire un test pour démontrer que les devoirs appartiennent à ce cours..
+1. Démontrer avec au moins deux devoirs distincts qu'il est possible de récupérer un devoir.
+2. Démontrer que le devoir récupéré appartient au cours.
 
-### CU03c — modifier devoir
+### CU03c Modifier devoir
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -309,7 +341,7 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Garanties en cas de succès (postconditions) :**
 
-- Un devoir est modifié
+- Un devoir a été modifié
 
 **Scénario principal (succès) :**
 
@@ -320,16 +352,18 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
+&nbsp;&nbsp;&nbsp; 1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
 
 **Tests supplémentaires à réaliser :**
 
-- CU03c-t1 Faire un test pour démontrer que c'est impossible de nommer un questionnaire avec un nom qui existe déjà.
-- CU03c-t2 faire un test pour démontrer qu'un enseignant ne peut pas modifier un devoir ne lui appartenant pas.
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-### CU03d — supprimer devoir
+1. Démontrer avec au moins deux devoirs distincts qu'il est possible de modifier un devoir.
+1. Démontrer qu'il n'est pas possible de nommer un questionnaire avec un nom qui existe déjà.
 
-**Acteur principal:**  Enseignant
+### CU03d Supprimer devoir
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -342,23 +376,24 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 **Scénario principal (succès) :**
 
 1. L'enseignant commence la suppression d'un devoir
-1. Le système affiche les valeurs du devoir à supprimer.
+1. Le système affiche les informations du devoir à supprimer.
 1. L'enseignant confirme la suppression du devoir
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
+&nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
 
 **Tests supplémentaires à réaliser :**
 
-- CU03d-t1 faire un test pour démonter qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
-- CU03d-t2 faire un test pour démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas.
+1. Démontrer pour au moins deux devoirs distincts qu'il est possible de supprimer un devoir et qu'il n'est plus associé au cours.
+1. Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
+<!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf : comment faire un test comme ça?] -->
 
 ---
 
-### CU04 —Corriger devoir
+### CU04 Corriger devoir
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -375,29 +410,30 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 1. Le système affiche les cours actifs de l'enseignant ainsi que le nombre de devoirs à corriger pour chaque cours
 1. L'enseignant sélectionne un cours
 1. Le système affiche tous les devoirs à corriger pour le cours.
-1. L'enseignant télécharge («download») le devoir de l'étudiant et le corrige.
-1. L'enseignant téléverse («upload») la version corrigée du devoir.
-1. L'enseignant indique la note du devoir.
+2. L'enseignant télécharge (« download ») un devoir remis par un étudiant et le corrige.
+3. L'enseignant téléverse (« upload ») la version corrigée du devoir.
+4. L'enseignant indique la note du devoir.
 
-*L'enseignant répète les étapes 5 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger.*
+*L'enseignant répète les étapes 5 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger ou qu'il ne souhaite plus corriger.*
 
-**Extensions (ou scénarios alternatifs):* *
+**Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension «.note» pour associer la note au devoir corrigé. Un fichier «.note» par devoir ou un fichier note.txt pour tous les devoirs
+&nbsp;&nbsp;&nbsp;5-6-7a. L'enseignant téléverse tous les devoirs corrigés ainsi que les fichiers avec l'extension `.note` pour associer la note au devoir corrigé. Un fichier `.note` par devoir ou un fichier `note.txt` pour tous les devoirs
 
 **Tests supplémentaires à réaliser :**
 
-- CU04-t1 faire un test pour démontrer qu'on ne peut pas corriger un devoir n'appartenant pas au cours.
-- CU04-t2 faire un test pour démontrer que les notes sont associées au devoir de l'étudiant.
-- CU04-t3 faire un test pour démontrer que la note à bien été transféré dans SGB
-- CU04-t4 faire un test pour démontrer que la mécanique de téléchargement est fonctionnelle.
-- CU04-t5 faire un test pour démontrer que la mécanique de téléversement est fonctionnelle.
+<!-- 1. démontrer qu'on ne peut pas corriger un devoir n'appartenant pas au cours. [cpf : comment faire cela si on n'y a pas accès?] -->
+1. Démontrer que les notes sont associées au devoir de l'étudiant.
+1. Démontrer que la note a bien été transférée dans SGB.
+2. Démontrer que le nombre de devoirs (remis) à corriger évolue après une correction.
+3. Démontrer que la mécanique de téléchargement est fonctionnelle.
+4. Démontrer que la mécanique de téléversement (correction en lot) est fonctionnelle.
 
 ---
 
-### CU05a — ajouter questionnaire
+### CU05a Ajouter questionnaire
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -406,7 +442,7 @@ La majorité des cas d'utilisation ont une condition préalable d'authentificati
 **Garanties en cas de succès (postconditions) :**
 
 - Un nouveau questionnaire a été créé et associé à un cours
-- Des questions ont été associées au questionnaire
+- Des questions ont été éventuellement associées au questionnaire (un questionnaire peut n'avoir aucune question)
 
 **Scénario principal (succès) :**
 
@@ -429,13 +465,19 @@ Sans objet.
 
 **Tests supplémentaires à réaliser :**
 
-- CU05a-t1 faire un test pour démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
-- CU05a-t2 faire un test avec plusieurs enseignants et plusieurs questionnaires pour montrer que le nombre de questionnaires affiché est bon.
-- CU05a-t2 faire un test pour démontrer que le nombre de fois qu'une question a été utilisée est calculé correctement,
-  
-### CU05b — afficher questionnaire
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-**Acteur principal:**  Enseignant
+1. Démontrer qu'un nouveau questionnaire a été créé et il est associé au cours.
+1. Démontrer que le questionnaire créé n'est pas associé à un autre cours.
+2. Démontrer qu'un questionnaire créé peut être associé à 0 question.
+3. Démontrer qu'un questionnaire créé peut être associé à plusieurs questions.
+4. Démontrer que c'est impossible de créer un questionnaire avec un nom qui existe déjà.
+5. Démontrer avec plusieurs enseignants et plusieurs questionnaires que l'affichage du nombre de questionnaires est bon.
+6. Démontrer que le nombre de fois qu'une question a été utilisée est calculé correctement.
+
+### CU05b Afficher questionnaire
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -466,13 +508,13 @@ Sans objet.
 
 **Tests supplémentaires à réaliser :**
 
-- CU05b-t1 faire un test pour démonter que le nombre de questionnaires correspond au nombre de questionnaires associé à l'enseignant.
-- CU05b-t2 faire un test pour s'assurer que les étudiants ont répondu aux questionnaires sélectionnés.
-- CU05b-t3 Faire un test pour montrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique.
+1. Démontrer que le nombre de questionnaires affichés correspond au nombre de questionnaires associés à l'enseignant.
+<!-- 1. Faire un test pour s'assurer que les étudiants ont répondu aux questionnaires sélectionnés. [C.Fuhrman je ne comprends pas] -->
+<!-- 1. Démontrer que vous pouvez aller chercher les questionnaires ayant été réalisés par un étudiant pour un cours spécifique. [cpf : est-ce que ça fait partie du CU?? -->
 
-### CU05c — modifier questionnaire
+### CU05c Modifier questionnaire
 
-**Acteur principal:**  Enseignant
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -482,31 +524,36 @@ Sans objet.
 **Garanties en cas de succès (postconditions) :**
 
 - Un questionnaire a été modifié
-- Les questions associées au questionnaire ont été modifiées
+<!-- - Les questions associées au questionnaire ont été modifiées [C.Fuhrman je pense que ce n'est pas possible dans ce cas d'utilisation ] -->
 
 **Scénario principal (succès) :**
 
 1. L'enseignant commence la modification d'un questionnaire
 1. Le système affiche la liste de questions associées au questionnaire
 1. L'enseignant modifie la description et/ou l'état du questionnaire
-1. L'enseignant modifie les questions associées au questionnaire
+1. L'enseignant associe au questionnaire une question de la banque de questions
 1. Le système confirme la modification du questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. 4a. L'enseignant ajoute une question au questionnaire.
-
-&nbsp; &nbsp; &nbsp; 4 b. L'enseignant supprime une question du questionnaire.
+&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une question du questionnaire  
+&nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
 
 **Tests supplémentaires à réaliser :**
 
-- CU05c-t1 faire un test pour démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.
-- CU05c-t2 faire un test pour démontre que l'enseignant ne peut modifier que les questionnaires associés à son cours.
-- CU05c-t3 faire un test pour démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire.
+Il faut des tests pour les postconditions du cas d'utilisation.
 
-### CU05d — supprimer questionnaire
+1. Démontrer que la description et l'état d'un questionnaire peuvent être modifiés.
+1. Démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.
+1. Démontrer qu'une question peut être associée à un questionnaire existant.
+1. Démontrer qu'une question peut être dissociée d'un questionnaire existant.
+1. Démontrer que l'ordre des questions d'un questionnaire peut être modifié.
+<!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
+<!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
 
-**Acteur principal:**  Enseignant
+### CU05d Supprimer questionnaire
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -516,29 +563,34 @@ Sans objet.
 **Garanties en cas de succès (postconditions) :**
 
 - Un questionnaire associé à un cours est supprimé
+- Les questions associées au questionnaire existent toujours dans la banque de questions.
 
 **Scénario principal (succès) :**
 
 1. L'enseignant commence la suppression d'un questionnaire
-1. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
-1. L'enseignant supprime le questionnaire
+2. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
+3. L'enseignant supprime le questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
+&nbsp;&nbsp;&nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
 
 **Tests supplémentaires à réaliser :**
 
-- CU05d-t1 faire un test pour démonter qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant à réalisé celui-ci.
-- CU05d-t2 faire un test pour démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours.
+1. Démontrer pour au moins deux questionnaires distincts qu'il est possible de supprimer un questionnaire d'un cours.
+1. Démontrer que les questions associées à un questionnaire avant sa suppression existent encore.
+1. Démontrer qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant a réalisé celui-ci.
+<!-- 1. Démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
 
 ---
 
-### CU06 —Corriger questionnaire (correction manuelle)
+### CU06 Corriger questionnaire (correction manuelle)
 
-Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doivent être corrigées par un enseignant.
+Il s'agit des questionnaires passés ayant au moins une question qui ne peut pas être corrigée automatiquement (ex. réponse longue) et donc nécessite une correction par un enseignant.
 
-**Acteur principal:**  Enseignant
+Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de son cours, mais ce cas d'utilisation fait l'hypothèse qu'il termine la correction d'au moins un questionnaire. Certains systèmes permettent à l'enseignant de reprendre plus tard une correction d'un questionnaire partiellement corrigé, mais cette fonctionnalité complique le cas d'utilisation et les tests).
+
+**Acteur principal :**  Enseignant
 
 **Préconditions :**
 
@@ -569,14 +621,17 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Tests supplémentaires à réaliser :**
 
-- CU06-t1 faire un test pour démonter que les questionnaires affichés appartiennent bien au cours.
-- CU06-t2 faire un test pour démonter que le nombre de questionnaires à corrigé pour chaque cour est bien calculé.
+Il faut des tests pour les postconditions du cas d'utilisation.
+
+1. Démontrer pour au moins deux questionnaires distincts, chacun avec au moins deux questions distinctes, qu'il est possible de corriger un questionnaire et que sa note soit transmise au SGB.
+1. Démontrer que les questionnaires affichés appartiennent bien au cours.
+1. Démontrer que le nombre de questionnaires à corriger pour un cours est bien calculé.
 
 ---
 
-### CU07 —Remettre devoir
+### CU07 Remettre devoir
 
-**Acteur principal:**  Étudiant
+**Acteur principal :**  Étudiant
 
 **Préconditions :**
 
@@ -584,7 +639,7 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Garanties en cas de succès (postconditions) :**
 
-- Un devoir remis est associé à un étudiant
+- Un devoir remis a été associé à l'étudiant en cours
 
 **Scénario principal (succès) :**
 
@@ -597,20 +652,20 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 3a. Un devoir ne peut être sélectionné si la date actuelle n'est pas à l'intérieur de la plage d'ouverture du devoir ou si celui-ci est inactif.
+&nbsp;&nbsp;&nbsp; 3a. Un devoir ne peut être sélectionné si la date actuelle n'est pas à l'intérieur de la plage d'ouverture du devoir ou si celui-ci est inactif.
 
 **Tests supplémentaires à réaliser :**
 
-- CU07-t1 faire un test pour démonter qu'on ne peut récupérer seulement les cours auquel l'étudiant est inscrit.
-- CU07-t2 faire un test pour démonter qu'un devoir déjà réalisé ne s'affiche plus.
-- CU07-t3 faire un test pour démonter qu'un étudiant ne peut sélectionner un devoir ne correspondant pas à la bonne plage horaire.
-- CU07-t4 faire un test pour démonter que les devoirs inactifs ne sont pas affichés.
+1. Démontrer pour deux étudiants distincts, chacun avec au moins deux devoirs distincts, qu'il est possible de remettre un devoir et que ce dernier est bien associé à l'étudiant et que l'enseignant peut le voir.
+<!-- 1. Démontrer qu'un étudiant ne peut sélectionner un devoir ne correspondant pas à la bonne plage horaire. [C.Fuhrman je ne comprends pas?] -->
+1. Démontrer que les devoirs inactifs ne sont pas affichés.
+1. Démonter qu'un devoir déjà réalisé ne s'affiche plus.
 
 ---
 
-### CU08 —Passé questionnaire
+### CU08 Passer questionnaire
 
-**Acteur principal:**  Étudiant
+**Acteur principal :**  Étudiant
 
 **Préconditions :**
 
@@ -638,12 +693,13 @@ Il s'agit des questionnaires ayant des questions (ex. réponse longue) qui doive
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp; &nbsp; &nbsp; 7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
+&nbsp;&nbsp;&nbsp; 7a. Le questionnaire a des questions nécessitant une correction manuelle. Le système informe l'étudiant que sa note sera déterminée plus tard après une correction manuelle.
 
 **Tests supplémentaires à réaliser :**
 
-- CU08-t1 faire un test pour démonter que les questionnaires complétés et corrigés sont affichés avec l'information concernant la note et que ceux-ci appartiennent à l'étudiant.
-- CU08-t2 faire un test pour démonter que les questionnaires non complétés son bien associé à l'étudiant.
+1. Démontrer que les questionnaires complétés et corrigés sont affichés avec l'information concernant la note et que ceux-ci appartiennent à l'étudiant.
+1. Démontrer que les questionnaires non complétés sont bien associés à l'étudiant.
+1. Démontrer que le résultat (note) d'un questionnaire automatiquement corrigé a été sauvegardé dans le SGB.
 
 ## Spécifications supplémentaires (FURPS+)
 
@@ -653,24 +709,23 @@ Rappel de l'acronyme FURPS+ :
 - **U**sability (Aptitude à l'utilisation) : L'interface humain-machine est-elle conviviale? Combien de clics pour réaliser chaque cas d'utilisation?
 - **R**eliability (Fiabilité) : Définir ce qui se passe lors d'une panne de système externe? Reprise?
 - **P**erformance : Combien d'utilisateurs en même temps?
-- **S**upportability (Possibilités de prise en charge): Rajout facile de nouveaux types de questions?
+- **S**upportability (Possibilités de prise en charge) : Rajout facile de nouveaux types de questions?
 - **+** le reste… Licences du code source? Contraintes avec l'utilisation de SGB (système externe)? OpenSource? Politiques de confidentialité?
 
 ### Fonctionnalités
 
 En dehors des cas d'utilisation (les fonctionnalités principales), il y a les exigences suivantes :
 
-#### F1 —Journalisation et traitement d'erreurs
+#### F1 Journalisation et traitement d'erreurs
 
 Toutes les erreurs doivent être journalisées en mémoire persistante.
 
 **Note :** Larman F30.3/A35.3 propose plusieurs patrons pour aider avec cette exigence.
-
-**Artéfacts à réaliser :**
+ **Artefacts à réaliser :**
 
 - Document d'analyse et de conception
 
-#### F2 —Sécurité
+#### F2 Sécurité
 
 Toute utilisation implique une authentification avec le Système d'authentification (SSO).
 
@@ -678,13 +733,13 @@ Vous devez remplacer la mécanique d'authentification actuelle par une authentif
 
 Référence : <https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node>
 
-**Artéfacts à réaliser :**
+**Artefacts à réaliser :**
 
 - Document d'analyse et de conception
 
 ### Aptitude à l'utilisation (Usability)
 
-#### U1 —Facteurs humains
+#### U1 Facteurs humains
 
 Le client doit voir les informations (surtout les questions) clairement sur plusieurs formats d'écran : téléphone, tablette et écran PC.
 Alors, les pages web doivent supporter des appareils avec une taille d'écran de 320 par 568 pixels jusqu'à 1920 par 1080 pixels et le texte doit être lisible à une distance de 25 cm.
@@ -694,13 +749,13 @@ Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
 - Les PUG du squelette intègrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
 - Une conception modulaire de vos PUG (layout) facilitera la réalisation de cette exigence.
 
-**Artéfacts à réaliser :**
+ **Artefacts à réaliser :**
 
 - Copie d'écran des différents formats.
 
 ### Fiabilité (Reliability)
 
-#### R1 – Tolérer panne temporaire de SGB.
+#### R1 Tolérer panne temporaire de SGB
 
 En cas d'indisponibilité du système de gestion des bordereaux (SGB), il faut une solution de recouvrement lors de la sauvegarde de notes.
 P. ex. une mise en place de stockage temporaire permettant de sauvegarder quand même les résultats de la correction d'un devoir ou d'un questionnaire.
@@ -715,14 +770,14 @@ Vous devez montrer que :
 
 **Note :** Larman propose une solution élégante avec plusieurs patrons de conception pour réaliser cette exigence. Voir le chapitre F30/A35.
 
-**Artéfacts à réaliser :**
+ **Artefacts à réaliser :**
 
 - Document d'analyse et de conception
 - Copie du fichier de persistance des informations à sauvegarder
 
 ### Performance
 
-#### P1 – Performance
+#### P1 Performance
 
 Les étudiants supportent mal l'attente.
 L'un des goulots d'étranglement possibles est la récupération des informations de SGB.
@@ -743,7 +798,7 @@ curl -w %{time_total} http://localhost:3200/api/v3/course/all
 0,002213 secondes
 ```
 
-**Artéfacts à réaliser :**
+ **Artefacts à réaliser :**
 
 - Document d'analyse et de conception de la cache mémoire
 - Rapport des données sur la performance avant et après l'utilisation de la cache mémoire.
@@ -752,7 +807,7 @@ curl -w %{time_total} http://localhost:3200/api/v3/course/all
 
 Ces exigences doivent être implémentées durant **au moins deux itérations** pour obtenir vos points.
 
-#### S1 —Contrainte de développement : environnement de test **(obligatoire)**
+#### S1 Contrainte de développement : environnement de test **(obligatoire)**
 
 Les décisionnaires de SGA insistent pour des technologies de test, qui, selon eux, fourniront à long terme la robustesse du code.
 
@@ -760,53 +815,69 @@ Les décisionnaires de SGA insistent pour des technologies de test, qui, selon e
 
 La couverture de test est évaluée à chaque itération. Voir la grille de correction pour plus de détail.
 
-#### S2 —Contrainte de développement : environnement d'intégration continue
+#### S2 Contrainte de développement : environnement d'intégration continue
 
-Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec Github.
+Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
 Vous devez intégrer la réalisation des tests ainsi que la notification par courriel ou SMS de tout le membre de l'équipe lorsque les tests ne passent pas. Vous devez avoir une couverture de test de plus de 90 % pour pouvoir réaliser cette exigence.
 
-**Note :** pour réaliser cette exigence il faudra utiliser Github action avec les badges, comme dans les squelettes.
+**Note :** pour réaliser cette exigence il faudra utiliser GitHub action avec les badges, comme dans les squelettes. 
 
-**Artéfacts à réaliser :**
+ **Artefacts à réaliser :**
 
-- Le fichier Github action correspondant à votre solution.
+- Le fichier GitHub action correspondant à votre solution.
 
-#### S3 —Contrainte de développement : gestion sémantique de version
+#### S3 Contrainte de développement : gestion sémantique de version
 
 Les décisionnaires de SGA insistent pour une gestion sémantique de version pour le logiciel. Vous devez avoir rempli les exigences pendant au moins deux itérations.
 
 **Note :** pour réaliser cette exigence, il faudra comprendre <https://linuxfr.org/news/gestion-semantique-de-version> et <https://docs.npmjs.com/about-semantic-versioning>
 
-#### S4 —Contrainte d'implémentation : banque de questions en format GIFT
+#### S4 Contrainte d'implémentation : banque de questions en format GIFT
 
 Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a).
 
-L'entré du format GIFT doit être validé il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
+La saisie du format GIFT doit être validée.
+Il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
 
-Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions. Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère #dans une réponse. Voir un exemple : <https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/master/tests/questions/TFTwoFeedback.gift>
+Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
+Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse.
+Voir [cet exemple](https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/master/tests/questions/TFTwoFeedback.gift).
 
-**Note :** pour réaliser cette exigence, vous pouvez utiliser [ce projet](https://github.com/fuhrmanator/GIFT-grammar-PEG.js).
+> **Note :** pour réaliser facilement cette exigence, vous pouvez utiliser [cette bibliothèque](https://github.com/fuhrmanator/GIFT-grammar-PEG.js) qui décortique (transforme) n'importe quelle question GIFT en objet JavaScript.
 
 ## Glossaire
 
-SGA —Système de gestion de l'apprentissage
+SGA  
+> Système de gestion de l'apprentissage
 
-SGB —Système externe de gestion des bordereaux
+SGB  
+> Système externe de gestion des bordereaux
 
-GIFT —PEG grammar to support GIFT (quiz) format
+Cours (SGB)  
+> La description générale d'un cours offert par l'université (sigle, titre, préalable)
 
-Tag — Catégorie non hiérarchique
+Groupe-cours (SGB)
+> Les informations d'une «&nbsp;instance&nbsp;» d'un cours enseigné par un enseignant, à un horaire précis, dans un local précis, etc. Synonymes: Cours-groupe, cours (perspective d'un.e étudiant.e)
 
-Cours SGB —La description générale d'un cours offert par l'université (sigle, titre, préalable)
+Cours (SGA)
+> Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA. Synonymes: Espace-cours, cours sur SGA (Moodle)
 
-Groupe cours SGB —Les informations d'une «instance» d'un cours enseigné par un enseignant, à un horaire précis, dans un local précis, etc.
+GIFT  
+> [«General Import Format Template»](https://en.wikipedia.org/wiki/GIFT_(file_format)) - format textuel pour spécifier des questions et questionnaires.
 
-Cours SGA — Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA.
+PEG  
+> [«Parsing Expression Grammaire»](https://fr.wikipedia.org/wiki/Parser_packrat)
+
+Tag  
+> [Étiquette (métadonnée)](https://fr.wikipedia.org/wiki/Tag_(m%C3%A9tadonn%C3%A9e)), catégorie non hiérarchique permettant un regroupement facile des éléments (questions).
 
 ## Modèle de données des questions Moodle
 
-Le modèle suivant existe pour expliquer les différents types de questions dans Moodle. Vous pouvez vous en inspirer pour votre analyse dans ce projet.
+Le modèle suivant existe pour expliquer les différents types de questions dans Moodle.
+Vous pouvez vous en inspirer pour votre analyse du volet des types de questions dans ce projet.
 
-**Note :** un modèle du domaine (MDD) devrait être limité à la portée de votre logiciel. L'exemple ci-dessous est hors de portée pour la plupart des exigences au sujet des questions. C'est plus un modèle de données qu'un modèle du domaine.
+**Note :** un modèle du domaine (MDD) devrait être limité à la portée de votre logiciel.
+L'exemple ci-dessous est hors de portée si vous ne visez pas le support de tous les types de questions.
+C'est plus un modèle de données qu'un modèle du domaine, car il est fortement relié au format XML (qui est assez naïf) des questions Moodle.
 
 ![Questions](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/fuhrmanator/GIFT-grammar-PEG.js/master/MoodleQuestionDomainModel.txt&fmt=svg)
