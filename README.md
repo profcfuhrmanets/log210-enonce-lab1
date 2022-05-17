@@ -62,8 +62,6 @@ Ce texte est normalement un extrait du plan de cours :
 
 > Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d'un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l'itération. **À la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l'équipe, aux auxiliaires d'enseignement ainsi qu'à l'enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de «0″ pour le travail.
 
-
-
 ## Application frontale et persistance minimalistes
 
 Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (Pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.

@@ -1,10 +1,10 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Hiver 2022 (1.0.0)  
-Si vous trouvez des incohérences ou vous avez des questions, utilisez les [Issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2022 (1.0.0)  
+Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
-- [Grille de pointage des exigences](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
+- [Pour les auxiliaires d'enseignement: Grille de pointage des exigences](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
 
 ## Introduction
 
@@ -53,9 +53,9 @@ La majorité des cas d'utilisation ont une précondition d'authentification pour
 **Scénario principal (succès) :**
 
 1. L'enseignant demande de créer un nouveau cours.
-2. Le système affiche la liste des groupes-cours qu'enseigne l'enseignant (l'information provient du SGB).
-3. L'enseignant choisit un groupe-cours dans la liste.
-4. Le système affiche l'information du cours et affiche la liste des étudiants inscrits dans le groupe-cours correspondant (l'information provient du SGB).
+1. Le système affiche la liste des groupes-cours qu'enseigne l'enseignant (l'information provient du SGB).
+1. L'enseignant choisit un groupe-cours dans la liste.
+1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits dans le groupe-cours correspondant (l'information provient du SGB).
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -155,7 +155,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 &nbsp;&nbsp;&nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
 
-&nbsp;&nbsp;&nbsp; 5 b. Le nom de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 5b. Le nom de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
@@ -731,7 +731,7 @@ Toute utilisation implique une authentification avec le Système d'authentificat
 
 Vous devez remplacer la mécanique d'authentification actuelle par une authentification par Intergiciel de type JWT (JSON web Token)
 
-Référence : https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node
+Référence : <https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-typescript-and-node>
 
 **Artefacts à réaliser :**
 
@@ -793,7 +793,7 @@ Voici quelques outils pour mesurer la performance
 
 Exemple :
 
-```
+```bash
 curl -w %{time_total} http://localhost:3200/api/v3/course/all
 0,002213 secondes
 ```
@@ -830,7 +830,7 @@ Vous devez intégrer la réalisation des tests ainsi que la notification par cou
 
 Les décisionnaires de SGA insistent pour une gestion sémantique de version pour le logiciel. Vous devez avoir rempli les exigences pendant au moins deux itérations.
 
-**Note :** pour réaliser cette exigence, il faudra comprendre https://linuxfr.org/news/gestion-semantique-de-version et https://docs.npmjs.com/about-semantic-versioning
+**Note :** pour réaliser cette exigence, il faudra comprendre <https://linuxfr.org/news/gestion-semantique-de-version> et <https://docs.npmjs.com/about-semantic-versioning>
 
 #### S4 Contrainte d'implémentation : banque de questions en format GIFT
 

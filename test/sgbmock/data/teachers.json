@@ -1,0 +1,43 @@
+[
+  {
+    "first_name": "Vincent",
+    "last_name": "Lacasse",
+    "id": "cc-vincent.lacasse@etsmtl.ca"
+  },
+  {
+    "first_name": "Benoit",
+    "last_name": "Galarneau",
+    "id": "cc-benoit.galarneau@etsmtl.ca"
+  },
+  {
+    "first_name": "Patrick",
+    "last_name": "Tremblay",
+    "id": "cc-patrick.tremblay@etsmtl.ca"
+  },
+  {
+    "first_name": "Yvan",
+    "last_name": "Ross",
+    "id": "cc-yvan.ross@etsmtl.ca"
+  },
+  {
+    "first_name": "Christopher",
+    "last_name": "Fuhrman",
+    "id": "christopher.fuhrman@etsmtl.ca"
+  },
+  {
+    "first_name": "Francis",
+    "last_name": "Cardinal",
+    "id": "francis.cardinal@etsmtl.ca"
+  },
+  {
+    "first_name": "Pierre",
+    "last_name": "Dumouchel",
+    "id": "pierre.dumouchel@etsmtl.ca"
+  },
+  {
+    "first_name": "Yves",
+    "last_name": "Durocher",
+    "id": "yves.durocher@etsmtl.ca"
+  }
+ 
+]
