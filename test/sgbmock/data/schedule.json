@@ -1,0 +1,372 @@
+[
+{
+  "group_id":"S20213-LOG121-01",
+  "day":"Mer",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"D-4012",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG121-01",
+  "day":"Jeu",
+  "hours":"13:30-16:30",
+  "activity":"Labo",
+  "mode":"P",
+  "local":"A-3220",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG121-02",
+  "day":"Jeu",
+  "hours":"13:30-17:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"D-4012",
+  "teacher_id":"cc-vincent.lacasse@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG121-02",
+  "day":"Lun",
+  "hours":"08:30-11:30",
+  "activity":"Labo",
+  "mode":"P",
+  "local":"A-3230",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG121-04",
+  "day":"Mer",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG121-04",
+  "day":"Mar",
+  "hours":"18:00-21:00",
+  "activity":"Labo",
+  "mode":"D",
+  "local":"",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG210-01",
+  "day":"Lun",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"cc-yvan.ross@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG210-01",
+  "day":"Mar",
+  "hours":"13:30-16:30",
+  "activity":"Labo",
+  "mode":"D",
+  "local":"A-3326",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG210-02",
+  "day":"Mar",
+  "hours":"13:30-17:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"E-2023",
+  "teacher_id":"cc-yvan.ross@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG210-02",
+  "day":"Lun",
+  "hours":"08:30-11:30",
+  "activity":"Labo",
+  "mode":"P",
+  "local":"A-3450",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG210-03",
+  "day":"Mar",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"D-5025",
+  "teacher_id":"cc-yvan.ross@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG210-03",
+  "day":"Ven",
+  "hours":"13:30-16:30",
+  "activity":"Labo",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG240-01",
+  "day":"Jeu",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"A-1302",
+  "teacher_id":"francis.cardinal@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG240-01",
+  "day":"Mer",
+  "hours":"08:30-10:30",
+  "activity":"Labo A",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG240-01",
+  "day":"Mer",
+  "hours":"10:30-12:30",
+  "activity":"Labo B",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG240-02",
+  "day":"Lun",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"francis.cardinal@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG240-02",
+  "day":"Jeu",
+  "hours":"18:00-20:00",
+  "activity":"Labo A",
+  "mode":"D",
+  "local":"",
+  "teacher_id":""
+    },
+{
+  "group_id":"S20213-LOG240-02",
+  "day":"Jeu",
+  "hours":"18:00-20:00",
+  "activity":"Labo B",
+  "mode":"D",
+  "local":"",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG240-03",
+  "day":"Mer",
+  "hours":"13:30-17:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"B-3432",
+  "teacher_id":"francis.cardinal@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG240-03",
+  "day":"Jeu",
+  "hours":"08:30-10:30",
+  "activity":"Labo A",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG240-03",
+  "day":"Jeu",
+  "hours":"10:30-12:30",
+  "activity":"Labo B",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG320-01",
+  "day":"Mar",
+  "hours":"13:30-17:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"E-4026",
+  "teacher_id":"pierre.dumouchel@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG320-01",
+  "day":"Lun",
+  "hours":"13:30-16:30",
+  "activity":"Labo A",
+  "mode":"P",
+  "local":"A-3412",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG320-01",
+  "day":"Lun",
+  "hours":"13:30-16:30",
+  "activity":"Labo B",
+  "mode":"P",
+  "local":"A-3446",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG320-02",
+  "day":"Lun",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"pierre.dumouchel@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG320-02",
+  "day":"Mar",
+  "hours":"18:00-21:00",
+  "activity":"Labo A",
+  "mode":"D",
+  "local":"A-3412",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG320-02",
+  "day":"Mar",
+  "hours":"18:00-21:00",
+  "activity":"Labo B",
+  "mode":"D",
+  "local":"A-3446",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG320-04",
+  "day":"Mar",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"francis.cardinal@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG320-04",
+  "day":"Lun",
+  "hours":"18:30-21:00",
+  "activity":"Labo A",
+  "mode":"D",
+  "local":"",
+  "teacher_id":""
+  },
+  {
+  "group_id":"S20213-LOG410-01",
+  "day":"Mar",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"E-4026",
+  "teacher_id":"cc-patrick.tremblay@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG410-01",
+  "day":"Jeu",
+  "hours":"13:30-15:30",
+  "activity":"Labo A",
+  "mode":"P",
+  "local":"A-3412",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG410-01",
+  "day":"Jeu",
+  "hours":"115:30-12:3",
+  "activity":"Labo B",
+  "mode":"P",
+  "local":"A-3412",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG410-02",
+  "day":"Mer",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"yves.durocher@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG410-02",
+  "day":"jeu",
+  "hours":"18:00-20:00",
+  "activity":"Labo A",
+  "mode":"D",
+  "local":"A-3326",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG410-02",
+  "day":"Jeu",
+  "hours":"18:00-20:00",
+  "activity":"Labo B",
+  "mode":"D",
+  "local":"A-3446",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG430-01",
+  "day":"Mer",
+  "hours":"08:30-12:00",
+  "activity":"C",
+  "mode":"P",
+  "local":"E-2025",
+  "teacher_id":"cc-yvan.ross@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG430-01",
+  "day":"Lun",
+  "hours":"08:30-11:30",
+  "activity":"Labo A",
+  "mode":"P",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG430-01",
+  "day":"Mer",
+  "hours":"08:30-11:30",
+  "activity":"Labo B",
+  "mode":"P",
+  "local":"A-3450",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG430-02",
+  "day":"Jeu",
+  "hours":"18:00-21:30",
+  "activity":"C",
+  "mode":"D",
+  "local":"",
+  "teacher_id":"cc-patrick.tremblay@etsmtl.ca"
+  },
+{
+  "group_id":"S20213-LOG430-02",
+  "day":"Mar",
+  "hours":"18:00-21:00",
+  "activity":"Labo A",
+  "mode":"D",
+  "local":"A-3322",
+  "teacher_id":""
+  },
+{
+  "group_id":"S20213-LOG430-02",
+  "day":"Mar",
+  "hours":"18:00-21:00",
+  "activity":"Labo B",
+  "mode":"D",
+  "local":"A-3450",
+  "teacher_id":""
+  }
+]
+

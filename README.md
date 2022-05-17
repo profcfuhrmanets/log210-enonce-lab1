@@ -159,7 +159,9 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 ### Dates clés et remises
 
-Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale [«main» ou «master»]. Marquez le commit correspondant à votre remise à l’aide d’un tag nommé «iteration-i», où i est le numéro de l’itération (p. ex. : iteration-1). Assurez-vous que votre rapport est au format PDF.
+Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale [«main» ou «master»].
+
+Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
