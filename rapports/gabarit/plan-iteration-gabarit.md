@@ -52,10 +52,10 @@ Les éléments de travail suivants seront abordés dans cette itération:
 ## Critères d'évaluation
 
 > Une brève description de la façon d'évaluer si les objectifs (définis plus haut) de haut niveau ont été atteints.
-> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par l’auxiliaire d'enseignement). En voici des exemples:
+> Vos critères d'évaluation doivent être objectifs (aucun membre de l'équipe ne peut avoir une opinion divergente) et quantifiables (sauf pour ceux évalués par l'auxiliaire d'enseignement). En voici des exemples:
 
 - 97% des cas de test passent.
-- Démonstration des fonctionnalités CU06 et CU07 pas à pas avec l’auxiliaire d'enseignement a reçu une réponse favorable.
+- Démonstration des fonctionnalités CU06 et CU07 pas à pas avec l'auxiliaire d'enseignement a reçu une réponse favorable.
 
 ## Évaluation
 
@@ -72,9 +72,9 @@ Les éléments de travail suivants seront abordés dans cette itération:
 
 ### Questions d'évaluation
 Regardez votre diagramme TPLANT et répondez aux questions suivantes?
-1. Est-ce qu’il y a un décalage de représentation?
+1. Est-ce qu'il y a un décalage de représentation?
   - Est-ce que tous les noms de classe ont un rapport avec le domaine?
-2. Est-ce que l’architecture en couche est respectée?
+2. Est-ce que l'architecture en couche est respectée?
    - Est-ce que les contrôleurs GRASP sont bien identifiés?
    - Est-ce que les paramètres des opérations système sont tous de type primitif ou sont des objets de paramètres de type primitif?
    - Est-ce que vous avez un fichier de route par contrôleur?
@@ -94,10 +94,10 @@ Regardez votre diagramme TPLANT et répondez aux questions suivantes?
 
 > Documentez si vous avez abordé les objectifs précisés dans le plan d'itération. *(on reprend les objectifs)*
 
-- Résoudre les problèmes de la dernière itération soulevés par l’auxiliaire d'enseignement.
-  - La rétroaction de l’auxiliaire d'enseignement a été positive. Bon travail l'équipe!
+- Résoudre les problèmes de la dernière itération soulevés par l'auxiliaire d'enseignement.
+  - La rétroaction de l'auxiliaire d'enseignement a été positive. Bon travail l'équipe!
 - Présenter une démonstration technique.
-  - Le CU06 a été convaincant pour l’auxiliaire d'enseignement, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
+  - Le CU06 a été convaincant pour l'auxiliaire d'enseignement, mais il a trouvé que les tests pour le CU07 n'étaient pas assez étoffés. On doit corriger ça à la prochaine itération si on veut que le CU07 compte pour l'implémentation finale.
 
 ### Éléments de travail: prévus vs réalisés
 
@@ -121,7 +121,7 @@ Nous avons discuté avec plusieurs professeurs pour comprendre le flux de travai
 
 ## Évaluation du travail d'équipe
 
-> Évaluez la contribution de chaque membre de l’équipe au projet durant l’itération. Pour vous aider, utilisez gitinspector (voir les notes du cours). Toutefois, tenez aussi compte des éléments qui ne peuvent être évalués par l’outil (apprentissage, connaissances préalables, etc.)
+> Évaluez la contribution de chaque membre de l'équipe au projet durant l'itération. Pour vous aider, utilisez gitinspector (voir les notes du cours). Toutefois, tenez aussi compte des éléments qui ne peuvent être évalués par l'outil (apprentissage, connaissances préalables, etc.)
 
 Selon les statistiques générées par `gitinspector` Pierre et Jérémie font 90 % de la programmation et les deux autres membres doivent contribuer plus. Voir le script contribution.sh dans le répertoire scripts du projet.
 
