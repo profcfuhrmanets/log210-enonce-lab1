@@ -1,6 +1,6 @@
 # Système de gestion de l'apprentissage
 
-Version: Hiver 2022 (1.0.0)  
+Version: Été 2022 (1.0.0)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
@@ -46,8 +46,8 @@ SGB est une application ayant son propre modèle du domaine (comprenant les conc
 <details>
 <summary><b>Cliquez ici pour voir les détails sur le MDD du SGB</b></summary>
 
-[Fichier source en PlantUML](https://raw.github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/mdd_sgb_sga.puml)
-![Modèle du domaine pour SGB avec liens au MDD de SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/mdd_sgb_sga.puml)
+[Fichier source en PlantUML](https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
+![Modèle du domaine pour SGB avec liens au MDD de SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
 
 </details>
 
@@ -60,7 +60,7 @@ Lisez le README.md de SGB pour savoir comment générer cette documentation.
 
 Ce texte est normalement un extrait du plan de cours :
 
-> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d'un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l'itération. **À la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l'équipe, aux auxiliaires d'enseignement ainsi qu'à l'enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de «0″ pour le travail.
+> Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d'un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l'itération. **À la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l'équipe, aux auxiliaires d'enseignement ainsi qu'à l'enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de «0» pour le travail.
 
 ## Application frontale et persistance minimalistes
 
