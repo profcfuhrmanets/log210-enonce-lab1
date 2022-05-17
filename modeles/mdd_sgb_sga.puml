@@ -1,0 +1,70 @@
+@startuml MDD_SGB_SGA
+skinparam style strictuml
+skinparam backgroundcolor transparent
+hide methods
+hide empty members
+'left to right direction
+title Modèle du domaine
+
+skinparam class {
+  BackgroundColor<< SGB >> #ddffdd
+}
+hide stereotype
+
+package SGB {
+  class "Université" as U << SGB >> {}
+  class "Enseignant" as En << SGB >> {
+    prénom: String
+    nom: String
+    courriel: String
+  }
+  class "Étudiant" as Et << SGB >> {
+    codePermanent : String
+    prénom: String
+    nom: String
+    courriel: String
+  }
+  class "Cours" as Cours << SGB >> {
+    sigle : String
+    titre : String
+  }
+  class "Catalogue\nCours" as CatalogueCours << SGB >> {}
+  class "Groupe\nCours" as GC << SGB >> {
+    limiteNbInscriptions : Entier
+    idGroupe : String
+  }
+  class "Bordereau" as Bord << SGB >> {}
+  class "Évaluation" as Éval << SGB >> {
+    type: String
+    idType: Entier
+    note: Float
+  }
+}
+
+
+U "1" -- "1" CatalogueCours : Offre >
+U "1" -- "1..*" Et : Forme >
+U "1" -- "1..*" En : Emploie >
+CatalogueCours "1" -- "1..*" Cours : Répertorie >
+Cours "1" -- "1..*" GC : Décrit >
+En "1" -- "*" GC : Enseigne >
+Et "1..*" -- "1..*" GC : S'inscrit-dans >
+GC "1" -- "1" Bord : Répertorie-evaluations-pour <
+Bord "1" -- "*" Éval : Journalise >
+
+' début de SGA
+package SGA {
+  ' Le concept de "Cours" dans SGA n'est pas un groupe-cours
+  class "//DéterminezUnBonNom//" as CoursSGA
+  note right
+    Cette classe conceptuelle
+    est le Cours dans SGA
+  end note
+  ' d'autres classes conceptuelles pour SGA
+  class "   ?   " as X
+  class "   ?   " as Y
+  CoursSGA "0..1" -- "1" GC : Est-un-support-des-activités-du >
+  X -u- Y : //Verbe// >
+  CoursSGA -u- X : //Verbe// <
+}
+@enduml
