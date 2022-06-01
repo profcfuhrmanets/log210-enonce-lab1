@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2022 (1.0.0)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2022 (1.0.0)
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
@@ -52,7 +52,7 @@ La majorité des cas d'utilisation ont une précondition d'authentification pour
 
 **Scénario principal (succès) :**
 
-1. L'enseignant demande de créer un nouveau cours.
+1. L'enseignant demande à créer un nouveau cours.
 1. Le système affiche la liste des groupes-cours qu'enseigne l'enseignant (l'information provient du SGB).
 1. L'enseignant choisit un groupe-cours dans la liste.
 1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits dans le groupe-cours correspondant (l'information provient du SGB).
@@ -191,7 +191,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Tests supplémentaires à réaliser :**
 
 1. Démontrer que le système retourne toutes les questions (plusieurs) du cours de l'enseignant
-1. Démontrer que le système ne retourne pas des questions (qui doivent exister) dans d'autres cours
+1. Démontrer que le système ne retourne pas des questions provenant d'autres cours (elles doivent exister).
 
 ### CU02c Modifier question
 
@@ -274,7 +274,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Le système affiche les cours de l'enseignant ainsi que le nombre de devoirs associés à chaque cours
 1. L'enseignant sélectionne un cours
 1. Le système affiche tous les devoirs associés au cours.
-1. L'enseignant crée un nouveau devoir avec une description et un nom, une note maximale, une date de début, une date de fin et un état visible ou non.
+1. L'enseignant crée un nouveau devoir avec une description, un nom, une note maximale, une date de début, une date de fin et un état visible ou non.
 1. Le système confirme l'ajout du devoir et affiche tous les devoirs associés au cours.
 
 *L'enseignant répète les étapes 5-6 tant qu'il y a un devoir à ajouter.*
@@ -381,12 +381,12 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
+&nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir est utilisé par des étudiants.
 
 **Tests supplémentaires à réaliser :**
 
 1. Démontrer pour au moins deux devoirs distincts qu'il est possible de supprimer un devoir et qu'il n'est plus associé au cours.
-1. Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci a été utilisé par des étudiants.
+1. Démontrer qu'il est impossible de supprimer un devoir lorsque celui-ci est utilisé par des étudiants.
 <!-- 1. Démontrer qu'un enseignant ne peut pas détruire un devoir ne lui appartenant pas. [cpf : comment faire un test comme ça?] -->
 
 ---
@@ -536,7 +536,7 @@ Sans objet.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une question du questionnaire  
+&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une question du questionnaire
 &nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
 
 **Tests supplémentaires à réaliser :**
@@ -580,7 +580,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer pour au moins deux questionnaires distincts qu'il est possible de supprimer un questionnaire d'un cours.
 1. Démontrer que les questions associées à un questionnaire avant sa suppression existent encore.
 1. Démontrer qu'il est impossible de supprimer un questionnaire lorsqu'au moins un étudiant a réalisé celui-ci.
-<!-- 1. Démonter qu'un enseignant ne peut pas détruire un questionnaire n'appartenant pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
+<!-- 1. Démontrer qu'un enseignant ne peut pas détruire un questionnaire qui n'appartient pas à un de ses cours. [cpf : impossible de faire un tel test?] -->
 
 ---
 
@@ -659,7 +659,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer pour deux étudiants distincts, chacun avec au moins deux devoirs distincts, qu'il est possible de remettre un devoir et que ce dernier est bien associé à l'étudiant et que l'enseignant peut le voir.
 <!-- 1. Démontrer qu'un étudiant ne peut sélectionner un devoir ne correspondant pas à la bonne plage horaire. [C.Fuhrman je ne comprends pas?] -->
 1. Démontrer que les devoirs inactifs ne sont pas affichés.
-1. Démonter qu'un devoir déjà réalisé ne s'affiche plus.
+1. Démontrer qu'un devoir déjà réalisé ne s'affiche plus.
 
 ---
 
@@ -820,7 +820,7 @@ La couverture de test est évaluée à chaque itération. Voir la grille de corr
 Les décisionnaires de SGA insistent pour des technologies d'intégration continue avec GitHub.
 Vous devez intégrer la réalisation des tests ainsi que la notification par courriel ou SMS de tout le membre de l'équipe lorsque les tests ne passent pas. Vous devez avoir une couverture de test de plus de 90 % pour pouvoir réaliser cette exigence.
 
-**Note :** pour réaliser cette exigence il faudra utiliser GitHub action avec les badges, comme dans les squelettes. 
+**Note :** pour réaliser cette exigence il faudra utiliser GitHub action avec les badges, comme dans les squelettes.
 
  **Artefacts à réaliser :**
 
@@ -847,13 +847,13 @@ Voir [cet exemple](https://github.com/fuhrmanator/GIFT-grammar-PEG.js/blob/maste
 
 ## Glossaire
 
-SGA  
+SGA
 > Système de gestion de l'apprentissage
 
-SGB  
+SGB
 > Système externe de gestion des bordereaux
 
-Cours (SGB)  
+Cours (SGB)
 > La description générale d'un cours offert par l'université (sigle, titre, préalable)
 
 Groupe-cours (SGB)
@@ -862,13 +862,13 @@ Groupe-cours (SGB)
 Cours (SGA)
 > Environnement d'apprentissage correspondant à un groupe cours SGB. Un enseignant responsable d'un groupe cours SGB peut choisir de créer ou non un cours SGA. Synonymes: Espace-cours, cours sur SGA (Moodle)
 
-GIFT  
+GIFT
 > [«General Import Format Template»](https://en.wikipedia.org/wiki/GIFT_(file_format)) - format textuel pour spécifier des questions et questionnaires.
 
-PEG  
+PEG
 > [«Parsing Expression Grammaire»](https://fr.wikipedia.org/wiki/Parser_packrat)
 
-Tag  
+Tag
 > [Étiquette (métadonnée)](https://fr.wikipedia.org/wiki/Tag_(m%C3%A9tadonn%C3%A9e)), catégorie non hiérarchique permettant un regroupement facile des éléments (questions).
 
 ## Modèle de données des questions Moodle
