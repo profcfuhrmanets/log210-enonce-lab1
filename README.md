@@ -84,7 +84,7 @@ La démonstration se déroule selon les étapes suivantes :
 
 #### Évaluation de la conception et des tests
 
-L'objectif de cette partie et de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
+L'objectif de cette partie est de montrer que l'application est conforme aux principes vus en classe et à la conception des étudiants. Elle suit les étapes suivantes :
 
 ![DSS pour le processus d'évaluation de la conception](README/activite-evaluation-implementation.svg)
 
