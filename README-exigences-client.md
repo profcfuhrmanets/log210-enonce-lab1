@@ -531,7 +531,7 @@ Sans objet.
 1. L'enseignant commence la modification d'un questionnaire
 1. Le système affiche la liste de questions associées au questionnaire
 1. L'enseignant modifie la description et/ou l'état du questionnaire
-1. L'enseignant associe au questionnaire une ou plusieurs question de la banque de questions
+1. L'enseignant associe au questionnaire une ou plusieurs questions de la banque de questions
 1. Le système confirme la modification du questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
