@@ -185,9 +185,9 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 | Itération |Plan d'itération  | Vérification conception | Rapport           |Plan d'itération section évaluation|
 | --------: | :----------------| :---------------------- |:----------------- |:----------------------------------|
-|         1 |git tag plan1     | git tag rdcu1           | git tag rapport1  | git tag plan1evaluation           |
-|         2 |git tag plan2     | git tag rdcu2           | git tag rapport2  | git tag plan2evaluation           |
-|         3 |git tag plan3     | git tag rdcu3           | git tag rapport3  | git tag plan3evaluation           |
+|         1 |git tag plan1     | (pendant la démo)       | git tag rapport1  | git tag plan1evaluation           |
+|         2 |git tag plan2     | (pendant la démo)       | git tag rapport2  | git tag plan2evaluation           |
+|         3 |git tag plan3     | (pendant la démo)       | git tag rapport3  | git tag plan3evaluation           |
 
 ### Correction interactive du [rapport][gabarit-rapport] de l'itération 1
 
