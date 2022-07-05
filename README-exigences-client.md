@@ -281,7 +281,11 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;5a. La date de début est après la date de fin.
+&nbsp;&nbsp;&nbsp;5b. Un devoir existe déjà avec le même nom.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
+
+&nbsp;&nbsp;&nbsp;5b. La date de début est après la date de fin.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
@@ -290,9 +294,10 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer que le devoir créé est associé au cours.
-1. Démontrer que le devoir créé n'est pas associé à un autre cours.
-1. Démontrer qu'un deuxième devoir peut être créé est associé au cours.
-1. Démontrer que c'est impossible de créer un devoir avec un nom qui existe déjà.
+2. Démontrer que le devoir créé n'est pas associé à un autre cours.
+3. Démontrer qu'un deuxième devoir peut être créé est associé au cours.
+4. Démontrer que c'est impossible de créer un devoir avec un nom qui existe déjà.
+5. Démontrer que c'est impossible de créer un devoir si la date de début n'est pas avant la date de fin.
 
 ### CU03b Récupérer devoir
 
