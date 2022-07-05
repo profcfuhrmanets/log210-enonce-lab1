@@ -536,7 +536,7 @@ Sans objet.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une ou plusieurs question du questionnaire  
+&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une ou plusieurs questions du questionnaire  
 &nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
 
 **Tests supplémentaires à réaliser :**
