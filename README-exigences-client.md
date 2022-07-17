@@ -531,12 +531,12 @@ Sans objet.
 1. L'enseignant commence la modification d'un questionnaire
 1. Le système affiche la liste de questions associées au questionnaire
 1. L'enseignant modifie la description et/ou l'état du questionnaire
-1. L'enseignant associe au questionnaire une question de la banque de questions
+1. L'enseignant associe au questionnaire une ou plusieurs questions de la banque de questions
 1. Le système confirme la modification du questionnaire
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une question du questionnaire  
+&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une ou plusieurs questions du questionnaire  
 &nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
 
 **Tests supplémentaires à réaliser :**
@@ -544,9 +544,9 @@ Sans objet.
 Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer que la description et l'état d'un questionnaire peuvent être modifiés.
-1. Démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.
-1. Démontrer qu'une question peut être associée à un questionnaire existant.
-1. Démontrer qu'une question peut être dissociée d'un questionnaire existant.
+1. ~~Démontrer que c'est impossible de modifier le nom d'un questionnaire avec un nom qui existe déjà.~~
+1. Démontrer qu'une ou plusieurs questions peuvent être associées à un questionnaire existant.
+1. Démontrer qu'une ou plusieurs questions peuvent être dissociées d'un questionnaire existant.
 1. Démontrer que l'ordre des questions d'un questionnaire peut être modifié.
 <!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
 <!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
