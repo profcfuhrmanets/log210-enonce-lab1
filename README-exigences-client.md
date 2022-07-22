@@ -364,7 +364,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 Il faut des tests pour les postconditions du cas d'utilisation.
 
 1. Démontrer avec au moins deux devoirs distincts qu'il est possible de modifier un devoir.
-1. Démontrer qu'il n'est pas possible de nommer un questionnaire avec un nom qui existe déjà.
+1. Démontrer qu'il n'est pas possible de nommer un devoir avec un nom qui existe déjà.
 
 ### CU03d Supprimer devoir
 
