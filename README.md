@@ -195,12 +195,13 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 ## Déclaration de mission de projet
 
-À la première séance du laboratoire 1, chaque équipe doit rédiger et signer une déclaration de mission de projet. La déclaration permet de communiquer les attentes des membres de l'équipe envers les autres membres de l'équipe sur ces aspects du travail d'équipe :
+À la première séance du laboratoire 1, chaque équipe doit rédiger et signer une déclaration de mission de projet.
+La déclaration permet de communiquer les attentes des membres de l'équipe envers les autres membres de l'équipe sur ces aspects du travail d'équipe :
 
 - Qualité du travail. Ex.:
 	- Qualité du logiciel, du code et du rapport (contenu et langue)
 	- Respect des échéances
-	- Note visée par l'équipe
+	- Note visée par l'équipe (ex. 90 % ou 110 % - il y a normalement un investissement du temps associé à la note ; chaque membre n'a pas la même capacité à investir du temps dans le projet)
 - Collaboration. Ex.:
 	- Charge de travail visée
 	- Aller chercher de l'aide lorsque nécessaire
@@ -211,13 +212,16 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 	- Délais de réponse appropriés
 	- Communiquer les problèmes aux autres membres de l'équipe
 
-La déclaration est concise : au maximum une page. Tous les membres de l'équipe doivent participer à la rédaction de la déclaration et approuver son contenu, sans quoi, elle n'est pas utile.
+La déclaration est concise : au maximum une page. 
+La participation de chaque membre de l'équipe est requise pour rédiger et approuver le contenu de la déclaration.
+Sans cette contribution, celle-ci perd de son utilité.
 
-Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui ne fonctionne pas. Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
+Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui ne fonctionne pas au besoin.
+Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
 
 Vous devez rédiger la déclaration dans le [fichier suivant][mission-projet]. Ce fichier contient un exemple de déclaration de mission de projet pour vous aider à démarrer.
-La déclaration n'est pas notée, mais le plan d'itération  de la première itération sera considéré en retard si votre dépôt ne contient pas une déclaration signée.
-
+**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.
+**
 ## Plan d'itération
 
 Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
