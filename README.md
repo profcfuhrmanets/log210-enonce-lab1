@@ -1,6 +1,6 @@
 # Système de gestion de l'apprentissage
 
-Version: Été 2022 (1.0.0)  
+Version: Été 2024 (1.1.0)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
@@ -193,6 +193,35 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artefacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
+## Déclaration de mission de projet
+
+À la première séance du laboratoire 1, chaque équipe doit rédiger et signer une déclaration de mission de projet.
+La déclaration permet de communiquer les attentes des membres de l'équipe envers les autres membres de l'équipe sur ces aspects du travail d'équipe :
+
+- Qualité du travail. Ex.:
+	- Qualité du logiciel, du code et du rapport (contenu et langue)
+	- Respect des échéances
+	- Note visée par l'équipe (ex. 90 % ou 110 % - il y a normalement un investissement du temps associé à la note ; chaque membre n'a pas la même capacité à investir du temps dans le projet)
+- Collaboration. Ex.:
+	- Charge de travail visée
+	- Aller chercher de l'aide lorsque nécessaire
+	- Aider les membres qui en ont besoin
+- Communication. Ex.:
+	- Présence aux laboratoires et aux réunions ou périodes de travail à l'extérieur du cours
+	- Transparence des membres dans les réponses
+	- Délais de réponse appropriés
+	- Communiquer les problèmes aux autres membres de l'équipe
+
+La déclaration est concise : au maximum une page. 
+La participation de chaque membre de l'équipe est requise pour rédiger et approuver le contenu de la déclaration.
+Sans cette contribution, celle-ci perd de son utilité.
+
+Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui ne fonctionne pas au besoin.
+Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
+
+Vous devez rédiger la déclaration dans le [fichier suivant][mission-projet]. Ce fichier contient un exemple de déclaration de mission de projet pour vous aider à démarrer.
+**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.
+**
 ## Plan d'itération
 
 Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
@@ -266,6 +295,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 - [Gabarit de plan d'itération][gabarit-plan-iteration]
 - [Gabarit de rapport][gabarit-rapport]
+- [Déclaration de mission de projet][mission-projet]
 
 ### Grilles de correction
 
@@ -286,6 +316,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 <!-- Gabarits -->
 [gabarit-rapport]: rapports/RAPPORT-iteration-i.md
 [gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
+[mission-projet]: rapports/mission-projet.md
 
 <!-- Grille de correction -->
 [grille-globale]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml
