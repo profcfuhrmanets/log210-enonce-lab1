@@ -220,8 +220,8 @@ Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui
 Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
 
 Vous devez rédiger la déclaration dans le [fichier suivant][mission-projet]. Ce fichier contient un exemple de déclaration de mission de projet pour vous aider à démarrer.
-**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.
-**
+**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.**
+
 ## Plan d'itération
 
 Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
