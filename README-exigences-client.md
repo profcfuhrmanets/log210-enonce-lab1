@@ -818,7 +818,7 @@ Les décisionnaires de SGA insistent pour des technologies de test, qui, selon e
 
 **Note :** pour réaliser cette exigence, il faudra automatiser les tests de l'ensemble des opérations système de chaque cas d'utilisation et s'assurer que les contrats sont respectés. Les tests devront être séparés en suites pour chaque cas d'utilisation.
 
-La couverture de test est évaluée à chaque itération. Voir la grille de correction pour plus de détail.
+La couverture de test devrait s'améliorer à chaque itération.
 
 #### S2 Contrainte de développement : environnement d'intégration continue
 
