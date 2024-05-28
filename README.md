@@ -311,7 +311,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 <!-- Projet -->
 [projet-exigences]: README-exigences-client.md
 [projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md
-[projet-sgb]: https://github.com/profcfuhrman/log210-systeme-gestion-bordereau-node-express-ts
+[projet-sgb]: https://github.com/profcfuhrmanets/log210-systeme-gestion-bordereau-node-express-ts
 
 <!-- Gabarits -->
 [gabarit-rapport]: rapports/RAPPORT-iteration-i.md
