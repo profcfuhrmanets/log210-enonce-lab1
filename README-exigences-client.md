@@ -553,7 +553,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer qu'une ou plusieurs questions peuvent être associées à un questionnaire existant.
 1. Démontrer qu'une ou plusieurs questions peuvent être dissociées d'un questionnaire existant.
 1. Démontrer que l'ordre des questions d'un questionnaire peut être modifié.
-1. Démontrer qu'il est impossible de supprimer ou de modifier un questionnaire lorsque celui-ci a déjà des réponses (des étudiants l'ont passés).
+1. Démontrer qu'il est impossible de supprimer ou de modifier un questionnaire lorsque celui-ci a déjà des réponses (des étudiants l'ont passé).
 <!-- 1. Démontrer que l'enseignant ne peut modifier que les questionnaires associés à son cours. [cpf : comment est-ce possible?] -->
 <!-- 1. Démontrer que l'enseignant ne peut pas modifier une question si celle-ci est utilisée dans un autre questionnaire. [on ne devrait pas permettre la modification de question ici, car c'est compliqué (Moodle ne le permet pas selon moi).] -->
 
