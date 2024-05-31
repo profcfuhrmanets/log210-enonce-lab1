@@ -1,6 +1,6 @@
 # Système de gestion de l'apprentissage
 
-Version: Été 2024 (1.1.0)  
+Version: Été 2024 (1.1.1)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 ## Introduction
