@@ -306,7 +306,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 <!-- Définition de tous les liens multiréférencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
 <!-- Théorie -->
-[NotesDeCours]: https://tinyurl.com/log210ndc
+[NotesDeCours]: http://tiny.cc/log210ndc
 
 <!-- Projet -->
 [projet-exigences]: README-exigences-client.md
