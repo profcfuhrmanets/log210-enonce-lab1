@@ -4,7 +4,7 @@
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
-- [Pour les auxiliaires d'enseignement: Grille de pointage des exigences](https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true)
+- [Pour les auxiliaires d'enseignement: Grille de pointage des exigences][grilleglobale]
 
 ## Introduction
 
@@ -887,3 +887,6 @@ L'exemple ci-dessous est hors de portée si vous ne visez pas le support de tous
 C'est plus un modèle de données qu'un modèle du domaine, car il est fortement relié au format XML (qui est assez naïf) des questions Moodle.
 
 ![Questions](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/fuhrmanator/GIFT-grammar-PEG.js/master/MoodleQuestionDomainModel.txt&fmt=svg)
+
+<!-- URLs -->
+[grille-globale]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
