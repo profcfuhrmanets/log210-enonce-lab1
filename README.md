@@ -228,9 +228,9 @@ Un plan d'itération doit être fait au début de chaque itération, suivant les
 
 #### Pour planifier vos itérations
 
-* [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
+* [Comment planifier une itération selon le processus unifié][comment-planifier-iteration]
 
-* [Comment estimer la taille d'une itération](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
+* [Comment estimer la taille d'une itération][comment-estimer-taille]
 
 ### Compléter la section Évaluation
 
@@ -245,7 +245,7 @@ Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale]
 * [Rapport][grille-rapport]
 * [Implémentation][grille-implementation]
 
-Vous pouvez faire une copie du tableur des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
+Vous pouvez faire une copie du tableur des grilles (pour les calculs hypothétiques) à partir de [ce lien][grille-globale].
 
 ## Directives d'implémentation (recommandations)
 
@@ -319,8 +319,10 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 [mission-projet]: rapports/mission-projet.md
 
 <!-- Grille de correction -->
-[grille-globale]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[grille-globale]: https://etsmtl365-my.sharepoint.com/:x:/g/personal/christopher_fuhrman_etsmtl_ca/ER8QtojugPlEqBHCMKvfZRoBylJoKju3HFK6jL_fDVz86w?e=vhI1bG
 [grille-artefacts]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Equipe'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
 [grille-plan-iteration]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Plan1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
 [grille-rapport]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Rapport1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
 [grille-implementation]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Implémentation'!A3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[comment-planifier-iteration]: https://etsmtl365-my.sharepoint.com/:w:/g/personal/christopher_fuhrman_etsmtl_ca/EWVA3MlzFHdElIMlduUvg6oBSAlrgHO7hjM2J93D1LGPSg?e=kCbXch
+[comment-estimer-taille]: https://etsmtl365-my.sharepoint.com/:w:/g/personal/christopher_fuhrman_etsmtl_ca/EaEe2fDK94RAkfWthKX1pr4B7KBgbD9BW4UMrzwtQzOrkg?e=XMf4IK
