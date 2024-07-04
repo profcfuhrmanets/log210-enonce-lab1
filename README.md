@@ -41,20 +41,19 @@ Beaucoup de cadres d'application web sont faciles à utiliser pour une applicati
 
 Le système de gestion des bordereaux des étudiants (SGB) est un système externe utilisé par votre application pour récupérer les informations sur les enseignants, les cours, les étudiants ainsi que sauvegarder les notes obtenues par les étudiants lors de la réalisation d'un questionnaire ou la correction d'un devoir. **Vous n'avez pas à modifier ce système.**
 
-SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse de SGA doit comprendre les classes conceptuelles de SGB.
+SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse du SGA doit comprendre les classes conceptuelles du SGB.
 
 <details>
 <summary><b>Cliquez ici pour voir les détails sur le MDD du SGB</b></summary>
 
 [Fichier source en PlantUML](https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
-![Modèle du domaine pour SGB avec liens au MDD de SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
+![Modèle du domaine pour SGB avec liens au MDD du SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
 
 </details>
 
-Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données. Il possède une interface de configuration permettant de nettoyer le contenu correspondant aux notes.
+Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données.
 
-L'API de SGB est disponible avec [le code source][projet-sgb].
-Lisez le README.md de SGB pour savoir comment générer cette documentation.
+Lisez le [README.md du SGB][projet-sgb] pour savoir comment consulter la documentation de son API.
 
 ## Travail d'équipe
 
@@ -291,7 +290,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 - [Document d'exigences du client][projet-exigences]
 - [Squelette de démarrage du projet][projet-squelette]
-- [Code source de SGB][projet-sgb]
+- [Code source du SGB][projet-sgb]
 
 ### Gabarits
 
