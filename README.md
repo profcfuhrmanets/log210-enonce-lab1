@@ -13,7 +13,7 @@ Le diagramme suivant décrit les différentes parties du système. Nous cherchon
 
 ![Diagramme de déploiement](README/deploiement.svg)
 
-Il faut que la solution respecte la séparation des couches, présentation et domaine. Les opérations système doivent être le mécanisme pour traverser ces deux couches (pas de logique applicative dans la couche de présentation). Pour vérifier cet aspect, la figure suivante est utile :
+Il faut que la solution respecte la séparation des couches présentation et domaine. Les opérations système doivent être le mécanisme pour traverser ces deux couches (pas de logique applicative dans la couche de présentation). Pour vérifier cet aspect, la figure suivante est utile :
 
 ![La figure F16.24 adaptée pour le contexte web](README/figureF16.24-web.svg "figure-f16.24-web")
 
@@ -41,20 +41,19 @@ Beaucoup de cadres d'application web sont faciles à utiliser pour une applicati
 
 Le système de gestion des bordereaux des étudiants (SGB) est un système externe utilisé par votre application pour récupérer les informations sur les enseignants, les cours, les étudiants ainsi que sauvegarder les notes obtenues par les étudiants lors de la réalisation d'un questionnaire ou la correction d'un devoir. **Vous n'avez pas à modifier ce système.**
 
-SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse de SGA doit comprendre les classes conceptuelles de SGB.
+SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse du SGA doit comprendre les classes conceptuelles du SGB.
 
 <details>
 <summary><b>Cliquez ici pour voir les détails sur le MDD du SGB</b></summary>
 
 [Fichier source en PlantUML](https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
-![Modèle du domaine pour SGB avec liens au MDD de SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
+![Modèle du domaine pour SGB avec liens au MDD du SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
 
 </details>
 
-Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données. Il possède une interface de configuration permettant de nettoyer le contenu correspondant aux notes.
+Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données.
 
-L'API de SGB est disponible avec [le code source][projet-sgb].
-Lisez le README.md de SGB pour savoir comment générer cette documentation.
+Lisez le [README.md du SGB][projet-sgb] pour savoir comment consulter la documentation de son API.
 
 ## Travail d'équipe
 
@@ -64,7 +63,7 @@ Ce texte est normalement un extrait du plan de cours :
 
 ## Application frontale et persistance minimalistes
 
-Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (Pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
+Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (Pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue.js, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
 
 Prenez note qu'il est possible de remplacer les pages Pug par des pages HTML et JavaScript.
 
@@ -90,15 +89,15 @@ L'objectif de cette partie et de montrer que l'application est conforme aux prin
 
 * Vérifier la correspondance du code avec la RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
-        1. commencer par/api/v1
+        1. commencer par `/api/v1`
         2. utiliser le verbe REST approprié
-        3. extraire et convertir et vérifier la présence des paramètres de la requête HTTP
-        4. faire un seul appelle à la méthode du contrôleur et retourne sa réponse sous forme de JSON avec le code HTTP approprié
+        3. extraire, convertir et vérifier la présence des paramètres de la requête HTTP
+        4. faire un seul appel à la méthode du contrôleur et retourner sa réponse en format JSON avec le code HTTP approprié
         5. intercepter et traiter les erreurs adéquatement
         6. :warning: [Cette méthode ne doit pas retourner une vue](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/wiki/Vue-sans-route-d'API-(endpoint)). Pour ce faire, il faut faire une autre route qui appelle l'opération système.
     2. une méthode avec la même signature est présente dans un contrôleur.
-       1. L'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception : [le réusinage «Introduce Parameter Object»](https://refactoring.com/catalog/introduceParameterObject.html)).
-       2. Le retour d'opération correspond à une valeur primitive
+       1. l'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception : [le réusinage «Introduce Parameter Object»](https://refactoring.com/catalog/introduceParameterObject.html)).
+       2. le retour d'opération correspond à une valeur primitive
 * exécuter les tests
   1. des tests pour vérifier le scénario principal, les scénarios alternatifs et la gestion des erreurs de l'opération système sont présents. Ils doivent :
         1. être exécutés pour montrer leur fonctionnement
@@ -161,15 +160,15 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 ### Dates clés et remises
 
-Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale («main» ou «master»). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé «iteration-i», où i est le numéro de l'itération (p. ex. iteration-1). Assurez-vous que votre rapport est au format PDF.
+Toutes les remises se font directement dans le répertoire Github de votre équipe, sur la branche principale («main» ou «master»). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé «iteration-i», où i est le numéro de l'itération (p. ex. iteration-1). Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              |Vérification conception[^1] | Démo/Rapport  |Plan d'itération section évaluation[^2]|
-| --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
-|         1 |Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
-|         2 |Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
-|         3 |Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
+| Itération | Plan d'itération              | Vérification conception[^1]        | Démo/Rapport    |Plan d'itération section évaluation[^2] |
+| --------: | :---------------------------- | :--------------------------------- |:--------------  | -------------------------------------- |
+|         1 | Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo           |     
+|         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo           |
+|         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo          |
 
 ![Visualisation Gantt des séances et remises](https://www.plantuml.com/plantuml/svg/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0)
 
@@ -179,11 +178,11 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 
 ### Processus de remise
 
-Toutes les remises se font directement dans GitHub.
+Toutes les remises se font directement sur GitHub.
 Vous devez mettre vos sources à jour dans la branche master (main), et ensuite vous générez un tag correspondant à votre remise.
 Voir le tableau suivant pour savoir quel tag générer selon votre remise.
 
-Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
+Prenez note que tous les rapports en format Markdown doivent aussi être remis en format PDF.
 
 | Itération |Plan d'itération  | Vérification conception | Rapport           |Plan d'itération section évaluation|
 | --------: | :----------------| :---------------------- |:----------------- |:----------------------------------|
@@ -291,7 +290,7 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 - [Document d'exigences du client][projet-exigences]
 - [Squelette de démarrage du projet][projet-squelette]
-- [Code source de SGB][projet-sgb]
+- [Code source du SGB][projet-sgb]
 
 ### Gabarits
 
