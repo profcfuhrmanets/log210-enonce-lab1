@@ -1,25 +1,62 @@
 # Système de gestion de l'apprentissage
 
-Version: Été 2024 (1.1.1)  
+Version: Automne 2024 (1.1.2)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
+
+## Table des matières
+
+Utilisez le menu intégré dans GitHub pour accéder à la table des matières (en haut, à droite de ce fichier).
 
 ## Introduction
 
-Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client.][projet-exigences]
+Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente.
+Voir le [document des exigences (besoins) du client][projet-exigences].
 
-## Déploiement du système
+Le document que vous lisez est l'énoncé du laboratoire. Il contient des informations sur le contexte du projet, les objectifs, les livrables, les modalités d'évaluation, etc.
 
-Le diagramme suivant décrit les différentes parties du système. Nous cherchons à simplifier les aspects techniques qui ne sont pas le sujet principal du cours : cadres d'application frontale, services REST, utilisation de bases de données, etc.
+## Objectifs
+
+Les objectifs du laboratoire suivent la méthodologie du cours et sont les suivants :
+
+1. Analyser les exigences du client et les transformer en artefacts UML (modèle du domaine, diagrammes de séquence système, contrats d'opération, etc.).
+2. Concevoir une solution logicielle en utilisant les artefacts UML.
+3. Implémenter les cas d'utilisation de la solution.
+4. Tester les modules et les cas d'utilisation de la solution.
+5. Appliquer un processus itératif pour construire et améliorer la solution.
+
+Notez que les objectifs sont les mêmes pour chaque itération, mais les artefacts et les cas d'utilisation à réaliser évoluent.
+
+Le travail réalisé dans le laboratoire 0 suit les mêmes objectifs pour un problème plus simple.
+Vous commencez le laboratoire 1 (ce projet) avec le même squelette (gabarit) que le laboratoire 0, avec les exemples d'artefacts à réaliser dans le laboratoire 1.
+
+## Implémentation de la solution
+
+Le diagramme suivant décrit les différentes parties du système.
+Nous cherchons à simplifier les aspects techniques qui ne sont pas le sujet principal du cours : cadres d'application frontale, services REST, utilisation de bases de données, etc.
 
 ![Diagramme de déploiement](README/deploiement.svg)
 
-Il faut que la solution respecte la séparation des couches présentation et domaine. Les opérations système doivent être le mécanisme pour traverser ces deux couches (pas de logique applicative dans la couche de présentation). Pour vérifier cet aspect, la figure suivante est utile :
+### Application frontale et persistance minimalistes
+
+Vous devez implémenter une interface utilisateur minimaliste dans un navigateur pour la réalisation de chacun des cas d'utilisation.
+Bien qu'une application frontale plus complexe soit possible, elle n'est pas nécessaire pour ce laboratoire.
+
+Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette a un mécanisme simple pour faire l'application frontale.
+Il s'agit des gabarits de pages générées avec PUG, plutôt qu'un cadriciel complexe comme Angular.js, React, Vue.js, etc. 
+Également, les technologies de bases de données ne sont pas proposées pour la solution.
+Vous verrez éventuellement ces éléments plus en profondeur dans d'autres cours spécialisés.
+
+### Architecture de la solution
+
+Il faut que la solution respecte la séparation des couches présentation et domaine.
+Les opérations système doivent être le mécanisme pour traverser ces deux couches (pas de logique applicative dans la couche de présentation). 
+Pour vérifier cet aspect, la figure suivante est utile :
 
 ![La figure F16.24 adaptée pour le contexte web](README/figureF16.24-web.svg "figure-f16.24-web")
 
 Notez que la logique du routeur (web) est simple :
 
-* décortiquer l'argument, p. ex. nom, de la requête et
+* décortiquer l'argument de la requête (p. ex. `nom`) et
 * appeler une opération système, p. ex. `demarrerJeu(nom)`, qui est une méthode définie dans une classe (le contrôleur GRASP) dans la couche domaine.
 
 [Cette petite présentation](https://log210-cfuhrman.github.io/log210-valider-architecture-couches/#/) vous donne d'autres astuces pour valider votre solution sur le plan de la séparation des couches.
@@ -28,14 +65,20 @@ Notez que la logique du routeur (web) est simple :
 
 ### Squelette pour commencer le SGA
 
-En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
+Le [squelette][projet-squelette] de démarrage de projet pour Node.js est le point de départ pour votre solution.
+Vous l'avez utilisé dans le lab 0.
 
-> Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
+> **Note** : Si vous n'avez pas terminé le lab 0, vous devez le terminer avant de commencer le lab 1. Une personne n'ayant pas complété le lab 0 peut être exclue d'une équipe.
 
-Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible ou facile d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour vous concentrer sur des aspects importants de la conception (séparation des couches présentation et domaine, modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
+Pour vous concentrer sur des aspects essentiels de la conception (comme la séparation des couches présentation et domaine, les modèles de 
+domaine complexes, etc.) et pour éviter que les laboratoires soient trop chronophages, **les technologies/solutions suivantes sont interdites :**
 
 * Cadre d'application d'interface utilisateur : Vue.js, React, Angular, etc.
 * Base de données : SQL, NoSQL, etc.
+
+> **Attention** : Il n'est pas recommandé d'abandonner PUG pour faire du HTML ou du Ajax, car cela peut vous faire perdre du temps sur des aspects "Web" qui ne sont pas nécessaires dans la solution.
+PUG simplifie la complexité des pages HTML et le squelette (lab0) montre comment l'utiliser.
+Si vous avez du mal avec PUG, regardez les exemples dans le squelette et les ressources en ligne et demandez de l'aide d'une personne ressource.
 
 ### SGB
 
@@ -60,12 +103,6 @@ Lisez le [README.md du SGB][projet-sgb] pour savoir comment consulter la documen
 Ce texte est normalement un extrait du plan de cours :
 
 > Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d'un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l'itération. **À la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l'équipe, aux auxiliaires d'enseignement ainsi qu'à l'enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de «0» pour le travail.
-
-## Application frontale et persistance minimalistes
-
-Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (Pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, Vue.js, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
-
-Prenez note qu'il est possible de remplacer les pages Pug par des pages HTML et JavaScript.
 
 ## Déroulement des corrections interactives
 
