@@ -207,7 +207,7 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo           |
 |         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo          |
 
-![Visualisation Gantt des séances et remises](https://www.plantuml.com/plantuml/svg/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0)
+[![Visualisation Gantt des séances et remises][gantt_seances]][gantt_seances_puml]
 
 [^1]: Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
 <!-- L'actualisation du plan d'itération (évaluation) est essentielle pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
@@ -355,6 +355,10 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 [gabarit-rapport]: rapports/RAPPORT-iteration-i.md
 [gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
 [mission-projet]: rapports/mission-projet.md
+
+<!-- Séances -->
+[gantt_seances]: https://www.plantuml.com/plantuml/svg/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0
+[gantt_seances_puml]: https://www.plantuml.com/plantuml/uml/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0
 
 <!-- Grille de correction -->
 [grille-globale]: https://etsmtl365-my.sharepoint.com/:x:/g/personal/christopher_fuhrman_etsmtl_ca/ER8QtojugPlEqBHCMKvfZRoBylJoKju3HFK6jL_fDVz86w?e=vhI1bG
