@@ -207,6 +207,10 @@ Notez que le calendrier des séances est différent pour chaque groupe-cours, ma
 |         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo           |
 |         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo          |
 
+### Gantt des séances et remises
+
+
+
 [![Visualisation Gantt des séances et remises][gantt_seances]][gantt_seances_puml]
 
 [^1]: Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
