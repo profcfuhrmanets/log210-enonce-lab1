@@ -51,6 +51,10 @@ domaine complexes, etc.) et pour éviter que les laboratoires soient trop chrono
 * Cadre d'application d'interface utilisateur : Vue.js, React, Angular, etc.
 * Base de données : SQL, NoSQL, etc.
 
+> **Attention** : Il n'est pas recommandé d'abandonner PUG pour faire du HTML ou du Ajax, car cela peut vous faire perdre du temps sur des aspects "Web" qui ne sont pas nécessaires dans la solution.
+PUG simplifie la complexité des pages HTML et le squelette (lab0) montre comment l'utiliser.
+Si vous avez du mal avec PUG, regardez les exemples dans le squelette et les ressources en ligne et demandez de l'aide d'une personne ressource.
+
 ### Livrables par itérations
 
 À chaque itération, vous devez livrer les artefacts suivants :
