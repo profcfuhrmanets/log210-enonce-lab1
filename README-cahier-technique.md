@@ -17,8 +17,8 @@ Il s'agit des gabarits de pages générées avec PUG.
 
 Afin de se concentrer sur les objectifs du cours, il n'est pas permis d'utiliser des frameworks frontend complexes (React, Angular, etc.)
 
-## Persistance minimalistes des données
-Les technologies de bases de données ne sont pas autorisés pour la solution. Vous verrez éventuellement ces éléments plus en profondeur dans d'autres cours spécialisés.
+## Persistance minimaliste des données
+Les technologies de bases de données ne sont pas autorisées pour la solution. Vous verrez éventuellement ces éléments plus en profondeur dans d'autres cours spécialisés.
 
 ## Squelette pour commencer le SGA
 
@@ -64,3 +64,53 @@ Notez que la logique du routeur (web) est simple :
 * appeler une opération système, p. ex. `demarrerJeu(nom)`, qui est une méthode définie dans une classe (le contrôleur GRASP) dans la couche domaine.
 
 [Cette petite présentation](https://log210-cfuhrman.github.io/log210-valider-architecture-couches/#/) vous donne d'autres astuces pour valider votre solution sur le plan de la séparation des couches.
+
+### Couche Présentation
+
+* Utilise PUG pour les vues
+* Routes Express pour gérer les requêtes HTTP
+* Format des réponses API : JSON
+
+### Couche Domaine
+
+* Contient la logique métier
+* Modèles du domaine
+* Contrôleurs GRASP
+* Indépendante de la présentation
+
+## Conventions de code
+
+### TypeScript
+
+* Utiliser des interfaces pour définir les structures de données
+* Éviter `any`
+* Documenter les méthodes publiques avec [JSDoc](https://jsdoc.app/)
+
+### Tests
+
+* Utiliser la méthode TDD (Test-Driven Development) pour écrire des tests unitaires
+* Utiliser [Jest](https://jestjs.io/) pour les tests unitaires
+* Nommer les tests de manière descriptive. Chaque test doit avoir un nom correspondant à son contexte (Ex: `CU02d-t1` pour le premier test du cas d'utilisation **CU02d**).
+* Écrire des tests pour vérifier le scénario principal des cas d'utilisation
+* Écrire des tests pour vérifier les scénarios alternatifs des cas d'utilisation
+* Écrire des tests pour les cas d'erreur  
+* Écrire des tests pour les cas limites
+
+### Git
+
+* Message de commit en français
+* Une branche par fonctionnalité
+* Nommer les branches : `feature/nom-feature`
+* Faire des commits atomiques, c'est-à-dire un commit par changement logique
+* Faire des pull requests pour fusionner les branches
+
+## FAQ
+
+### Comment tester l'API sans interface?
+
+Vous pouvez utiliser un outil comme [Postman](https://www.postman.com/) pour tester l'API sans interface.
+
+
+
+<!-- Projet -->
+[projet-sgb]: https://github.com/profcfuhrmanets/log210-systeme-gestion-bordereau-node-express-ts
