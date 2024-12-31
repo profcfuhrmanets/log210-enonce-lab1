@@ -27,10 +27,6 @@ Vous l'avez utilisé dans le lab 0.
 
 > **Note** : Si vous n'avez pas terminé le lab 0, vous devez le terminer avant de commencer le lab 1. Une personne n'ayant pas complété le lab 0 peut être exclue d'une équipe.
 
-> **Attention** : Il n'est pas recommandé d'abandonner PUG pour faire du HTML ou du Ajax, car cela peut vous faire perdre du temps sur des aspects "Web" qui ne sont pas nécessaires dans la solution.
-PUG simplifie la complexité des pages HTML et le squelette (lab0) montre comment l'utiliser.
-Si vous avez du mal avec PUG, regardez les exemples dans le squelette et les ressources en ligne et demandez de l'aide d'une personne ressource.
-
 ## Modèle du domaine (MDD) du SGB
 
 SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse du SGA doit comprendre les classes conceptuelles du SGB.
