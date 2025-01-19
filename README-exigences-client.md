@@ -200,7 +200,14 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. L'enseignant sélectionne l'option pour gérer les questions du cours.
 2. Le système affiche toutes les questions associées au cours.
 3. L'enseignant sélectionne une question
-4. Le système affiche les détails de la question (type de question, nom, énoncé, vérité, rétroaction pour la bonne réponse, rétroaction pour la mauvaise réponse, catégories non hiérarchiques («tags»)).
+4. Le système affiche les détails de la question:
+    - Type de question;
+    - Nom;
+    - Énoncé; 
+    - Vérité;
+    - Rétroaction pour la bonne réponse;
+    - Rétroaction pour la mauvaise réponse;
+    - Catégories non hiérarchiques («tags»).
 
 **Tests supplémentaires à réaliser :**
 
@@ -311,7 +318,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
     - Une date de fin;
     - Un état visible ou non.
 5. Le système:
-    - Ajoute la devoir;
+    - Ajoute le devoir;
     - Affiche la nouvelle liste de devoirs associés au cours;
     - Affiche un message de confirmation pour l'ajout du devoir.
 
