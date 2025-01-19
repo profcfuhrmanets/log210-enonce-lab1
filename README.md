@@ -1,60 +1,72 @@
 # Système de gestion de l'apprentissage
 
-Version: Été 2024 (1.1.0)  
+Version: Automne 2024 (1.1.2)  
 Si vous trouvez des incohérences ou vous avez des questions, créez un [Issue](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
+
+## Table des matières
+
+Utilisez le menu intégré dans GitHub pour accéder à la table des matières (en haut, à droite de ce fichier).
 
 ## Introduction
 
-Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente. [Voir le document des exigences du client.][projet-exigences]
+Le laboratoire consiste à analyser, concevoir, implémenter et tester une solution pour satisfaire les besoins en ce qui concerne une application cliente.
 
-## Déploiement du système
+Le document que vous lisez est l'énoncé du laboratoire. Il contient des informations sur le contexte du projet, les objectifs, les livrables, les modalités d'évaluation, etc.
 
-Le diagramme suivant décrit les différentes parties du système. Nous cherchons à simplifier les aspects techniques qui ne sont pas le sujet principal du cours : cadres d'application frontale, services REST, utilisation de bases de données, etc.
+## Objectifs
 
-![Diagramme de déploiement](README/deploiement.svg)
+Les objectifs du laboratoire suivent la méthodologie du cours et sont les suivants :
 
-Il faut que la solution respecte la séparation des couches, présentation et domaine. Les opérations système doivent être le mécanisme pour traverser ces deux couches (pas de logique applicative dans la couche de présentation). Pour vérifier cet aspect, la figure suivante est utile :
+1. Analyser les exigences du client et les transformer en artefacts UML (modèle du domaine, diagrammes de séquence système, contrats d'opération, etc.).
+2. Concevoir une solution logicielle en utilisant les artefacts UML.
+3. Implémenter les cas d'utilisation de la solution.
+4. Tester les modules et les cas d'utilisation de la solution.
+5. Appliquer un processus itératif pour construire et améliorer la solution.
 
-![La figure F16.24 adaptée pour le contexte web](README/figureF16.24-web.svg "figure-f16.24-web")
+Notez que les objectifs sont les mêmes pour chaque itération, mais les artefacts et les cas d'utilisation à réaliser évoluent.
 
-Notez que la logique du routeur (web) est simple :
+Le travail réalisé dans le laboratoire 0 suit les mêmes objectifs pour un problème plus simple.
+Vous commencez le laboratoire 1 (ce projet) avec le même squelette (gabarit) que le laboratoire 0, avec les exemples d'artefacts à réaliser dans le laboratoire 1.
 
-* décortiquer l'argument, p. ex. nom, de la requête et
-* appeler une opération système, p. ex. `demarrerJeu(nom)`, qui est une méthode définie dans une classe (le contrôleur GRASP) dans la couche domaine.
+## Résumé du projet
 
-[Cette petite présentation](https://log210-cfuhrman.github.io/log210-valider-architecture-couches/#/) vous donne d'autres astuces pour valider votre solution sur le plan de la séparation des couches.
+### Vue d'ensemble
 
-## Documents de référence
+Ce projet consiste à développer un système de gestion de l'apprentissage (SGA) dont les fonctionnalités peuvent être comparables à la solution Moodle. Cette solution doit permettre aux enseignants de gérer les activités pédagogiques en ligne. Le projet se déroule sur 3 itérations et met l'accent sur l'application des principes de génie logiciel.
 
-### Squelette pour commencer le SGA
+### Technologies utilisées
 
-En plus du [squelette][projet-squelette] de démarrage de projet pour Node.js, des [exemples de code supplémentaires](https://github.com/profcfuhrmanets/exemples-ts) pour vous aider dans votre projet sont aussi disponibles.
+* [Node.js](https://nodejs.org/fr) et [TypeScript](https://www.typescriptlang.org/) pour le backend
+* [PUG](https://pugjs.org/api/getting-started.html) pour les interfaces utilisateur
+* [Jest](https://jestjs.io/) pour les tests unitaires
+* [Git/GitHub](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop) pour la gestion de versions du projet
+* [Markdown](https://www.markdownguide.org/) pour la rédaction des rapports
+* [PlantUML](https://plantuml.com/) pour les diagrammes UML et l'[extension pour Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
 
-> Les solutions impliquant les langages et technologies autres que ceux dans le squelette ne sont pas permises.
+### Technologies interdites
 
-Beaucoup de cadres d'application web sont faciles à utiliser pour une application simple, mais il n'est pas toujours possible ou facile d'appliquer une bonne conception lorsqu'il s'agit d'une application complexe. Pour vous concentrer sur des aspects importants de la conception (séparation des couches présentation et domaine, modèles du domaine complexes, etc.), **vous ne pouvez pas utiliser les technologies/solutions suivantes :**
+Pour vous concentrer sur des aspects essentiels de la conception (comme la séparation des couches présentation et domaine, les modèles de 
+domaine complexes, etc.) et pour éviter que les laboratoires soient trop chronophages, **les technologies/solutions suivantes sont interdites :**
 
 * Cadre d'application d'interface utilisateur : Vue.js, React, Angular, etc.
 * Base de données : SQL, NoSQL, etc.
 
-### SGB
+> **Attention** : Il n'est pas recommandé d'abandonner PUG pour faire du HTML ou du Ajax, car cela peut vous faire perdre du temps sur des aspects "Web" qui ne sont pas nécessaires dans la solution.
+PUG simplifie la complexité des pages HTML et le squelette (lab0) montre comment l'utiliser.
+Si vous avez du mal avec PUG, regardez les exemples dans le squelette et les ressources en ligne et demandez de l'aide d'une personne ressource.
 
-Le système de gestion des bordereaux des étudiants (SGB) est un système externe utilisé par votre application pour récupérer les informations sur les enseignants, les cours, les étudiants ainsi que sauvegarder les notes obtenues par les étudiants lors de la réalisation d'un questionnaire ou la correction d'un devoir. **Vous n'avez pas à modifier ce système.**
+### Livrables par itérations
 
-SGB est une application ayant son propre modèle du domaine (comprenant les concepts comme l'université, les cours, les groupes-cours, les étudiants, les évaluations. Bien que votre application SGA ne traite que l'aspect pédagogique en ligne, votre analyse de SGA doit comprendre les classes conceptuelles de SGB.
+À chaque itération, vous devez livrer les artefacts suivants :
 
-<details>
-<summary><b>Cliquez ici pour voir les détails sur le MDD du SGB</b></summary>
+1. **Plan d'itération** : document qui décrit les objectifs de l'itération, les cas d'utilisation à réaliser, les artefacts UML à produire, les tests à réaliser, etc. ([Gabarit de plan d'itération][gabarit-plan-iteration])
+2. **Rapport** : document qui contient les artefacts UML produits, les tests réalisés, les difficultés rencontrées, etc. ([Gabarit de rapport][gabarit-rapport])
+3. **Implémentation** : code source de la solution, tests unitaires, etc. ([Directives d'implémentation](#directives-dimplémentation-recommandations))
+4. **Démonstration** : présentation du fonctionnement technique de votre solution au chargé de laboratoire. ([Déroulement des corrections interactives](#déroulement-des-corrections-interactives))
+5. **Évaluation** : Une mise à jour de votre plan d'itération afin de présenter son évaluation, les points forts et les points à améliorer. ([Compléter la section Évaluation](#compléter-la-section-évaluation))
 
-[Fichier source en PlantUML](https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
-![Modèle du domaine pour SGB avec liens au MDD de SGA](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.github.com/profcfuhrmanets/log210-enonce-lab1/main/modeles/mdd_sgb_sga.puml)
-
-</details>
-
-Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données. Il possède une interface de configuration permettant de nettoyer le contenu correspondant aux notes.
-
-L'API de SGB est disponible avec [le code source][projet-sgb].
-Lisez le README.md de SGB pour savoir comment générer cette documentation.
+Il est important de respecter les dates de remises pour chaque livrable. Par exemple, le plan d'itération doit être remis avant la démonstration pour montrer la correspondance entre la conception et la solution.
+Les dates sont indiquées dans la section [Dates clés et remises](#dates-clés-et-remises).
 
 ## Travail d'équipe
 
@@ -62,11 +74,72 @@ Ce texte est normalement un extrait du plan de cours :
 
 > Chaque membre d'équipe est responsable de la totalité du travail réalisé et remis par son équipe. Toutefois, les membres de l'équipe ayant réalisé un travail peuvent décider de ne pas mettre sur le rapport le nom d'un ou de plusieurs autres membres qui n'ont pas fait une contribution (conception et codage) significative à l'itération. **À la remise de l'évaluation du plan d'itération**, un courriel doit être envoyé en copie conforme à tous les membres de l'équipe, aux auxiliaires d'enseignement ainsi qu'à l'enseignant pour indiquer les raisons du retrait du nom. Un membre de l'équipe dont son nom n'est pas sur un travail de laboratoire reçoit une note de «0» pour le travail.
 
-## Application frontale et persistance minimalistes
+## Plan d'itération
 
-Vous devez implémenter une interface utilisateur minimaliste pour la réalisation de chacun des cas d'utilisation. Le but du laboratoire étant d'appliquer la méthodologie d'analyse et de conception enseignée dans LOG210, le squelette à un mécanisme simple pour faire l'application frontale. Il s'agit des gabarits HTML (Pug, etc.) plutôt qu'un cadriciel complexe comme Angular.js, React, vue, etc. Pour la même raison, les technologies de bases de données ne sont pas proposées pour la solution. Il est possible de réaliser le laboratoire sans passer du temps sur ces aspects que vous verrez plus en profondeur dans d'autres cours spécialisés.
+Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
 
-Prenez note qu'il est possible de remplacer les pages Pug par des pages HTML et JavaScript.
+#### Pour planifier vos itérations
+
+* [Comment planifier une itération selon le processus unifié][comment-planifier-iteration]
+
+* [Comment estimer la taille d'une itération][comment-estimer-taille]
+
+### Compléter la section Évaluation
+
+Après l'évaluation de votre itération, vous devez compléter la section **Évaluation** de votre plan d'itération. Cette section doit contenir les points forts et les points à améliorer pour chaque artefact et cas d'utilisation réalisé.
+
+## Déclaration de mission de projet
+
+À la première séance du laboratoire 1, chaque équipe doit rédiger et signer une déclaration de mission de projet.
+La déclaration permet de communiquer les attentes des membres de l'équipe envers les autres membres de l'équipe sur ces aspects du travail d'équipe :
+
+- Qualité du travail. Ex.:
+	- Qualité du logiciel, du code et du rapport (contenu et langue)
+	- Respect des échéances
+	- Note visée par l'équipe (ex. 90 % ou 110 % - il y a normalement un investissement du temps associé à la note ; chaque membre n'a pas la même capacité à investir du temps dans le projet)
+- Collaboration. Ex.:
+	- Charge de travail visée
+	- Aller chercher de l'aide lorsque nécessaire
+	- Aider les membres qui en ont besoin
+- Communication. Ex.:
+	- Présence aux laboratoires et aux réunions ou périodes de travail à l'extérieur du cours
+	- Transparence des membres dans les réponses
+	- Délais de réponse appropriés
+	- Communiquer les problèmes aux autres membres de l'équipe
+
+La déclaration est concise : au maximum une page. 
+La participation de chaque membre de l'équipe est requise pour rédiger et approuver le contenu de la déclaration.
+Sans cette contribution, celle-ci perd de son utilité.
+
+Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui ne fonctionne pas au besoin.
+Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
+
+Vous devez rédiger la déclaration dans le [fichier suivant][mission-projet]. Ce fichier contient un exemple de déclaration de mission de projet pour vous aider à démarrer.
+**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.**
+
+
+## Documents de référence
+
+### Exigences du client
+
+Le [document des exigences (besoins) du client][projet-exigences] contient les besoins du client pour le système de gestion de l'apprentissage.
+Il détaille les fonctionnalités attendues, les acteurs, les cas d'utilisation, etc.
+
+Pour réaliser ce projet, vous aurez à sélectionner les cas d'utilisation à réaliser pour chaque itération. Vous devez vous concentrer sur les cas d'utilisation qui permettent de réaliser les fonctionnalités essentielles du système. Attention, certains cas d'utilisation dépendant d'autres cas d'utilisation. Vous devez les réaliser dans l'ordre pour éviter des difficultés.
+
+### Cahier technique
+
+Un [cahier technique][cahier-technique] est disponible pour vous aider à démarrer le projet. Il contient des informations sur l'architecture du système, les technologies utilisées, un diagramme de déploiement et des informations sur le système de gestion des bordereaux des étudiants (SGB).
+
+### Système de gestion des bordereaux des étudiants (SGB)
+
+Le système de gestion des bordereaux des étudiants (SGB) est un système externe utilisé par votre application pour récupérer les informations sur les enseignants, les cours, les étudiants ainsi que sauvegarder les notes obtenues par les étudiants lors de la réalisation d'un questionnaire ou la correction d'un devoir.  **Vous n'avez pas à modifier ce système.**
+
+Veuillez noter que l'implémentation proposée de ce système n'a aucun mécanisme de persistance des données.
+
+Le [cahier technique][cahier-technique] présente le MDD du SGB.
+
+Lisez le [README.md du SGB][projet-sgb] pour savoir comment consulter la documentation de son API.
 
 ## Déroulement des corrections interactives
 
@@ -90,15 +163,15 @@ L'objectif de cette partie et de montrer que l'application est conforme aux prin
 
 * Vérifier la correspondance du code avec la RDCU
     1. une méthode avec le même nom est présente dans un routeur. Elle doit :
-        1. commencer par/api/v1
+        1. commencer par `/api/v1`
         2. utiliser le verbe REST approprié
-        3. extraire et convertir et vérifier la présence des paramètres de la requête HTTP
-        4. faire un seul appelle à la méthode du contrôleur et retourne sa réponse sous forme de JSON avec le code HTTP approprié
+        3. extraire, convertir et vérifier la présence des paramètres de la requête HTTP
+        4. faire un seul appel à la méthode du contrôleur et retourner sa réponse en format JSON avec le code HTTP approprié
         5. intercepter et traiter les erreurs adéquatement
         6. :warning: [Cette méthode ne doit pas retourner une vue](https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/wiki/Vue-sans-route-d'API-(endpoint)). Pour ce faire, il faut faire une autre route qui appelle l'opération système.
     2. une méthode avec la même signature est présente dans un contrôleur.
-       1. L'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception : [le réusinage «Introduce Parameter Object»](https://refactoring.com/catalog/introduceParameterObject.html)).
-       2. Le retour d'opération correspond à une valeur primitive
+       1. l'opération du contrôleur ne doit pas utiliser d'objets comme paramètres (exception : [le réusinage «Introduce Parameter Object»](https://refactoring.com/catalog/introduceParameterObject.html)).
+       2. le retour d'opération correspond à une valeur primitive
 * exécuter les tests
   1. des tests pour vérifier le scénario principal, les scénarios alternatifs et la gestion des erreurs de l'opération système sont présents. Ils doivent :
         1. être exécutés pour montrer leur fonctionnement
@@ -161,27 +234,31 @@ Si une équipe ne réussit pas à répondre adéquatement à une exigence (fonct
 
 ### Dates clés et remises
 
-Toutes les remises se font directement sur le répertoire Github de votre équipe, sur la branche principale («main» ou «master»). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé «iteration-i», où i est le numéro de l'itération (p. ex. iteration-1). Assurez-vous que votre rapport est au format PDF.
+Toutes les remises se font directement dans le répertoire Github de votre équipe, sur la branche principale («main» ou «master»). Marquez le commit correspondant à votre remise à l'aide d'un tag nommé «iteration-i», où i est le numéro de l'itération (p. ex. iteration-1). Assurez-vous que votre rapport est au format PDF.
 
 Notez que le calendrier des séances est différent pour chaque groupe-cours, mais les dates de remises suivent cette planification. Le rapport doit être prêt pour la démo afin de montrer la correspondance entre la conception et la solution.
 
-| Itération | Plan d'itération              |Vérification conception<sup>1</sup> | Démo/Rapport  |Plan d'itération section évaluation<sup>2</sup>|
-| --------: | :---------------------------- | :----------------------            |:--------------  |------------------------------------|
-|         1 |Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo       |     
-|         2 |Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo       |
-|         3 |Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo      |
+| Itération | Plan d'itération              | Vérification conception[^1]        | Démo/Rapport    |Plan d'itération section évaluation[^2] |
+| --------: | :---------------------------- | :--------------------------------- |:--------------  | -------------------------------------- |
+|         1 | Fin journée séance 3 du labo  | Début séance 4                     | Début séance 5  | Fin journée séance 5 du labo           |     
+|         2 | Fin journée séance 6 du labo  | Début séance 7                     | Début séance 8  | Fin journée séance 8 du labo           |
+|         3 | Fin journée séance 9 du labo  | Début séance 10                    | Début séance 12 | Fin journée séance 12 du labo          |
 
-**Note 1:** Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
+### Gantt des séances et remises
+
+[![Visualisation Gantt des séances et remises][gantt_seances]][gantt_seances_puml]
+
+[^1]: Vous devez avoir commencé les modèles UML (MDD, RDCU, etc.).  
 <!-- L'actualisation du plan d'itération (évaluation) est essentielle pour le BCAPG, car on mesure la partie "évaluation" des rapports -->
-**Note 2:** le Plan d'itération doit être actualisé après l'évaluation.  
+[^2]: le Plan d'itération doit être actualisé après l'évaluation.  
 
 ### Processus de remise
 
-Toutes les remises se font directement dans GitHub.
+Toutes les remises se font directement sur GitHub.
 Vous devez mettre vos sources à jour dans la branche master (main), et ensuite vous générez un tag correspondant à votre remise.
 Voir le tableau suivant pour savoir quel tag générer selon votre remise.
 
-Prenez note que tous les rapports en format markdown doivent aussi être remis sous le format PDF.
+Prenez note que tous les rapports en format Markdown doivent aussi être remis en format PDF.
 
 | Itération |Plan d'itération  | Vérification conception | Rapport           |Plan d'itération section évaluation|
 | --------: | :----------------| :---------------------- |:----------------- |:----------------------------------|
@@ -193,59 +270,17 @@ Prenez note que tous les rapports en format markdown doivent aussi être remis s
 
 À la deuxième semaine de l'itération 1, vous devrez présenter les artefacts, l'implémentation et les tests des CU01a et CU01b à votre auxiliaire d'enseignement. Vous recevrez des commentaires pour vous aider avant la remise de votre premier rapport et de votre première démo. Cette activité est informelle, mais votre participation est notée et obligatoire.
 
-## Déclaration de mission de projet
-
-À la première séance du laboratoire 1, chaque équipe doit rédiger et signer une déclaration de mission de projet.
-La déclaration permet de communiquer les attentes des membres de l'équipe envers les autres membres de l'équipe sur ces aspects du travail d'équipe :
-
-- Qualité du travail. Ex.:
-	- Qualité du logiciel, du code et du rapport (contenu et langue)
-	- Respect des échéances
-	- Note visée par l'équipe (ex. 90 % ou 110 % - il y a normalement un investissement du temps associé à la note ; chaque membre n'a pas la même capacité à investir du temps dans le projet)
-- Collaboration. Ex.:
-	- Charge de travail visée
-	- Aller chercher de l'aide lorsque nécessaire
-	- Aider les membres qui en ont besoin
-- Communication. Ex.:
-	- Présence aux laboratoires et aux réunions ou périodes de travail à l'extérieur du cours
-	- Transparence des membres dans les réponses
-	- Délais de réponse appropriés
-	- Communiquer les problèmes aux autres membres de l'équipe
-
-La déclaration est concise : au maximum une page. 
-La participation de chaque membre de l'équipe est requise pour rédiger et approuver le contenu de la déclaration.
-Sans cette contribution, celle-ci perd de son utilité.
-
-Lors d'un conflit, l'équipe doit revenir sur la déclaration et évaluer ce qui ne fonctionne pas au besoin.
-Par la suite, elle propose une solution pour résoudre le conflit et éviter qu'il ne se reproduise aux itérations suivantes.
-
-Vous devez rédiger la déclaration dans le [fichier suivant][mission-projet]. Ce fichier contient un exemple de déclaration de mission de projet pour vous aider à démarrer.
-**La déclaration n'est pas notée, mais le plan d'itération de l'itération sans déclaration sera considéré en retard si votre dépôt ne contient pas une déclaration signée.
-**
-## Plan d'itération
-
-Un plan d'itération doit être fait au début de chaque itération, suivant les conseils dans le [gabarit de plan d'itération][gabarit-plan-iteration].
-
-#### Pour planifier vos itérations
-
-* [Comment planifier une itération selon le processus unifié](https://docs.google.com/a/etsmtl.net/document/d/1xeCCdR4-sTznTPaSKYIl4l_bQi-gE5stPWSA5VArRlY/edit?usp=sharing)
-
-* [Comment estimer la taille d'une itération](https://docs.google.com/a/etsmtl.net/document/d/1bDy0chpWQbK9bZ82zdsBweuAgNYni3T2k79xihr6CuU/edit?usp=sharing)
-
-### Compléter la section Évaluation
-
-Après l'évaluation de votre itération, vous devez compléter la section **Évaluation** de votre plan.
 
 ## Modalités d'évaluation
 
-Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale] Google :
+Toutes les grilles d'évaluation se trouvent dans [un chiffrier][grille-globale] Excel :
 
 * [Pointage de tous les artefacts][grille-artefacts]
 * [Plan d'itération][grille-plan-iteration]
 * [Rapport][grille-rapport]
 * [Implémentation][grille-implementation]
 
-Vous pouvez faire une copie du tableur des grilles (pour les calculs hypothétiques) à partir de [ce lien](https://docs.google.com/spreadsheets/d/1M1mnxtXvlemp86aDPpdaTEhOxlhztEMf/edit?usp=sharing&ouid=100642354018215358554&rtpof=true&sd=true).
+Vous pouvez faire une copie du tableur des grilles (pour les calculs hypothétiques) à partir de [ce lien][grille-globale].
 
 ## Directives d'implémentation (recommandations)
 
@@ -288,8 +323,9 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 ### Projet
 
 - [Document d'exigences du client][projet-exigences]
+- [Cahier technique][cahier-technique]
 - [Squelette de démarrage du projet][projet-squelette]
-- [Code source de SGB][projet-sgb]
+- [Code source du SGB][projet-sgb]
 
 ### Gabarits
 
@@ -306,21 +342,28 @@ Ici vous trouverez des liens rapides vers les documents et éléments importants
 
 <!-- Définition de tous les liens multiréférencés afin de n'avoir qu'une seule information à mettre à jour ("single source of truth"). -->
 <!-- Théorie -->
-[NotesDeCours]: https://tinyurl.com/log210ndc
+[NotesDeCours]: http://tiny.cc/log210ndc
 
 <!-- Projet -->
 [projet-exigences]: README-exigences-client.md
+[cahier-technique]: README-cahier-technique.md
 [projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/tree/master/docs/Squelette.md
-[projet-sgb]: https://github.com/fuhrmanator/log210-systeme-gestion-bordereau-node-express-ts
+[projet-sgb]: https://github.com/profcfuhrmanets/log210-systeme-gestion-bordereau-node-express-ts
 
 <!-- Gabarits -->
 [gabarit-rapport]: rapports/RAPPORT-iteration-i.md
 [gabarit-plan-iteration]: rapports/plan-iteration-gabarit.md
 [mission-projet]: rapports/mission-projet.md
 
+<!-- Séances -->
+[gantt_seances]: https://www.plantuml.com/plantuml/svg/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0.svg
+[gantt_seances_puml]: https://www.plantuml.com/plantuml/uml/bPNVQjim5CRlzHJdBZSBdPt_K4RPohh1sCOAWn5wSMAVfAAov4d7sRBH1zYZv3doObCSftOYKrDo8IdAz_s-dC_WAyTeUOMQMLmwtYXw8yhJjSILnGp-2fOPAQd9Rp_vvPrHnW9Rr2v7Ivh5UwCv_FPHCBe7BzfVVyQCu0EfDR5CiA6mb9QdM_c788f5hppiSy32g5IynUJXnff2fuVVtrWY_OEKChyQQHQg80_Cf2B7HbD5RLpMZ6cJ8HcLJ0BAfWRKCH_zv_AYcj6zJ0cMnl32_1Oz-A8X8uO9fBXna9l2Wa982xlR4k1IQlXP42ZoOKm2paY6N1KEbD4hM4jNU21b-x7r-_2HTrkBB8s62FfzCR_TRL4d18CxG0TpvrU5ZXsCIfwOVrMe8Ut9Xl0ExZ7FIJj0BYKz1wJJscnOcGrFpG1r2kL34IY_UtUvbCc1a1ZlahV2XbvoyAXnemetwi0Ddt3NksrcBhvvOsCvO8ngHlZtNu6Zf8os-xT6LRJFP7H4dGqzFXdwk0e-xWX-T6jh8puZZuCs9XLbqa4PTxKHmYOjRKmhtBG3Dsbl8s1CNzv6QD7Unk2aZLaLVDOHVFfC6uCpyYne8tfTOVpcUSwiguyGvpt3GgBeI8mwY5uUn8sFuhXB7BKN6eQCNzvecqTLgRZoI_bU-Gy0
+
 <!-- Grille de correction -->
-[grille-globale]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml
-[grille-artefacts]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=502440678&single=true
-[grille-plan-iteration]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1557747181&single=true
-[grille-rapport]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=146951737&single=true
-[grille-implementation]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSv41don0mUrXlng6Uk46yrKrKPZ1P4jbDLBi6qEO0s3pybZ93uAwBlkKqG6HD6AA/pubhtml?gid=1269446979&single=true
+[grille-globale]: https://etsmtl365-my.sharepoint.com/:x:/g/personal/christopher_fuhrman_etsmtl_ca/ER8QtojugPlEqBHCMKvfZRoBylJoKju3HFK6jL_fDVz86w?e=vhI1bG
+[grille-artefacts]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Equipe'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[grille-plan-iteration]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Plan1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[grille-rapport]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Rapport1'!A1&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[grille-implementation]: https://etsmtl365-my.sharepoint.com/personal/christopher_fuhrman_etsmtl_ca/_layouts/15/Doc.aspx?sourcedoc={88b6101f-80ee-44f9-a811-c230abdf651a}&action=embedview&wdAllowInteractivity=False&ActiveCell='Implémentation'!A3&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True
+[comment-planifier-iteration]: https://etsmtl365-my.sharepoint.com/:w:/g/personal/christopher_fuhrman_etsmtl_ca/EWVA3MlzFHdElIMlduUvg6oBSAlrgHO7hjM2J93D1LGPSg?e=kCbXch
+[comment-estimer-taille]: https://etsmtl365-my.sharepoint.com/:w:/g/personal/christopher_fuhrman_etsmtl_ca/EaEe2fDK94RAkfWthKX1pr4B7KBgbD9BW4UMrzwtQzOrkg?e=XMf4IK
