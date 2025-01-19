@@ -1,6 +1,6 @@
 # Exigences SGA
 
-<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Été 2022 (1.0.0)  
+<!-- deux espaces à la fin pour faire un saut de ligne -->Version : Hiver 2025 (1.1.0)  
 Si vous trouvez des incohérences ou vous avez des questions, utilisez les [issues](https://github.com/profcfuhrmanets/log210-enonce-lab1/issues).
 
 - [README.md](./README.md)
@@ -47,21 +47,24 @@ La majorité des cas d'utilisation ont une précondition d'authentification pour
 **Garanties en cas de succès (postconditions) :**
 
 - Un nouveau cours est créé.
-- Le nouveau cours est associé seulement à l'enseignant
-- Les étudiants inscrits dans le groupe-cours (SGB) sont associés au cours
+- Le nouveau cours est associé seulement à l'enseignant.
+- Les étudiants inscrits dans le groupe-cours (SGB) sont associés au cours.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant demande de créer un nouveau cours.
-1. Le système affiche la liste des groupes-cours qu'enseigne l'enseignant (l'information provient du SGB).
-1. L'enseignant choisit un groupe-cours dans la liste.
-1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits dans le groupe-cours correspondant (l'information provient du SGB).
+1. L'enseignant sélectionne l'option pour créer un nouveau cours.
+2. Le système affiche la liste des groupes-cours assignés à l'enseignant (l'information provient du SGB).
+3. L'enseignant sélectionne un groupe-cours dans la liste.
+4. Le système:
+    - Affiche les informations (identifiant de groupe, jour, horaire, local et s'il se donne en présence ou à distance) du cours associé au groupe-cours sélectionné.
+    - Affiche la liste des étudiants (prénom, nom, courriel et code permanent) inscrits dans le groupe-cours correspondant (l'information provient du SGB).
 
 **Extensions (ou scénarios alternatifs) :**
 
 &nbsp;&nbsp;&nbsp; 3a. Un cours correspondant au groupe-cours sélectionné existe déjà.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le système signale l'erreur et rejette la saisie.\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Retour à l'étape 2 du scénario principal.
 
 **Tests supplémentaires à réaliser :**
 
@@ -82,14 +85,16 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Garanties en cas de succès (postconditions) :**
 
-- Aucun
+- L'enseignant a accès au cours sélectionné.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant demande la liste de ses cours.
-1. Le système affiche la liste de ses cours.
-1. L'enseignant demande les détails d'un cours.
-1. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
+1. L'enseignant sélectionne l'option pour afficher la liste de ses cours.
+2. Le système affiche la liste des cours créés et assignés à l'enseignant.
+3. L'enseignant sélectionne l'option pour afficher les détails d'un cours.
+4. Le système:
+    - Affiche les informations (identifiant de groupe, jour, horaire, local et s'il se donne en présence ou à distance) du cours sélectionné.
+    - Affiche la liste des étudiants (prénom, nom, courriel et code permanent) inscrits dans le cours sélectionné.
 
 **Tests supplémentaires à réaliser :**
 
@@ -102,6 +107,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -109,14 +115,13 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant demande la liste de ses cours.
-2. Le système affiche la liste de ses cours.
-3. L'enseignant demande les détails d'un cours.
-4. Le système affiche l'information du cours et affiche la liste des étudiants inscrits.
-5. L'enseignant demande de supprimer le cours.
-6. Le système demande une confirmation pour supprimer le cours.
-7. L'enseignant confirme.
-8. Le système supprime le cours et affiche la nouvelle liste de cours.
+1. L'enseignant sélectionne l'option pour supprimer le cours.
+2. Le système affiche une demande de confirmation pour supprimer le cours.
+3. L'enseignant confirme.
+4. Le système:
+    - Supprime le cours
+    - Affiche la  liste de cours
+    - Affiche un message de confirmation de suppression.
 
 **Tests supplémentaires à réaliser :**
 
@@ -135,6 +140,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -143,19 +149,28 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la création de questions
-1. Le système affiche les cours actifs de l'enseignant
-1. L'enseignant sélectionne un cours
-1. Le système affiche toutes les questions associées au cours.
-1. L'enseignant ajoute une question de type vrai-faux en spécifiant une ou plusieurs catégories non hiérarchiques («tags»), un nom (court) de la question, l'énoncé (le texte) de la question, la vérité (vrai ou faux) de l'énoncé, un texte de rétroaction pour la bonne réponse et un texte de rétroaction pour la mauvaise réponse.
+1. L'enseignant sélectionne l'option pour gérer les questions du cours.
+2. Le système affiche toutes les questions associées au cours.
+3. L'enseignant sélectionne l'option pour ajouter une question.
+4. L'enseignant ajoute une question de type vrai-faux en spécifiant les éléments suivants:
+    - Un nom (court) de la question;
+    - L'énoncé (le texte) de la question;
+    - La vérité (vrai ou faux) de l'énoncé;
+    - Un texte de rétroaction pour la bonne réponse;
+    - Un texte de rétroaction pour la mauvaise réponse;
+    - Une ou plusieurs catégories non hiérarchiques («tags»).
+5. Le système:
+    - Ajoute la nouvelle question;
+    - Affiche toutes les questions associées au cours; 
+    - Affiche un message de confirmation de l'ajout de la question.
 
-*L'enseignant répète l'étape 5 jusqu'à ce qu'il n'ait plus de questions à ajouter au cours.*
+*L'enseignant répète l'étape 3 à 5 jusqu'à ce qu'il n'ait plus de questions à ajouter au cours.*
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 5a. L'enseignant ajoute un autre type de question (défini par S4).
+&nbsp;&nbsp;&nbsp; 4a. L'enseignant ajoute un autre type de question (défini par S4).
 
-&nbsp;&nbsp;&nbsp; 5b. Le nom de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 4b. Le nom de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
@@ -174,6 +189,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -181,12 +197,17 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la récupération de questions
-1. Le système affiche toutes les questions de l'enseignant
-1. L'enseignant sélectionne une question
-1. Le système affiche les détails de la question
-
-*L'enseignant répète les étapes 3 et 4 tant que l'enseignant n'a pas terminé.*
+1. L'enseignant sélectionne l'option pour gérer les questions du cours.
+2. Le système affiche toutes les questions associées au cours.
+3. L'enseignant sélectionne une question
+4. Le système affiche les détails de la question:
+    - Type de question;
+    - Nom;
+    - Énoncé; 
+    - Vérité;
+    - Rétroaction pour la bonne réponse;
+    - Rétroaction pour la mauvaise réponse;
+    - Catégories non hiérarchiques («tags»).
 
 **Tests supplémentaires à réaliser :**
 
@@ -200,6 +221,8 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
+
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -207,14 +230,18 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la modification d'une question
-1. Le système affiche les valeurs actuelles de la question à modifier.
-1. L'enseignant effectue les modifications de la question et les sauvegarde.
-1. Le système affiche la question modifiée.
+1. L'enseignant sélectionne l'option pour gérer les questions du cours.
+2. Le système affiche toutes les questions associées au cours.
+3. L'enseignant sélectionne l'option pour modifier une question existante.
+4. Le système affiche les détails actuels de la question à modifier (type de question, nom, énoncé, vérité, rétroaction pour la bonne réponse, rétroaction pour la mauvaise réponse, catégories non hiérarchiques («tags»)).
+5. L'enseignant effectue les modifications de la question et les sauvegarde.
+6. Le système:
+    - Affiche la question modifiée.
+    - Affiche un message de confirmation de la modification de la question.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 3a. Le nom (modifié) de la question n'est pas unique.
+&nbsp;&nbsp;&nbsp; 5a. Le nom (modifié) de la question n'est pas unique.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Le Système signale l'erreur et rejette la saisie.
 **Tests supplémentaires à réaliser :**
@@ -231,6 +258,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -238,13 +266,21 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la suppression d'une question
-1. Le système affiche les valeurs actuelles de la question à supprimer.
-1. L'enseignant confirme la suppression de la question
+1. L'enseignant sélectionne l'option pour gérer les questions du cours.
+2. Le système affiche toutes les questions associées au cours.
+3. L'enseignant sélectionne l'option pour supprimer une question existante.
+4. Le système affiche:
+    - Les valeurs actuelles de la question à supprimer;
+    - Une demande de confirmation pour supprimer le cours.
+5. L'enseignant confirme.
+6. Le système:
+    - Supprime la question
+    - Affiche la nouvelle liste de questions
+    - Affiche un message de confirmation de suppression.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 2a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
+&nbsp;&nbsp;&nbsp; 4a. Le système affiche la liste des questionnaires utilisant cette question et désactive la possibilité de suppression tant que la question est utilisée dans un questionnaire.
 
 **Tests supplémentaires à réaliser :**
 
@@ -263,6 +299,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -270,22 +307,30 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la création d'un devoir
-1. Le système affiche les cours de l'enseignant ainsi que le nombre de devoirs associés à chaque cours
-1. L'enseignant sélectionne un cours
-1. Le système affiche tous les devoirs associés au cours.
-1. L'enseignant crée un nouveau devoir avec une description et un nom, une note maximale, une date de début, une date de fin et un état visible ou non.
-1. Le système confirme l'ajout du devoir et affiche tous les devoirs associés au cours.
+1. L'enseignant sélectionne l'option pour gérer les devoirs du cours.
+2. Le système affiche tous les devoirs associés au cours.
+3. L'enseignant sélectionne l'option pour ajouter un devoir.
+4. L'enseignant spécifie les éléments suivants:
+    - Un nom (court) du devoir;
+    - Une description du devoir;
+    - Une note maximale;
+    - Une date de début;
+    - Une date de fin;
+    - Un état visible ou non.
+5. Le système:
+    - Ajoute le devoir;
+    - Affiche la nouvelle liste de devoirs associés au cours;
+    - Affiche un message de confirmation pour l'ajout du devoir.
 
-*L'enseignant répète les étapes 5-6 tant qu'il y a un devoir à ajouter.*
+*L'enseignant répète les étapes 3 à 5 tant qu'il y a un devoir à ajouter.*
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;5b. Un devoir existe déjà avec le même nom.
+&nbsp;&nbsp;&nbsp;4b. Un devoir existe déjà avec le même nom.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
-&nbsp;&nbsp;&nbsp;5b. La date de début est après la date de fin.
+&nbsp;&nbsp;&nbsp;4b. La date de début est après la date de fin.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Le Système signale l'erreur et rejette la saisie.
 
@@ -306,6 +351,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -313,23 +359,19 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la récupération d'un devoir
-2. Le système affiche les cours de l'enseignant ainsi que le nombre de devoirs associés à chaque cours
-3. L'enseignant sélectionne un cours
-4. Le système affiche tous les devoirs associés au cours.
-5. L'enseignant sélectionne un devoir
-6. Le système affiche le détail du devoir
-7. Le système affiche la liste des étudiants ayant fait le devoir ainsi que la note leur étant associée.
+1. L'enseignant sélectionne l'option pour gérer les devoirs du cours.
+2. Le système affiche tous les devoirs associés au cours.
+3. L'enseignant sélectionne l'option pour consulter un devoir
+4. Le système affiche le détail du devoir (nom, description, note maximale, date de début, date de fin, état visible ou non).
+5. Le système affiche la liste des étudiants ayant fait le devoir ainsi que la note leur étant associée.
 
-*L'enseignant répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
-
-*L'enseignant répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 3 à 5 tant que l'enseignant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 7a. Le système affiche les étudiants par ordre alphabétique.
+&nbsp;&nbsp;&nbsp; 5a. Le système affiche les étudiants par ordre alphabétique.
 
-&nbsp;&nbsp;&nbsp; 7 b. Le système affiche les étudiants par ordre croissant de la note.
+&nbsp;&nbsp;&nbsp; 5b. Le système affiche les étudiants par ordre croissant de la note.
 
 **Tests supplémentaires à réaliser :**
 
@@ -343,6 +385,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -350,14 +393,18 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la modification d'un devoir
-1. Le système affiche les valeurs actuelles du devoir à modifier.
-1. L'enseignant effectue les modifications du devoir et demande au système de les sauvegarder.
-1. Le système affiche tout le devoir modifié
+1. L'enseignant sélectionne l'option pour gérer les devoirs du cours.
+2. Le système affiche tous les devoirs associés au cours.
+3. L'enseignant sélectionne l'option pour modifier un devoir.
+4. Le système affiche le détail du devoir (nom, description, note maximale, date de début, date de fin, état visible ou non).
+5. L'enseignant effectue les modifications du devoir et demande au système de les sauvegarder.
+6. Le système:
+    - Affiche le détail du devoir modifié;
+    - Affiche un message de confirmation de la modification du devoir.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 1a. Un devoir ne peut pas être modifié si des étudiants ont déjà commencé à réaliser celui-ci.
+&nbsp;&nbsp;&nbsp; 3a. Le système désactive la possibilité de modifier un devoir si des étudiants ont déjà commencé à réaliser celui-ci. Un message doit être affiché pour informer l'enseignant de la raison de l'impossibilité de modifier le devoir.
 
 **Tests supplémentaires à réaliser :**
 
@@ -373,6 +420,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -380,13 +428,21 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la suppression d'un devoir
-1. Le système affiche les informations du devoir à supprimer.
-1. L'enseignant confirme la suppression du devoir
+1. L'enseignant sélectionne l'option pour gérer les devoirs du cours.
+2. Le système affiche tous les devoirs associés au cours.
+3. L'enseignant sélectionne l'option pour supprimer un devoir.
+4. Le système affiche:
+    - Les valeurs actuelles du devoir à supprimer;
+    - Une demande de confirmation pour supprimer le cours.
+5. L'enseignant confirme la suppression.
+6. Le système:
+    - Supprime le devoir
+    - Affiche la nouvelle liste de devoir
+    - Affiche un message de confirmation de suppression.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;2a. Le système désactive la possibilité de suppression tant que le devoir a été utilisé par des étudiants.
+&nbsp;&nbsp;&nbsp;3a. Le système désactive la possibilité de supprimer un devoir si des étudiants ont déjà commencé à réaliser celui-ci. Un message doit être affiché pour informer l'enseignant de la raison de l'impossibilité de supprimer le devoir.
 
 **Tests supplémentaires à réaliser :**
 
@@ -403,6 +459,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -411,15 +468,19 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la correction de devoir
-1. Le système affiche les cours actifs de l'enseignant ainsi que le nombre de devoirs à corriger pour chaque cours
-1. L'enseignant sélectionne un cours
-1. Le système affiche tous les devoirs à corriger pour le cours.
-2. L'enseignant télécharge (« download ») un devoir remis par un étudiant et le corrige.
-3. L'enseignant téléverse (« upload ») la version corrigée du devoir.
-4. L'enseignant indique la note du devoir.
+1. L'enseignant sélectionne l'option pour gérer les devoirs du cours.
+2. Le système affiche tous les devoirs associés au cours.
+3. L'enseignant sélectionne l'option pour corriger un devoir.
+4. Le système affiche tous les devoirs à corriger pour le cours.
+5. L'enseignant télécharge (« download ») un devoir remis par un étudiant et le corrige.
+6. L'enseignant téléverse (« upload ») la version corrigée du devoir associé à un étudiant.
+7. L'enseignant indique la note du devoir associé à un étudiant.
+8. L'enseignant sélectionne l'option pour sauvegarder la correction des devoirs.
+9. Le système:
+    - Effectue la sauvegarde de la correction des devoirs
+    - Affiche un message de confirmation de la sauvegarde de la correction.
 
-*L'enseignant répète les étapes 5 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger ou qu'il ne souhaite plus corriger.*
+*L'enseignant répète les étapes 4 à 7 jusqu'à ce qu'il n'ait plus de devoirs à corriger ou qu'il ne souhaite plus corriger.*
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -443,6 +504,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 **Préconditions :**
 
 - L'enseignant est authentifié.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -451,18 +513,25 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la création d'un questionnaire
-1. Le système affiche les cours de l'enseignant ainsi que le nombre de questionnaires associés à chaque cours
-1. L'enseignant sélectionne un cours
-1. Le système affiche tous les questionnaires associés au cours.
-1. L'enseignant crée un nouveau questionnaire avec un nom, une description et un état pour indiquer si le questionnaire est actif
-1. Le système confirme la création du questionnaire
-1. Le système affiche la liste de catégories non hiérarchiques de questions
-1. L'enseignant sélectionne la catégorie non hiérarchique de question
-1. Le système affiche les questions correspondant à la catégorie non hiérarchique ainsi que le nombre de questionnaires auxquels ces questions ont déjà été ajoutées.
-1. L'enseignant sélectionne une ou plusieurs questions et les ajoute au questionnaire.
+1. L'enseignant sélectionne l'option pour gérer les questionnaires du cours.
+2. Le système affiche tous les questionnaires associés au cours.
+3. L'enseignant crée un nouveau questionnaire en spéciant les éléments suivants:
+    - Un nom du questionnaire;
+    - Une description du questionnaire;
+    - Un état pour indiquer si le questionnaire est actif.
+4. Le système
+    - Ajoute le questionnaire
+    - Affiche un message de confirmation de l'ajout du questionnaire.
+5. Le système affiche la liste de catégories non hiérarchiques («tags») de questions.
+6. L'enseignant sélectionne la catégorie non hiérarchique de question
+7. Le système affiche les questions correspondant à la catégorie non hiérarchique ainsi que le nombre de questionnaires auxquels ces questions ont déjà été ajoutées.
+8. L'enseignant sélectionne une ou plusieurs questions et les ajoute au questionnaire.
+9. L'enseignant sélectionne l'option pour sauvegarder le questionnaire.
+10. Le système:
+    - Associe les questions au questionnaire;
+    - Affiche un message de confirmation de la sauvegarde du questionnaire.
 
-*L'enseignant répète les étapes 7 à 10 tant que l'enseignant n'a pas terminé l'ajout de questions.*
+*L'enseignant répète les étapes 8 à 10 tant que l'enseignant n'a pas terminé l'ajout de questions.*
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -488,6 +557,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 - L'enseignant est authentifié.
 - Il existe un cours, un questionnaire, etc.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -495,17 +565,16 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la gestion des questionnaires
-1. Le système affiche les cours de l'enseignant ainsi que le nombre de questionnaires associés à chaque cours
-1. L'enseignant sélectionne un cours
-1. Le système affiche tous les questionnaires associés au cours.
-1. L'enseignant sélectionne un questionnaire
-1. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
-1. Le système affiche la liste des étudiants ayant réalisé le questionnaire ainsi que la note qu'ils ont obtenue.
+1. L'enseignant sélectionne l'option pour gérer les questionnaires du cours.
+2. Le système affiche tous les questionnaires associés au cours.
+3. L'enseignant sélectionne un questionnaire
+4. Le système affiche les détails du questionnaire:
+    - Le nom du questionnaire;
+    - La description du questionnaire;
+    - L'état pour indiquer si le questionnaire est actif.
+    - La liste des étudiants ayant réalisé le questionnaire ainsi que la note qu'ils ont obtenue.
 
-*L'enseignant répète les étapes 5 à 7 tant que l'enseignant n'a pas terminé.*
-
-*L'enseignant répète les étapes 3 à 7 tant que l'enseignant n'a pas terminé.*
+*L'enseignant répète les étapes 3 à 4 tant que l'enseignant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -525,6 +594,7 @@ Sans objet.
 
 - L'enseignant est authentifié.
 - Il existe un cours, un questionnaire, etc.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -533,16 +603,25 @@ Sans objet.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la modification d'un questionnaire
-1. Le système affiche la liste de questions associées au questionnaire
-1. L'enseignant modifie la description et/ou l'état du questionnaire
-1. L'enseignant associe au questionnaire une ou plusieurs questions de la banque de questions
-1. Le système confirme la modification du questionnaire
+1. L'enseignant sélectionne l'option pour gérer les questionnaires du cours.
+2. Le système affiche tous les questionnaires associés au cours.
+3. L'enseignant sélectionne l'option pour modifier un questionnaire
+4. Le système affiche les détails du questionnaire:
+    - Le nom du questionnaire;
+    - La description du questionnaire;
+    - L'état pour indiquer si le questionnaire est actif.
+5. L'enseignant modifier l'un ou plusieurs des informations du questionnaire (nom, description, état).
+6. L'enseignant associe au questionnaire une ou plusieurs questions de la banque de questions.
+7. L'enseignant sélectionne l'option pour sauvegarder les modifications au questionnaire.
+8. Le système:
+    - Effectue la sauvegarde des modifications du questionnaire;
+    - Effectue l'association et/ou la dissociation des questions au questionnaire;
+    - Affiche un message de confirmation de la sauvegarde des modifications.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp;4a. L'enseignant dissocie une ou plusieurs questions du questionnaire  
-&nbsp;&nbsp;&nbsp;4b. L'enseignant modifie l'ordre des questions associées au questionnaire
+&nbsp;&nbsp;&nbsp;6a. L'enseignant dissocie une ou plusieurs questions du questionnaire.
+&nbsp;&nbsp;&nbsp;6b. L'enseignant modifie l'ordre des questions associées au questionnaire.
 
 **Tests supplémentaires à réaliser :**
 
@@ -565,6 +644,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 - L'enseignant est authentifié.
 - Il existe un cours, un questionnaire, etc.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -573,13 +653,26 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la suppression d'un questionnaire
-2. Le système affiche les détails du questionnaire avec une description et un état pour indiquer si le questionnaire est actif
-3. L'enseignant supprime le questionnaire
+1. L'enseignant sélectionne l'option pour gérer les questionnaires du cours.
+2. Le système affiche tous les questionnaires associés au cours.
+3. L'enseignant sélectionne l'option pour supprimer un questionnaire
+4. Le système affiche:
+    - Les détails du questionnaire avec une description;
+    - Un état pour indiquer si le questionnaire est actif.
+    - Une demande de confirmation pour supprimer le cours.
+5. L'enseignant confirme la suppression.
+6. Le système:
+    - Supprime le questionnaire;
+    - Affiche la nouvelle liste des questionnaires;
+    - Affiche un message de confirmation de suppression.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 1a. Le système désactive la possibilité de suppression du questionnaire aussitôt qu'un étudiant a réalisé celui-ci dans le cadre du cours.
+&nbsp;&nbsp;&nbsp; 2a. Le système désactive la possibilité de supprimer les questionnaires qui ont été réalisé par au moins un étudiant. Un message doit être affiché pour informer l'enseignant de la raison de l'impossibilité de supprimer le questionnaire.
+
+**Spécifications particulières**
+
+- En cas d'échec, le questionnaire et ses questions restent inchangés.
 
 **Tests supplémentaires à réaliser :**
 
@@ -601,7 +694,8 @@ Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de so
 **Préconditions :**
 
 - L'enseignant est authentifié.
-- Il existe un cours, des questionnaires passés par étudiant avec questions nécessitant une correction manuelle.
+- L'enseignant a récupéré un cours (Résultat du CU01b - Récupérer cours).
+- Il existe pour le cours récupéré des questionnaires passés par étudiant avec questions nécessitant une correction manuelle.
 
 **Garanties en cas de succès (postconditions) :**
 
@@ -610,20 +704,20 @@ Note : il se peut qu'un enseignant ne corrige pas tous les questionnaires de so
 
 **Scénario principal (succès) :**
 
-1. L'enseignant commence la correction de questionnaire
-2. Le système affiche les cours actifs de l'enseignant ainsi que le nombre de questionnaires à corriger pour chaque cours
-3. L'enseignant sélectionne un cours
-4. Le système affiche tous les questionnaires à corriger pour le cours.
-5. L'enseignant choisit un questionnaire à corriger.
-6. Le système affiche les questions du questionnaire ayant besoin de correction manuelle.
-7. L'enseignant fait une correction manuelle à une question décidant les points à accorder à la réponse.
+1. L'enseignant sélectionne l'option pour gérer les questionnaires du cours.
+2. Le système affiche tous les questionnaires associés au cours.
+3. L'enseignant sélectionne l'option pour corriger un questionnaire.
+4. Le système affiche les questions du questionnaire ayant besoin de correction manuelle.
+5. L'enseignant fait une correction manuelle à une question décidant les points à accorder à la réponse.
 
-*L'enseignant répète les étapes 6 et 7 jusqu'à ce qu'il n'ait plus de questions à corriger ou qu'il ne souhaite plus corriger.*
+*L'enseignant répète les étapes 4 et 6 jusqu'à ce qu'il n'ait plus de questions à corriger ou qu'il ne souhaite plus corriger.*
 
-8. L'enseignant indique qu'il a terminé sa correction manuelle du questionnaire.
-9. Le système calcule la note du questionnaire.
+6. L'enseignant indique qu'il a terminé sa correction manuelle du questionnaire.
+7. Le système:
+    - Calcule la note du questionnaire.
+    - Affiche un message de confirmation de la correction du questionnaire.
 
-*L'enseignant répète les étapes 5 à 9 jusqu'à ce qu'il n'ait plus de questionnaires à corriger ou qu'il ne souhaite plus corriger.*
+*L'enseignant répète les étapes 3 à 7 jusqu'à ce qu'il n'ait plus de questionnaires à corriger ou qu'il ne souhaite plus corriger.*
 
 **Tests supplémentaires à réaliser :**
 
@@ -649,12 +743,13 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'étudiant sélectionne un cours parmi les cours auxquels il est inscrit
-1. Le système affiche les devoirs à remettre
-1. L'étudiant sélectionne un devoir
-1. Le système affiche les détails du devoir
-1. L'étudiant téléverse (upload) son devoir
-1. Le système confirme la réception du devoir
+1. L'étudiant sélectionne un cours parmi les cours auxquels il est inscrit.
+2. Le système affiche les devoirs à remettre.
+3. L'étudiant sélectionne un devoir.
+4. Le système affiche les détails du devoir (nom, description, date de fin).
+5. L'étudiant téléverse (upload) son devoir.
+6. L'étudiant sélectionne l'option pour confirmer la remise du devoir.
+1. Le système affiche un message de confirmation de la remise du devoir.
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -684,12 +779,12 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Scénario principal (succès) :**
 
-1. L'étudiant sélectionne un cours parmi les cours auxquels il est inscrit
-1. Le système affiche les questionnaires déjà complétés avec les notes reçues.
-1. Le système affiche les questionnaires à compléter
-1. L'étudiant sélectionne un questionnaire à compléter
-1. Le système affiche une question
-1. L'étudiant répond à la question
+1. L'étudiant sélectionne un cours parmi les cours auxquels il est inscrit.
+2. Le système affiche les questionnaires déjà complétés avec les notes reçues.
+3. Le système affiche les questionnaires à compléter.
+4. L'étudiant sélectionne un questionnaire à compléter.
+5. Le système affiche une question.
+6. L'étudiant répond à la question.
 
 *L'enseignant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
 
@@ -707,18 +802,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 1. Démontrer que les questionnaires non complétés sont bien associés à l'étudiant.
 1. Démontrer que le résultat (note) d'un questionnaire automatiquement corrigé a été sauvegardé dans le SGB.
 
-## Spécifications supplémentaires (FURPS+)
-
-Rappel de l'acronyme FURPS+ :
-
-- **F**unctionality : Fonctionnalité courante dans beaucoup de cas d'utilisation (la sécurité est considérée comme des Fonctionnalités dans FURPS)
-- **U**sability (Aptitude à l'utilisation) : L'interface humain-machine est-elle conviviale? Combien de clics pour réaliser chaque cas d'utilisation?
-- **R**eliability (Fiabilité) : Définir ce qui se passe lors d'une panne de système externe? Reprise?
-- **P**erformance : Combien d'utilisateurs en même temps?
-- **S**upportability (Possibilités de prise en charge) : Rajout facile de nouveaux types de questions?
-- **+** le reste… Licences du code source? Contraintes avec l'utilisation de SGB (système externe)? OpenSource? Politiques de confidentialité?
-
-### Fonctionnalités
+## Exigences fonctionnelles supplémentaires
 
 En dehors des cas d'utilisation (les fonctionnalités principales), il y a les exigences suivantes :
 
@@ -743,13 +827,28 @@ Référence : <https://nozzlegear.com/blog/implementing-a-jwt-auth-system-with-
 
 - Document d'analyse et de conception
 
-### Aptitude à l'utilisation (Usability)
+## Exigences non-fonctionnelles (facteurs de qualité)
 
-#### U1 Facteurs humains
+La norme [ISO 25010:2023](https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:ed-2:v1:en) est le standard qui définit les caractéristiques de qualité des produits et systèmes logiciels en spécifiant neuf caractéristiques de qualité et de sous-caractéristiques associées.
+
+1. **Adéquation fonctionnelle**: C’est la capacité d’un logiciel à fournir des fonctions qui répondent aux exigences spécifiées et aux attentes des utilisateurs dans des conditions données.
+2. **Efficacité de performance**: C’est la capacité d’un logiciel à fournir des performances appropriées, en termes de rapidité, de temps de réponse, de débit et d’utilisation des ressources, sous des conditions données.
+3. **Compatibilité**: C’est la capacité d’un logiciel à fonctionner de manière efficace et cohérente avec d’autres logiciels spécifiés, d’autres systèmes, logiciels, matériels ou environnements prévus.
+4. **Capacité d'interaction**: C’est la capacité d’un logiciel à permettre à l’utilisateur à interagir avec lui, en fournissant des interfaces utilisateur conviviales et en facilitant les interactions humain-machine fluides.
+5. **Fiabilité**: C’est la capacité d’un logiciel à maintenir un certain niveau de performances lorsqu’il est utilisé dans des conditions spécifiées pendant une période donnée, à fonctionner de manière stable et cohérente, en minimisant les risques de défaillance, de panne ou de comportement imprévu.
+6. **Sécurité**: C’est la capacité d’un logiciel à protéger les informations et les données, à garantir la confidentialité, l’intégrité et la disponibilité des informations, à prévenir l’accès non autorisé et à garantir l’authentification et l’autorisation des utilisateurs.
+7. **Maintenabilité**: C’est la capacité d’un logiciel à être modifié, y compris en ajoutant de nouvelles fonctionnalités, en corrigeant des erreurs et en améliorant les performances.
+8. **Flexibilité**: C’est la capacité d’un logiciel à être adapté à différentes conditions d’utilisation, à être modifié pour répondre à des besoins spécifiques, à être personnalisé pour des utilisateurs spécifiques, sans nécessiter de modifications majeures de son code source ou de son architecture.
+9. **Sûreté**: C’est la capacité d’un logiciel à garantir que les risques liés à l’utilisation du logiciel sont acceptables, en minimisant les risques de dommages pour les utilisateurs, les autres personnes et les biens.
+
+
+### Capacité d'interaction (Interaction capability)
+
+#### U1 Affichage adaptatif (Responsive design)
 
 Le client doit voir les informations (surtout les questions) clairement sur plusieurs formats d'écran : téléphone, tablette et écran PC.
 Alors, les pages web doivent supporter des appareils avec une taille d'écran de 320 par 568 pixels jusqu'à 1920 par 1080 pixels et le texte doit être lisible à une distance de 25 cm.
-Il ne doit y avoir aucun défilement horizontal sur la page ou ses éléments.
+Il ne doit y avoir **aucun défilement horizontal** sur la page ou ses éléments.
 
 - Utilisez les outils de développement du navigateur pour simuler des appareils de différentes tailles d'écran.
 - Les PUG du squelette intègrent déjà la technologie Bootstrap, ce qui facilite la mise en page pour les écrans à tailles différentes.
@@ -781,7 +880,7 @@ Vous devez montrer que :
 - Document d'analyse et de conception
 - Copie du fichier de persistance des informations à sauvegarder
 
-### Performance
+### Efficacité de performance (Performance efficiency)
 
 #### P1 Performance
 
@@ -809,7 +908,7 @@ curl -w %{time_total} http://localhost:3200/api/v3/course/all
 - Document d'analyse et de conception de la cache mémoire
 - Rapport des données sur la performance avant et après l'utilisation de la cache mémoire.
 
-### Possibilités de prise en charge (Supportability)
+### Compatibilité (Compatibility)
 
 Ces exigences doivent être implémentées durant **au moins deux itérations** pour obtenir vos points.
 
