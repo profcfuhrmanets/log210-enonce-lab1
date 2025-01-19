@@ -397,7 +397,7 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 
 **Extensions (ou scénarios alternatifs) :**
 
-&nbsp;&nbsp;&nbsp; 3a. Le système désactive la possibilité de modifier un devoir si des étudiants ont déjà commencé à réaliser celui-ci. Un message doit être affiché pour informer l'enseignant la raison de l'impossibilité de modifier le devoir.
+&nbsp;&nbsp;&nbsp; 3a. Le système désactive la possibilité de modifier un devoir si des étudiants ont déjà commencé à réaliser celui-ci. Un message doit être affiché pour informer l'enseignant de la raison de l'impossibilité de modifier le devoir.
 
 **Tests supplémentaires à réaliser :**
 
