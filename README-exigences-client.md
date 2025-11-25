@@ -786,11 +786,11 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 5. Le système affiche une question.
 6. L'étudiant répond à la question.
 
-*L'enseignant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
+*L'étudiant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
 
 7. Le système affiche la note obtenue et le texte de rétroaction (bonne ou mauvaise réponse) pour chaque question ainsi que la note résultante en pourcentage
 
-*L'enseignant répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
+*L'étudiant répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -877,7 +877,7 @@ Vous devez montrer que :
 
  **Artefacts à réaliser :**
 
-- Document d'analyse et de conception
+- Mettre à jour vos documents d'analyse et de conception en conséquence
 - Copie du fichier de persistance des informations à sauvegarder
 
 ### Efficacité de performance (Performance efficiency)
@@ -905,7 +905,7 @@ curl -w %{time_total} http://localhost:3200/api/v3/course/all
 
  **Artefacts à réaliser :**
 
-- Document d'analyse et de conception de la cache mémoire
+- Mettre à jour vos documents d'analyse et de conception en utilisant la cache mémoire
 - Rapport des données sur la performance avant et après l'utilisation de la cache mémoire.
 
 ### Compatibilité (Compatibility)
