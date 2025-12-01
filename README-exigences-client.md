@@ -786,11 +786,11 @@ Il faut des tests pour les postconditions du cas d'utilisation.
 5. Le système affiche une question.
 6. L'étudiant répond à la question.
 
-*L'enseignant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
+*L'étudiant répète les étapes 5 à 6 tant que toutes les questions n'ont pas été complétées.*
 
 7. Le système affiche la note obtenue et le texte de rétroaction (bonne ou mauvaise réponse) pour chaque question ainsi que la note résultante en pourcentage
 
-*L'enseignant répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
+*L'étudiant répète les étapes 2 à 7 tant que l'étudiant n'a pas terminé.*
 
 **Extensions (ou scénarios alternatifs) :**
 
@@ -877,7 +877,7 @@ Vous devez montrer que :
 
  **Artefacts à réaliser :**
 
-- Document d'analyse et de conception
+- Mettre à jour vos documents d'analyse et de conception en conséquence
 - Copie du fichier de persistance des informations à sauvegarder
 
 ### Efficacité de performance (Performance efficiency)
@@ -905,7 +905,7 @@ curl -w %{time_total} http://localhost:3200/api/v3/course/all
 
  **Artefacts à réaliser :**
 
-- Document d'analyse et de conception de la cache mémoire
+- Mettre à jour vos documents d'analyse et de conception en utilisant la cache mémoire
 - Rapport des données sur la performance avant et après l'utilisation de la cache mémoire.
 
 ### Compatibilité (Compatibility)
@@ -939,10 +939,11 @@ Les décisionnaires de SGA insistent pour une gestion sémantique de version pou
 
 #### S4 Contrainte d'implémentation : banque de questions en format GIFT
 
-Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a).
+Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a) et modifier une question (CU02c). 
 
-La saisie du format GIFT doit être validée.
-Il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
+Si vous supportez plusieurs types de questions (choix de réponses, réponse courte, vrai/faux, etc.), vous devez supporter le format GIFT pour chacun des types de questions supportés.
+
+La saisie du format GIFT doit être validée et vous devez respecter les contraintes pour l'ajout d'une question (CU02a) et de la modification d'une question (CU02c).
 
 Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
 Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse.
