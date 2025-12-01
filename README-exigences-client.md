@@ -939,10 +939,11 @@ Les décisionnaires de SGA insistent pour une gestion sémantique de version pou
 
 #### S4 Contrainte d'implémentation : banque de questions en format GIFT
 
-Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a).
+Les questions ne peuvent pas être seulement rédigées en GIFT, il faut d'abord avoir une interface utilisateur pour ajouter une question (CU02a) et modifier une question (CU02c). 
 
-La saisie du format GIFT doit être validée.
-Il faut donc implémenter «CU02c Modifier question» pour montrer que cela fonctionne.
+Si vous supportez plusieurs types de questions (choix de réponses, réponse courte, vrai/faux, etc.), vous devez supporter le format GIFT pour chacun des types de questions supportés.
+
+La saisie du format GIFT doit être validée et vous devez respecter les contraintes pour l'ajout d'une question (CU02a) et de la modification d'une question (CU02c).
 
 Pour simplifier la rédaction et le partage des questions, le format GIFT doit être utilisé pour importer les questions.
 Vous devez implémenter le mécanisme de rétroaction à une question en utilisant le caractère # dans une réponse.
