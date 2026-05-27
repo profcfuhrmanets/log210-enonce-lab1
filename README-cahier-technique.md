@@ -114,3 +114,4 @@ Vous pouvez utiliser un outil comme [Postman](https://www.postman.com/) pour tes
 
 <!-- Projet -->
 [projet-sgb]: https://github.com/profcfuhrmanets/log210-systeme-gestion-bordereau-node-express-ts
+[projet-squelette]: https://github.com/profcfuhrmanets/log210-jeu-de-des/tree/master/docs/Squelette.md
